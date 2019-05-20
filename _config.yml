@@ -1,3 +1,17 @@
+# Saigon Jekyll Theme Config
+permalink: /:categories/:title/
+url: "http://example.com"
+full_name: "Saigon Jekyll Theme"
+first_name: "Just"
+last_name: "Me"
+blog_title: "Title"
+author_img_name_path: "/images/users/user.jpg"
+disqus_shortname: "example"
+copyright_year: "2016"
+google_analytics_code: ""
+aboutme: "I like ramen noodles with cream."
+
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -17,7 +31,7 @@ title: 'Flightdeck: A Scaffold for Jekyll'
 email: client-email@client_domain.com
 description: >
   Flightdeck is a scaffold and starter project for Jekyll that uses an opinionated modern front-end workflow.
-baseurl: 'soal' # the subpath of your site, e.g. /blog
+baseurl: # 'soal' # the subpath of your site, e.g. /blog
 url: 'https://ashcatcher.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ginfuru
 github_username: ginfuru
