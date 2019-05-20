@@ -1,40 +1,28 @@
 # Saigon Jekyll Theme Config
 permalink: /:categories/:title/
-url: "http://example.com"
-full_name: "Saigon Jekyll Theme"
-first_name: "Just"
-last_name: "Me"
-blog_title: "Title"
 author_img_name_path: "/images/users/user.jpg"
 disqus_shortname: "example"
-copyright_year: "2016"
 google_analytics_code: ""
-aboutme: "I like ramen noodles with cream."
 
-
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 'Flightdeck: A Scaffold for Jekyll'
-email: client-email@client_domain.com
+
+url: 'https://ashcatcher.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # 'soal' # the subpath of your site, e.g. /blog
+
+title: 'Solace: Jekyll Theme'
+full_name: 'Solace for SOAL House'
+first_name: "Small"
+last_name: "Solace"
+copyright_year: "2019"
+email: ryan@fancy55.com
+
 description: >
   Flightdeck is a scaffold and starter project for Jekyll that uses an opinionated modern front-end workflow.
-baseurl: # 'soal' # the subpath of your site, e.g. /blog
-url: 'https://ashcatcher.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ginfuru
-github_username: ginfuru
 
 # SEO
 #image: /assets/images/open_graph_image.png
