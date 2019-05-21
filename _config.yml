@@ -16,8 +16,6 @@ baseurl: # 'soal' # the subpath of your site, e.g. /blog
 
 title: 'SOAL'
 full_name: 'Shephards of Abundant Living'
-first_name: "SOAL"
-last_name: "House"
 copyright_year: "2019"
 email: clboulter@shaw.ca
 
