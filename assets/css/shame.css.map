@@ -1,1 +1,1 @@
-{"version":3,"sources":["shame.scss"],"names":[],"mappings":"AAAA,KACE,4BAA6B,CAC9B,YAIG,iCACA,sDAAA,AACA,8CAAA,oBACA,wBAAyB,CAC1B","file":"shame.css","sourcesContent":["body {\n  background: 2a190f !important;\n}\n\n.blazen {\n  img {\n    border: 0px solid rgba(0,0,0,.5);\n    box-shadow: 0px 0px 50px rgba(204,204,204,0.3);\n    border-radius: 100px;\n    background-color: #3f3028;\n  }\n}\n"],"sourceRoot":"/source/"}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"shame.css","sourceRoot":"/source/","sourcesContent":[]}
