@@ -17,9 +17,12 @@ img, embed, object{
 body {
   margin: 0px;
   text-align: center;
-  padding: 0px 20px 0px 20px;
-  border-top: 4px solid #333;
+  // Remove border so top is flush with image
+  // border-top: 4px solid #333;
   background: #111;
+
+  // Prevents screen scrolling on x axis
+  // padding: 0px 20px 0px 20px;
 
 }
 
@@ -70,13 +73,6 @@ h1 {
   font-weight: normal;
 }
 
-
-#layout {
-  width: 90%;
-  margin: auto;
-  text-align: left;
-}
-
 #heading {
   margin: 20px 0px 40px 0px;
   position: relative;
@@ -118,7 +114,8 @@ h1 {
 #content {
   margin: 0px 15% 0px ;
   background: #f4f4f4;
-  padding-top: 20px;
+  // Remove padding for sidebar to reach top of page
+  // padding-top: 20px;
   margin-top: 40px;
 }
 
@@ -137,7 +134,7 @@ h1 {
   margin: auto;
   padding: 0px;
   width: 80%;
-}
+  }
 
 #posts ul li {
   margin: 0px 20px 20px 0px;
@@ -346,14 +343,17 @@ only screen and (max-width: 600px) {
   margin: 40px 0px 8px 0px;
 }
 
+// This code moved to section#home-hero
+/*
 section{
-  background-image: url('/assets/images/18asaigon-hero.jpg');
-  background-size: cover;
-  background-position: center;
-  height:100px;
-  width:100%;
-  margin-bottom: 40px;
+background-image: url('/assets/images/18asaigon-hero.jpg');
+background-size: cover;
+background-position: center;
+height:100px;
+width:100%;
+margin-bottom: 40px;
 }
+ */
 
 h1.post-title {
   font-weight:800
@@ -370,7 +370,13 @@ h1.post-title {
 
 #posts.leftblock, .rightblock {width:100%}
 #content.hp{background: transparent}
-.rightblock{color:#444;text-align:left}
+
+.rightblock{
+  color:#444;
+  // Center sidebar contents
+  // text-align:left;
+}
+
 .rightblock b, .rightblock strong, .rightblock a {color: #555}
 
 @media (min-width: 770px) {
@@ -385,9 +391,20 @@ h1.post-title {
   section#home-hero{
     max-width: 1100px;
     margin: 0 auto;
+    background-image: url('/assets/images/18asaigon-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height:150px;
+    width:100%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+
   }
   #content.hp{
-    margin: 0 auto;background:transparent;padding-top: 40px;
+    margin: 0 auto;
+    background:transparent;
+    /* padding-top: 40px; */
     max-width:1100px;
   }
   #posts.leftblock {
