@@ -37,13 +37,15 @@
     </style>
   </head>
   <body>
+
     <div id='layout'>
-      {% include header.html %}
       <div style='clear: both'></div>
     </div>
+
     <section class="parallax">
       <div id='content' class="hp">
         <div id='posts' class="leftblock">
+          {% include header.html %}
           <ul>
             {% for post in site.categories.blog %}
               <li class='post'>
