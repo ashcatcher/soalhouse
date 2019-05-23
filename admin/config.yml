@@ -24,4 +24,20 @@ collections:
         media_library:
           config:
             multiple: true
-
+  - name: "events"
+    label: "Events"
+    file: "_data/events.yml"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Teaser_Image"
+        name: "teaser_image"
+        widget: "image"
+      - label: "Date"
+        name: "date"
+        widget: "date"
+        default: ""
+      - label: "Description"
+        name: "description"
+        widget: "string"
