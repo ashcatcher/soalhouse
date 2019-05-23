@@ -1,0 +1,21 @@
+<div id="slideshow">
+  {% for event in site.data.events %}
+    <div class="event-card">
+      <img class="event-teaser-image" src="{{event.teaser_image}}"
+                                      alt="party hat"/>
+      <div class="event-teaser-details">
+        <div class="event-row">
+          <h1 class="event-teaser-name">{{event.name}}</h1>
+          <p class="event-teaser-date">{{event.date}}</p>
+        </div>
+        <div class="event-row">
+          <p class="event-teaser-description">{{event.description}}</p>
+        </div>
+        <div class="event-row">
+          <a class="more" href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+

@@ -45,27 +45,14 @@
     <section class="parallax">
       <div id='content' class="hp">
         <div id='posts' class="leftblock">
-          {% include header.html %}
-          <ul>
-            {% for post in site.categories.blog %}
-              <li class='post'>
-                {% if post.image %}
-                  <a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
-                {% endif %}
-                <div class="postcontent">
-                  <a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
-
-                  <div class='post-content'>{{post.summary}}</div>
-                </div>
-              </li>
-            {% endfor %}
-          </ul>
+          {% include events.html %}
+          {% include posts.html %}
         </div>
         <section class="sidebar">
-        <div class="rightblock blazen">
-          {% include sidebar.html %}
-        </div>
-        <div style='clear:both'></div>
+          <div class="rightblock blazen">
+            {% include sidebar.html %}
+          </div>
+          <div style='clear:both'></div>
         </section>
       </div>
     </section>
@@ -74,5 +61,19 @@
       <a href="/about/">About</a> | {{site.full_name}} - {{site.copyright_year}}
     </div>
     </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#slideshow > div:gt(0)").hide();
+        setInterval(function() {
+          $('#slideshow > div:first')
+            .fadeOut(1500)
+            .next()
+            .fadeIn(1500)
+            .end()
+            .appendTo('#slideshow');
+        }, 3000);
+      })
+    </script>
   </body>
 </html>

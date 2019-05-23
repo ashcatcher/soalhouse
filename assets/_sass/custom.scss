@@ -27,3 +27,30 @@
   position: relative;
   opacity: 0.65;
 }
+
+#slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 880px;
+  height: 240px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+.event-card {
+  width: 880px;
+  height: 150px;
+  border: 1px;
+  padding-bottom: 30px;
+}
+.event-teaser-image {
+  height: 100%;
+  float: left;
+}
