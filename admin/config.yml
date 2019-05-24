@@ -24,10 +24,12 @@ collections:
         media_library:
           config:
             multiple: true
+
   - name: "events"
     label: "Events"
-    file: "_data/events.yml"
+    folder: "_events/"
     create: true
+    slug: "{{slug}}"
     fields:
       - label: "Name"
         name: "name"
