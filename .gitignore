@@ -3,7 +3,6 @@
 *.scssc
 
 # Compiled CSS
-/assets/css/*
 # Sublime Text
 sftp-config.json
 
