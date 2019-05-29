@@ -44,10 +44,15 @@
 
     <section class="parallax">
       <div id='content' class="hp">
+
         <div id='posts' class="leftblock">
           {% include events.html %}
+          {% comment %}
           {% include posts.html %}
+          {% endcomment %}
         </div>
+
+
         <section class="sidebar">
           {% include sidebar.html %}
           <div style='clear:both'></div>
