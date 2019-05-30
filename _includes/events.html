@@ -1,22 +1,20 @@
-<div class="glass">
-<div id="slideshow">
-  {% for event in site.events %}
-    <div class="event-card">
-      <img class="event-teaser-image" src="{{event.teaser_image}}"
-                                      alt="party hat"/>
-      <div class="event-teaser-details">
-        <div class="row">
-          <h1 class="event-teaser-name">{{event.name}}</h1>
-          <p class="event-teaser-date">{{event.date}}</p>
-        </div>
-        <div class="row">
-          <p class="event-teaser-description">{{event.description}}</p>
-        </div>
-        <div class="row">
-          <a class="more" href="#">Read More</a>
+  <div class="glass" id="slideshow">
+    {% for event in site.events %}
+      <div class="event-card">
+        <img class="event-teaser-image" src="{{event.teaser_image}}"
+                                        alt="party hat"/>
+        <div class="event-teaser-details">
+          <div class="row">
+            <h1 class="event-teaser-name">{{event.name}}</h1>
+            <p class="event-teaser-date">{{event.date}}</p>
+          </div>
+          <div class="row">
+            <p class="event-teaser-description">{{event.description}}</p>
+          </div>
+          <div class="row">
+            <a class="more" href="#">Read More</a>
+          </div>
         </div>
       </div>
-    </div>
-  {% endfor %}
-</div>
-</div>
+    {% endfor %}
+  </div>
