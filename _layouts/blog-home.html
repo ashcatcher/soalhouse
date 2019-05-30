@@ -37,29 +37,11 @@
     </style>
   </head>
   <body>
-
-    <div id='layout'>
-      <div style='clear: both'></div>
-    </div>
-
     <section class="parallax">
       <div id='content' class="hp">
-        <section>
-          {% include left_curtain.html %}
-        </section>
-
-        <div id='posts' class="leftblock">
-          {% include events.html %}
-          {% comment %}
-          {% include posts.html %}
-          {% endcomment %}
-        </div>
-
-
-        <section class="sidebar">
-          {% include right_curtain.html %}
-          <div style='clear:both'></div>
-        </section>
+        {% include left_curtain.html %}
+        {% include right_curtain.html %}
+        {% include events.html %}
       </div>
     </section>
 
