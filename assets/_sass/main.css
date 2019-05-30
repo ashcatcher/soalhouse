@@ -74,12 +74,14 @@ h1 {
 	font-weight: normal;
 }
 
-
+/*
+ * Removing unneceesary rules to simplify troubleshooting
 #layout {
 	width: 90%;
 	margin: auto;
 	text-align: left;
 }
+*/
 
 #heading {
 	margin: 20px 0px 40px 0px;
