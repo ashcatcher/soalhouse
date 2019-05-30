@@ -91,15 +91,24 @@ div.curtains {
   right: 10px;
   bottom: 10px;
 }
-.event-card {
-  width: 60%;
-  height: 150px;
+
+.event {
+  width: 100%;
   border: 1px;
-  padding-bottom: 30px;
-}
-.event-teaser-image {
-  height: 100%;
-  float: left;
+  
+  &-image {
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    float: left;
+
+    > img {
+      max-width: 220px;
+      max-height: 220px;
+      margin: 0 auto;
+    }
+    
+  }
 }
 
 // Glass Effect

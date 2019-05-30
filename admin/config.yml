@@ -39,7 +39,7 @@ collections:
         widget: "image"
       - label: "Date"
         name: "date"
-        widget: "date"
+        widget: "datetime"
         default: ""
       - label: "Description"
         name: "description"

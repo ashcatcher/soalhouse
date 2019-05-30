@@ -1,19 +1,19 @@
 <section class="events">
   <div class="glass" id="slideshow">
     {% for event in site.events %}
-      <div class="event-card">
-        <img class="event-teaser-image" src="{{event.teaser_image}}"
-                                        alt="party hat"/>
-        <div class="event-teaser-details">
+      <div class="event">
+
+        <div class="event-image">
+          <img src="{{event.teaser_image}}" />
+        </div>
+
+        <div class="event-details">
           <div class="row">
-            <h1 class="event-teaser-name">{{event.name}}</h1>
-            <p class="event-teaser-date">{{event.date}}</p>
+            <h1 class="event-name">{{event.name}}</h1>
+            <p class="event-date">{{event.date}}</p>
           </div>
           <div class="row">
-            <p class="event-teaser-description">{{event.description}}</p>
-          </div>
-          <div class="row">
-            <a class="more" href="#">Read More</a>
+            <p class="event-description">{{event.description}}</p>
           </div>
         </div>
       </div>
