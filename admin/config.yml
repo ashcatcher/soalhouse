@@ -35,7 +35,7 @@ collections:
       - { label: "Permalink", name: "permalink", widget: "string", default: "{{slug}}", required: "true" }
       - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: "true" }
       - { label: "Body", name: "body", widget: "markdown", default: "", required: "false" }
-      - { label: "Active", name: "active", widget: "boolean", default: "false", required: "false" }
+      - { label: "Priority", name: "priority", widget: "number", default: "", required: "false", default: 5 }
 
 
   - name: "events"

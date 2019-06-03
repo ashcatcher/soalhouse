@@ -1,16 +1,21 @@
-<div class="blazen">
+<nav class="blazen">
   <a href="/">
-    <img src="/assets/images/soal220.png" />
+    <img src="/assets/images/soal220.png" class="navlink" alt="SOAL" />
   </a>
-
-  {% comment %}
   <ul>
-    <li><a href="/" class="navlink">Home</a></li>
-    <li><a href="/about/" class="navlink">About</a></li>
-    <li><a href="/events/" class="navlink">Events</a></li>
-    <li><a href="/rooms/" class="navlink">Rooms</a></li>
+    {% for i in (1..9) %}
+      {% for paige in site.pages %}
+        {% if paige.priority == i %}
+          <li>
+            <a href="{{paige.permalink}}"
+               class="navlink"
+               {% if page.url == paige.permalink %}
+                 style="color: teal;"{% endif %}>
+            {{ paige.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   </ul>
-   {% endcomment %}
-
-   {% include navigation.html %}
-</div>
+</nav>
