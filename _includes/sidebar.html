@@ -8,11 +8,13 @@
         {% if paige.priority == i %}
           <li>
             <a href="{{paige.permalink}}"
-               class="navlink"
                {% if page.url == paige.permalink %}
-                 style="color: teal;"{% endif %}>
-            {{ paige.title }}
-            </a>
+                 class="navlink navlink-active"
+               {% else %}
+                   class="navlink"
+                 {% endif %}>
+                {{ paige.title }}
+              </a>
           </li>
         {% endif %}
       {% endfor %}

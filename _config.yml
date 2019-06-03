@@ -68,6 +68,11 @@ plugins:
   - jekyll-sitemap
 
 
+sidebar:
+  - gradient-light: #450003
+  - gradient-dark: #771100
+
+
 include:
   ["_pages"]
 

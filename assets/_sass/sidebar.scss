@@ -1,0 +1,63 @@
+.sidebar {
+  width: calc(300px - 1em);
+  height: 100%;
+  float: left;
+  position: fixed;
+}
+
+a.navlink, img.navlink {
+  opacity: 0.75;
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: opacity 0.2s;
+
+
+  &:hover {
+    -webkit-stroke-width: 5.3ps;
+    -webkit-stroke-color: #FFFFF;
+    -webkit-fill-color: #FFFFFF;
+    text-shadow: 1px 0px 20px teal;
+    opacity: 1;
+  }
+
+  &-active {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 5px 5px 20px white;
+  }
+}
+.blazen {
+  display: inline-block;
+  position: static;
+  float: left;
+  text-align:center;
+  width: 20%;
+  height: auto;
+
+  margin-bottom: 50px;
+  position: sticky; // was sticky. Change to be permanent fixture, rest scrolls.
+  opacity: 0.85;
+  transition: opacity 0.6s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  background: repeating-linear-gradient(
+  90deg,
+  #450003,
+  #450003 11px,
+  #771100,
+  #771100 33px,
+  #450003,
+  #450003 66px,
+  #771100,
+  #771100 110px,
+  #450003,
+  #450003 165px,
+  #771100,
+  #771100 220px);
+
+
+  
+}
