@@ -1,11 +1,33 @@
+.navlink {
+  font-size: 1.5rem;
+  color: #fff;
+
+  &:hover {
+    -webkit-stroke-width: 5.3ps;
+    -webkit-stroke-color: #FFFFF;
+    -webkit-fill-color: #FFFFFF;
+    text-shadow: 1px 0px 20px teal;
+  }
+
+  &-disabled {
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  &-active {
+    color: teal;
+  }
+}
+
+
+
 .blazen {
   text-align:center;
-  height: 80%;
   width: 15%;
   padding-bottom: 50px;
   background-color: #333;
   width: 220px;
-  position: fixed; // was sticky. Change to be permanent fixture, rest scrolls.
+  position: sticky; // was sticky. Change to be permanent fixture, rest scrolls.
 
   background: repeating-linear-gradient(
   90deg,
@@ -32,6 +54,8 @@
       margin-top: 10px;
       margin-bottom: 10px;
       font-size: 1.5em;
+
+
     }
   }
 }
