@@ -25,6 +25,19 @@ collections:
           config:
             multiple: true
 
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Permalink", name: "permalink", widget: "string", default: "{{slug}}" }
+      - { label: "Title", name: "title", widget: "string", default: "{{slug}}" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Active", name: "active", widget: "boolean" }
+
+
   - name: "events"
     label: "Event"
     folder: "_events/"
@@ -44,3 +57,20 @@ collections:
       - label: "Description"
         name: "description"
         widget: "string"
+      - label: "Active"
+        name: "active"
+        widget: "boolean"
+        default: "false"
+
+  - name: "rooms"
+    label: "Rooms"
+    folder: "_rooms/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string", default: "{{slug}}" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Teaser Image", name: "teaser_image", widget: "image" }
+      - { label: "Active", name: "active", widget: "boolean" }
+

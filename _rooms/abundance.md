@@ -1,5 +1,4 @@
 ---
-teaser_image: "#"
 name: "Abundance"
 description: "Test"
 title: Abundance
