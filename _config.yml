@@ -44,6 +44,14 @@ collections:
     permalink: /:collection/:title
 
 
+defaults:
+  # _events
+  - scope:
+      path: ""
+      type: room
+    values:
+      layout: default
+
 
 # Build settings
 markdown: kramdown

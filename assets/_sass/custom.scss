@@ -1,3 +1,18 @@
+#solace, .content {
+  display: inline-block;
+  float: left;
+  width: calc(1100px - 300px);
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+
+.sidebar {
+  width: calc(300px - 1em);
+  float: left;
+}
+
+
 .navlink {
   font-size: 1.5rem;
   color: #fff;
@@ -22,12 +37,20 @@
 
 
 .blazen {
+  display: inline-block;
+  float: left;
   text-align:center;
   width: 15%;
   padding-bottom: 50px;
   background-color: #333;
   width: 220px;
   position: sticky; // was sticky. Change to be permanent fixture, rest scrolls.
+  opacity: 0.85;
+  transition: opacity 0.6s;
+
+  &:hover {
+    opacity: 1;
+  }
 
   background: repeating-linear-gradient(
   90deg,
@@ -78,13 +101,11 @@
 
 #slideshow {
   // margin: 30px auto;
-  left: 20%;
   position: relative;
   // width: 100%;
   height: 240px;
   // padding: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  max-width: 80%;
 
   > div {
     position: absolute;
@@ -94,10 +115,8 @@
   }
 }
 .event {
-  width: 100%;
   border: 1px;
-  max-width: 500px;
-  // padding-top: 30px;
+  width: 100%;
 
   &-image {
     margin: 0 auto;
@@ -115,6 +134,9 @@
     text-align: right;
     margin-right: 30px;
   }
+  &-details {
+    overflow-x: hidden;
+  }
 }
 
 // Glass Effect
@@ -125,7 +147,7 @@
   background-image: url('assets/images/house/SOAL3.jpg');
   background-size: cover;
   content: ' ';
-  opacity: 0.4;
+  opacity: 0.6;
   filter: blur(5px);
 }
 .glass {
