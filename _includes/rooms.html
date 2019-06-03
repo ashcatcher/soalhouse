@@ -1,0 +1,18 @@
+<div class="rooms">
+  {% for room in site.rooms %}
+  <div class="room">
+    <div class="room-image">
+      <img src="{{room.teaser_image}}" alt="Room first image" />
+    </div>
+
+    <div class="room-details">
+      <p class="room-availability">{{event.date | date: '%I:%M %p  %B %d, %Y'}}</p>
+      <h1 class="room-name">{{event.name}}</h1>
+      <p class="room-description">{{event.description}}</p>
+    </div>
+
+    <a href="#">AirBnB Link!</a>
+  </div>
+  {% endfor %}
+</div>
+
