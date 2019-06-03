@@ -1,12 +1,19 @@
 #solace, .content {
-  display: inline-block;
+  display: block;
   padding-top: 30px;
+  width: 70%;
+  float: left;
+  margin-top: 5%;
+  margin-left: 5%;
+
 }
 
 
 .sidebar {
   width: calc(300px - 1em);
+  height: 100%;
   float: left;
+  position: fixed;
 }
 
 
@@ -33,11 +40,15 @@
 
 
 
+
 .blazen {
   display: inline-block;
+  position: static;
   float: left;
   text-align:center;
   width: 15%;
+  height: 100%;
+
   padding-bottom: 50px;
   background-color: #333;
   width: 220px;
@@ -65,24 +76,12 @@
   #771100 220px);
 
 
-  > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 20px;
-    > li {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 1.5em;
-
-
-    }
-  }
+  
 }
 .parallax {
   background-image: url("/assets/images/house/SOAL3.jpg");
 
-  height: 100vh;
+  height: 200vh;
   // Change to greater than 100vh to enable the same static picture to host more
   // scrolling content
   width: 100vw;
@@ -99,13 +98,12 @@
 #slideshow {
   // margin: 30px auto;
   position: relative;
-  // width: 100%;
+  width: 100%;
   height: 240px;
   // padding: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 
   > div {
-    position: absolute;
     top: 10px;
     bottom: 10px;
 
@@ -114,6 +112,8 @@
 .event {
   border: 1px;
   width: 100%;
+  height: 100%;
+  position: absolute;
 
   &-image {
     margin: 0 auto;
@@ -139,7 +139,7 @@
 // Glass Effect
 
 .glass::before {
-  width: 100%;
+  // width: 100%;
   height: 100%;
   background-image: url('assets/images/house/SOAL3.jpg');
   background-size: cover;
@@ -175,18 +175,14 @@
   background-color: #450003;
   opacity: 0.6;
 }
-/* Old school way of 2 col layout */
-
-.column {
-  float: left;
-  width: 50%;
+.row {
+  display: flex;
+  margin:10px;
 }
 
-/* Clears floats after columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column {
+  width:auto;
+  flex: 100%;
 }
 
 /* new way */
@@ -195,16 +191,14 @@
   display: flex;
 }
 
-.column {
-  flex: 50%;
-}
 
-/* new way */
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    > li {
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+  }
