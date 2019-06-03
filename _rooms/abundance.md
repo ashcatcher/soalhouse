@@ -1,7 +1,7 @@
 ---
 teaser_image: "#"
-name: "Solar"
+name: "Abundance"
 description: "Test"
-title: "Solar"
+title: Abundance
 teaser_image: "/assets/images/rooms/abundance.png"
 ---

@@ -1,17 +1,19 @@
-<div class="rooms">
-  {% for room in site.rooms %}
+{% for room in site.rooms %}
     <div class="room">
-      <div class="room-image">
-        <img src="{{room.teaser_image}}" alt="Room first image" />
+  <div class="glass">
+      <div class="card left-card">
+        <div class="room-image">
+          <img src="{{room.teaser_image}}" alt="Room first image" />
+        </div>
       </div>
 
       <div class="room-details">
         <h1 class="room-name">{{room.name}}</h1>
         <p class="room-description">{{room.description}}</p>
+      <a href="#">AirBnB Link!</a>
       </div>
 
-      <a href="#">AirBnB Link!</a>
     </div>
-  {% endfor %}
-</div>
-
+  </div>
+  </div>
+{% endfor %}

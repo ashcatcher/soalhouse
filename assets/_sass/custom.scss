@@ -1,8 +1,5 @@
 #solace, .content {
   display: inline-block;
-  float: left;
-  width: calc(1100px - 300px);
-  padding-left: 30px;
   padding-top: 30px;
 }
 
@@ -150,6 +147,64 @@
   opacity: 0.6;
   filter: blur(5px);
 }
+
+.room {
+  display: inline-block;
+
+  &-image {
+    > img {
+      width: 100px;
+      height: 100px;
+      display: flex;
+    }
+  }
+
+  &-details {
+    display: inline-block;
+    width: 250px;
+    padding: auto;
+  }
+}
+
+.card {
+  width: auto;
+  display: inline-block;
+  margin: 20px;
+}
 .glass {
-  background-color: rgba(255,255,255,0.4);;
+  background-color: #450003;
+  opacity: 0.6;
+}
+/* Old school way of 2 col layout */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clears floats after columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* new way */
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+/* new way */
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }
