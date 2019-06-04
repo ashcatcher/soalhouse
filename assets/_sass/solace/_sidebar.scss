@@ -47,16 +47,20 @@
           -webkit-stroke-width: 5.3ps;
           -webkit-stroke-color: #FFFFF;
           -webkit-fill-color: #FFFFFF;
-          text-shadow: 1px 0px 20px teal;
-          opacity: 1;
-        }
-
-        &-active {
+          text-shadow: 1px 0px 20px white;
           opacity: 1;
           color: #fff;
-          text-shadow: 5px 5px 20px white;
         }
       }
     }
   }
+}
+
+#active {
+  opacity: 1;
+  color: #fff;
+  text-shadow: 1px 0px 20px white;
+  -webkit-stroke-width: 5.3ps;
+  -webkit-stroke-color: #FFFFF;
+  -webkit-fill-color: #FFFFFF;
 }

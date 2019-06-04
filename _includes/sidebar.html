@@ -9,10 +9,8 @@
           <li>
             <a href="{{paige.permalink}}"
                {% if page.url == paige.permalink %}
-                 class="navlink navlink-active"
-               {% else %}
-                   class="navlink"
-                 {% endif %}>
+                 id="active"
+                {% endif %}>
                 {{ paige.title }}
               </a>
           </li>

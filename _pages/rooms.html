@@ -1,28 +1,6 @@
 ---
 layout: default
-title: Accomodations
+title: Accommodations
 permalink: /rooms/
 priority: 2
 ---
-{% comment %}
-{% include rooms.html %}
-{% endcomment %}
-
-<section class="solace column">
-  {% for room in site.rooms %}
-    <div class="row glass">
-      <div class="room">
-        <div class="card left-card">
-          <div class="room-image">
-            <img src="{{room.teaser_image}}" alt="Room first image" />
-          </div>
-        </div>
-        <div class="room-details">
-          <h1 class="room-name">{{room.name}}</h1>
-          <p class="room-description">{{room.description}}</p>
-          <a href="#">AirBnB Link!</a>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</section>
