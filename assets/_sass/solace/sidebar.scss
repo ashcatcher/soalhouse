@@ -1,8 +1,8 @@
 .sidebar {
   width: calc(300px - 1em);
-  height: 100%;
-  float: left;
+  height: 200vh;
   position: fixed;
+  left: 5%;
 }
 
 a.navlink, img.navlink {
@@ -28,14 +28,13 @@ a.navlink, img.navlink {
 }
 .blazen {
   display: inline-block;
-  position: static;
+  position: fixed;
   float: left;
   text-align:center;
   width: 20%;
-  height: auto;
-
+  left: 5%;
+  height: 100vh;
   margin-bottom: 50px;
-  position: sticky; // was sticky. Change to be permanent fixture, rest scrolls.
   opacity: 0.85;
   transition: opacity 0.6s;
 
@@ -56,7 +55,7 @@ a.navlink, img.navlink {
   #450003,
   #450003 165px,
   #771100,
-  #771100 220px);
+  #771100 235px);
 
 
   

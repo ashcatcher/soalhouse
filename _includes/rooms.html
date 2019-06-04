@@ -1,30 +1,26 @@
-<section class="solace column">
+<div class="solace column">
   {% for room in site.rooms %}
     {% unless room.hidden == true %}
-    <div class="row" style="position: relative; height: 150px; width: 750px;">
-      <div class="radial-whack">
-      </div>
-      <div class="room">
-        <div class="card left-card">
-          <div class="room-image">
+      <div class="row">
+        <div class="radial-whack"></div>
+        <div class="card-room">
+
+          <div class="card-left">
             <img src="{{room.teaser_image}}" alt="Room first image" />
           </div>
-        </div>
-        <div class="room-details">
-          <h1 class="room-name">{{room.name}}</h1>
-          <p class="room-description">{{room.description}}</p>
-          <a href="#">AirBnB Link!</a>
-        </div>
+          <div class="card">
+            <h2 class="room-name">{{room.name}}</h2>
+            <p class="room-description">{{room.description}}</p>
+          </div>
 
-        <div class="airbnb">
-          {% if airbnb_url %}
-            <a href="{{airbnb_url}}">
-              <img src="/assets/images/airbnb_vertical_lockup_web.png" />
+          <div class="card-right">
+            <a href="{{room.airbnb_url}}">
+              <img src="/assets/images/airbnb_vertical_lockup_web.png"
+                   class="card-right"/>
             </a>
-          {% endif %}
+          </div>
         </div>
       </div>
-    </div>
-  {% endunless %}
+    {% endunless %}
   {% endfor %}
-</section>
+</div>
