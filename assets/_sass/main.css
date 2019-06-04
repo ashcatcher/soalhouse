@@ -11,7 +11,7 @@ img, embed, object{
 .postcontent{
 	//padding : 10px;
 }
-
+/*
 body {
 	margin: 0px;
 	text-align: center;
@@ -19,13 +19,12 @@ body {
 	border-top: 4px solid #333;
 	background: #111;
 
-/*
 background-color: #F7F7F7;
 background-image: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/noise.png');
 background-image: url('http://cdn.elegantthemes.com/preview/Notebook/wp-content/themes/Notebook/images/body-bg.png');
-background-repeat: repeat;*/
-
+background-repeat: repeat;
 }
+*/
 
 body, div, a, input, select, button, textarea {
 	font-family: 'Open Sans', sans-serif;

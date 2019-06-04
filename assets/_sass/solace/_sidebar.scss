@@ -9,6 +9,15 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  @include breakpoint(small){
+    width: 100%;
+    position: static;
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
   background: repeating-linear-gradient(
   90deg,
   #450003,
