@@ -1,6 +1,9 @@
 <section class="solace column">
   {% for room in site.rooms %}
-    <div class="row glass">
+    {% unless room.hidden == true %}
+    <div class="row" style="position: relative; height: 150px; width: 750px;">
+      <div class="radial-whack">
+      </div>
       <div class="room">
         <div class="card left-card">
           <div class="room-image">
@@ -12,7 +15,16 @@
           <p class="room-description">{{room.description}}</p>
           <a href="#">AirBnB Link!</a>
         </div>
+
+        <div class="airbnb">
+          {% if airbnb_url %}
+            <a href="{{airbnb_url}}">
+              <img src="/assets/images/airbnb_vertical_lockup_web.png" />
+            </a>
+          {% endif %}
+        </div>
       </div>
     </div>
+  {% endunless %}
   {% endfor %}
 </section>
