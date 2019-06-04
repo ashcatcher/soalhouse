@@ -22,7 +22,7 @@
   margin: 1em auto;
   @include breakpoint(phablet){
   width: 100%;
-  }
+ }
   @include breakpoint(desktop){
     // maybe some desktop layout styles.
   }

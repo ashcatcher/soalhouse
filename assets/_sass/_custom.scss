@@ -82,10 +82,6 @@
   &:hover {
     opacity: 1;
   }
-
-
-
-
 }
 
 .room {
@@ -163,21 +159,3 @@
   margin: 10px auto;
   display: inline-block;
 }
-
-/* new way */
-
-.row {
-  display: flex;
-}
-
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 20px;
-    > li {
-      margin-bottom: 10px;
-      font-size: 1.5em;
-    }
-  }

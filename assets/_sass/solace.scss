@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "assets/_sass/solace/mixin/solace_mix.scss";
-@import "assets/_sass/solace/sidebar.scss";
-@import "assets/_sass/solace/variables.scss";
-@import "assets/_sass/solace/gradient.scss";
+@import "solace/mixin/solace_mix";
+@import "solace/sidebar";
+@import "solace/variables";
+@import "solace/gradient";
 
-@import "assets/_sass/custom.scss";
-@import "assets/_sass/shame.scss";
+@import "custom";
+@import "shame";
