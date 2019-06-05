@@ -1,19 +1,22 @@
 <html>
   {% include head.html %}
   <body>
-    <section class="parallax">
-      {% include sidebar.html %}
+    <div class="parallax">
+      <section class="navigation">
+        {% include sidebar.html %}
+      </section>
 
       <div id='content' class="hp">
         {{ content }}
       </div>
-    </section>
-    {% comment %}
-    <div id='footer'>
-      <!--<a href="/admin/">Admin</a> |--> {{site.full_name}} - {{site.copyright_year}}
-    </div>
-    {% endcomment %}
 
+      {% comment %}
+      <div id='footer'>
+        <!--<a href="/admin/">Admin</a> |--> {{site.full_name}} - {{site.copyright_year}}
+      </div>
+      {% endcomment %}
+
+    </div>
     {% if page.url == '/events/' %}
       {% include events_js.html %}
     {% endif %}
