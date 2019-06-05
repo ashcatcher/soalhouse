@@ -3,18 +3,13 @@
   --gradient-2: #771100;
   --my-gradient:  repeating-linear-gradient(
                   90deg,
-                  var(--gradient-1),
-                  var(--gradient-1) 5%,
                   var(--gradient-2),
-                  var(--gradient-2) 10%,
-                  var(--gradient-1),
-                  var(--gradient-1) 20%,
+                  var(--gradient-1) 10%,
                   var(--gradient-2),
-                  var(--gradient-2) 45%,
-                  var(--gradient-1),
-                  var(--gradient-1) 70%,
+                  var(--gradient-2) 50%,
                   var(--gradient-2),
-                  var(--gradient-2) 100%);
+                  var(--gradient-1) 90%,
+                  var(--gradient-2));
 }
 .blazen {
 
