@@ -1,32 +1,30 @@
- @mixin breakpoint($point) {
-   /*
-   @if $point == largest {
-     @media (min-width: 70em) { @content ; }
+@mixin breakpoint($point) {
+  @if $point == verywide {
+    @media (min-width: 70em) { @content ; }
   }
-   @else if $point == larger {
-     @media (min-width: 64em) { @content ; }
+  @else if $point == wide {
+    @media (min-width: 64em) { @content ; }
   }
-    @else if $point == large {
-     @media (min-width: 50em) { @content ; }
+  @else if $point == notwide {
+    @media (min-width: 50em) { @content ; }
   }
-  */
-   @if $point == notsmall {
-     @media (min-width: 37.5em)  { @content ; }
+  @if $point == notsmall {
+    @media (min-width: 37.5em)  { @content ; }
   }
   @else if $point == small {
-     @media (max-width: 37.5em)  { @content ; }
+    @media (max-width: 37.5em)  { @content ; }
 
   }
 }
 /* EXAMPLE USAGE */
 /*
 .podcasts {
-  margin: 1em auto;
-  @include breakpoint(phablet){
-  width: 100%;
- }
-  @include breakpoint(desktop){
-    // maybe some desktop layout styles.
-  }
+margin: 1em auto;
+@include breakpoint(phablet){
+width: 100%;
 }
-*/
+@include breakpoint(desktop){
+// maybe some desktop layout styles.
+}
+}
+ */
