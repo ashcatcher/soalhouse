@@ -1,1 +1,7 @@
-
+/* Fixing mobile layout */
+#content {
+  @include breakpoint(small){
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
