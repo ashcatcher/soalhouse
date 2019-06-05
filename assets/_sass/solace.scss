@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @import "solace/mixin/solace_mix";
-@import "solace/sidebar";
+
 @import "solace/variables";
 @import "solace/gradient";
+@import "solace/sidebar";
+@import "solace/events";
 
 @import "custom";
 @import "shame";
