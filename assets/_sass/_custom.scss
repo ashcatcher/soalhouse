@@ -1,21 +1,21 @@
 .solace, .content {
-  display: block;
-  width: 70%;
+  display: inline-block;
+  width: 80%;
   float: left;
-  margin-top: 5%;
-  margin-left: 5%;
+  // padding: 5%;
 
 }
 
 .parallax {
+  overflow-x: hidden;
   @include breakpoint(notsmall){
 
     background-image: url("/assets/images/house/SOAL3.jpg");
 
-    height: 120vh;
+    height: 100vh;
     // Change to greater than 100vh to enable the same static picture to host more
     // scrolling content
-    width: 100%;
+    width: 100vw;
 
     background-attachment: fixed;
     background-position: center;
@@ -161,4 +161,16 @@
   flex: 100%;
   margin: 10px auto;
   display: inline-block;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+
+  .scroll-card {
+    flex: 0 0 auto;
+  }
 }

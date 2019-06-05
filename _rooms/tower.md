@@ -7,17 +7,12 @@ description: |
 title: Tower
 teaser_image: # "/assets/images/rooms/abundance.png"
 airbnb_url: "https://www.airbnb.ca/rooms/1659915"
+hidden: true
 ---
 
-Welcome to the Tower Room, an extra flight of stairs to get there -
-at the top of our mansion, this serene butter yellow room is the perfect hideaway -
-semi-private bathroom complete with claw foot tub, and easy access to our community
-loft space for yoga, meditation, reading or whatever you wish!
-
-{% comment %}
-# Tower No Substitutous
 <div class="airbnb-embed-frame" data-id="1659915" data-view="home" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ca/rooms/1659915?s=51">View On Airbnb</a><a href="https://www.airbnb.ca/rooms/1659915?s=51" rel="nofollow">Heritage House 99th &amp; Whyte Tower</a><script async="" src="https://www.airbnb.ca/embeddable/airbnb_jssdk"></script></div>
 
+{% comment %}
 # Tower No Price
 <div class="airbnb-embed-frame" data-id="1659915" data-view="home" data-hide-price="true" style="width:450px;height:300px;margin:auto"><a href="https://www.airbnb.ca/rooms/1659915?s=51">View On Airbnb</a><a href="https://www.airbnb.ca/rooms/1659915?s=51" rel="nofollow">Heritage House 99th &amp; Whyte Tower</a><script async="" src="https://www.airbnb.ca/embeddable/airbnb_jssdk"></script></div>
 

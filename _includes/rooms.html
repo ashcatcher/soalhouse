@@ -1,3 +1,16 @@
+<div class="solace scrolling-wrapper">
+  {% for room in site.rooms %}
+    {% unless room.hidden == true %}
+      <div class="scroll-card">
+        {{room.content}}
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+
+
+{% comment %}
 <div class="solace column">
   {% for room in site.rooms %}
     {% unless room.hidden == true %}
@@ -16,7 +29,7 @@
           <div class="card-right">
             <a href="{{room.airbnb_url}}">
               <img src="/assets/images/airbnb_vertical_lockup_web.png"
-                   class="card-right"/>
+              class="card-right"/>
             </a>
           </div>
         </div>
@@ -24,3 +37,4 @@
     {% endunless %}
   {% endfor %}
 </div>
+{% endcomment %}
