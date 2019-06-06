@@ -51,7 +51,8 @@ collections:
 defaults:
   # _gallery
   - scope:
-      path: "gallery"
+      path: ""
+      type: "gallery"
     values:
       layout: "exhibit"
       value: ""
@@ -59,7 +60,8 @@ defaults:
       image: "/assets/images/users/user.jpg"
   # _artisan
   - scope:
-      path: "artist"
+      path: ""
+      type: "artist"
     values:
       layout: "artisan"
       name: "Mystery Man"
@@ -67,7 +69,8 @@ defaults:
       image: "/assets/images/users/user.jpg"
   # _events
   - scope:
-      path: "events"
+      path: ""
+      type: "events"
     values:
       layout: default
       name: "Masquerade Ball"
