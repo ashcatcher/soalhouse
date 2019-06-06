@@ -103,7 +103,7 @@ collections:
       - label: "Active"
         name: "active"
         widget: "boolean"
-        default: "false"
+        default: false
         required: false
 
   - name: "rooms"
@@ -116,5 +116,5 @@ collections:
       - { label: "Description", name: "description", widget: "markdown", required: false }
       - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
       - { label: "Teaser Image", name: "teaser_image", widget: "image", required: "false" }
-      - { label: "Active", name: "active", widget: "boolean", "required": "false, default: false }
-      - { label: "Hidden", name: "hidden", widget: "boolean", "required": true, default: true } 
+      - { label: "Active", name: "active", widget: "boolean", required: false, default: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: true } 
