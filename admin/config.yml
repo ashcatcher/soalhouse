@@ -160,6 +160,4 @@ collections:
     fields:
       - { label: "Name", name: "name", widget: "string", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
-      - { label: "Description", name: "description", widget: "markdown", required: false }
-      - { label: "Teaser Image", name: "teaser_image", widget: "image", required: false }
       - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: false }
