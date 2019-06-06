@@ -11,7 +11,7 @@ google_analytics_code: ""
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-url: 'https://ashcatcher.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
+url:  # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # 'soal' # the subpath of your site, e.g. /blog
 
 title: 'SOAL'
@@ -46,17 +46,26 @@ collections:
     listed: true
     output: true
     permalink: /:collection/:title
+  pages:
+    listed: true
+    output: true
+    permalink: /:title
 
 
 defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      priority: 5
   # _gallery
   - scope:
       path: ""
       type: "gallery"
     values:
       layout: "exhibit"
-      value: ""
-      artist: ""
       image: "/assets/images/users/user.jpg"
   # _artisan
   - scope:
