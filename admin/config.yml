@@ -29,6 +29,7 @@ collections:
   - name: "pages"
     label: "Pages"
     folder: "_pages/"
+    extension: ".html"
     create: true
     slug: "{{slug}}"
     fields:
