@@ -33,11 +33,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string", required: true }
-      - { label: "Permalink", name: "permalink", widget: "string", required: true }
-      - { label: "Title", name: "title", widget: "string", required: true }
-      - { label: "Body", name: "body", widget: "markdown", default: "", required: false }
-      - { label: "Priority", name: "priority", widget: "number", default: "1", required: false}
+      - { label: "Name", name: "name", widget: "string", required: true, hint: "This is the name that will appear for this page in the sidebar" }
+      - { label: "Link URL", name: "permalink", widget: "string", required: true, hint: "This is the path this page will be found at. '/' - http://soalhouse.ca/, '/about/' at https://soalhouse.ca/about/, etc." }
+      - { label: "Priority", name: "priority", widget: "number", default: "1", required: false, hint: "This is the relative order in which this page will appear on the sidebar. 1 = Highest, 9 - Lowest" }
+      - { label: "Title", name: "title", widget: "hidden", default: {{name}} }
 
   - name: "artist"
     label: "Artist"
