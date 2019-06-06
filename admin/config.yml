@@ -31,7 +31,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default", required: false }
       - { label: "Permalink", name: "permalink", widget: "string", default: "{{slug}}", required: true }
       - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
       - { label: "Body", name: "body", widget: "markdown", default: "", required: false }
@@ -115,6 +114,6 @@ collections:
       - { label: "Name", name: "name", widget: "string", default: "{{slug}}", required: true }
       - { label: "Description", name: "description", widget: "markdown", required: false }
       - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
-      - { label: "Teaser Image", name: "teaser_image", widget: "image", required: "false" }
+      - { label: "Teaser Image", name: "teaser_image", widget: "image", required: false }
       - { label: "Active", name: "active", widget: "boolean", required: false, default: false }
-      - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: true } 
+      - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: true }
