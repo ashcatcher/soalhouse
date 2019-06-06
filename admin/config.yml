@@ -53,6 +53,10 @@ collections:
         name: "bio"
         widget: "text"
         required: false
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: "false"
 
   - name: "gallery"
     label: "Art Gallery"
@@ -76,6 +80,10 @@ collections:
         name: "value"
         widget: "string"
         default: ""
+        required: false
+      - label: "Image"
+        name: "image"
+        widget: "image"
         required: false
 
 

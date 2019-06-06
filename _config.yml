@@ -56,6 +56,7 @@ defaults:
       layout: "exhibit"
       value: ""
       artist: ""
+      image: "/assets/images/users/user.jpg"
   # _artisan
   - scope:
       path: "artist"
@@ -63,6 +64,7 @@ defaults:
       layout: "artisan"
       name: "Mystery Man"
       bio: ""
+      image: "/assets/images/users/user.jpg"
   # _events
   - scope:
       path: "events"
