@@ -153,6 +153,7 @@ collections:
     folder: "_rooms/"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}}"
     fields:
       - { label: "Name", name: "name", widget: "string", default: "{{slug}}", required: true }
       - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
