@@ -31,11 +31,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default", required: "false" }
-      - { label: "Permalink", name: "permalink", widget: "string", default: "{{slug}}", required: "true" }
-      - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: "true" }
-      - { label: "Body", name: "body", widget: "markdown", default: "", required: "false" }
-      - { label: "Priority", name: "priority", widget: "number", default: "1", required: "false"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string", default: "{{slug}}", required: true }
+      - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
+      - { label: "Body", name: "body", widget: "markdown", default: "", required: false }
+      - { label: "Priority", name: "priority", widget: "number", default: "1", required: false}
 
   - name: "artist"
     label: "Artist"
@@ -89,22 +89,22 @@ collections:
       - label: "Teaser_Image"
         name: "teaser_image"
         widget: "image"
-        required: "false"
+        required: false
       - label: "Date"
         name: "date"
         widget: "datetime"
         default: ""
-        required: "false"
+        required: false
       - label: "Description"
         name: "description"
         widget: "string"
-        required: "true"
+        equired: true
         default: ""
       - label: "Active"
         name: "active"
         widget: "boolean"
         default: "false"
-        required: "false"
+        required: false
 
   - name: "rooms"
     label: "Room"
@@ -112,10 +112,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string", default: "{{slug}}", required: "true" }
-      - { label: "Description", name: "description", widget: "markdown", required: "false" }
-      - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: "true" }
+      - { label: "Name", name: "name", widget: "string", default: "{{slug}}", required: true }
+      - { label: "Description", name: "description", widget: "markdown", required: false }
+      - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
       - { label: "Teaser Image", name: "teaser_image", widget: "image", required: "false" }
-      - { label: "Active", name: "active", widget: "boolean", required: "false", default: "false" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", required" true", default: "true" }
-
+      - { label: "Active", name: "active", widget: "boolean", "required": "false, default: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", "required": true, default: true } 
