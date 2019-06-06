@@ -74,5 +74,62 @@ section.navigation {
   }
 
 }
+.row {
+  display: flex;
+ //  position: relative;
+  height: auto;
+  width: 100%;
+  margin:10px;
+  flex-wrap: wrap;
+}
 
+.column {
+  width:auto;
+  flex: 33%;
+  margin: 10px auto;
+  display: inline-block;
+}
 
+.artists, .gallery {
+  background-color: var(--color-red-dark);
+  margin: 5% 5% 5% 5%;
+  padding: 5px;
+}
+
+.art, .artist {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  opacity: 0.6;
+  color: black;
+  text-align: center;
+  background-color: #fff;
+  // flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+
+  > h1, h2, h3, h4, h5, h6, p {
+    margin: 10px 0 10px 0;
+    color: black;
+  }
+
+  &-image {
+    max-height: 220px;
+    max-width: 220px;
+    float: left;
+    display: inline-block;
+  }
+
+  &-details {
+    display: inline-block;
+    float:left;
+    padding-left: 25px;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+    color: black;
+  }
+}

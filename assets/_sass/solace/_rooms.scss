@@ -21,3 +21,21 @@
     flex: 0 0 auto;
   }
 }
+.room {
+  display: inline-block;
+  width: 100%;
+
+  &-image {
+    > img {
+      width: 100px;
+      height: 100px;
+      display: flex;
+    }
+  }
+
+  &-details {
+    display: inline-block;
+    width: 250px;
+    padding: auto;
+  }
+}

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h1>Art Gallery</h1>
+<div class="gallery">
+  {% for art in site.gallery %}
+    <div class="art">
+      <div class="art-image">
+        <img src="/assets/images/users/user.jpg"/>
+      </div>
+
+      <h2>{{art.title}}</h2><br>
+      <h4>{{art.artist}}</h4><br>
+      <p>${{art.value}}</p><br>
+    </div>
+  {% endfor %}
+</div>

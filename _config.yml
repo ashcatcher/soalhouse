@@ -34,7 +34,11 @@ collections:
     listed: true
     output: true
     permalink: /:collection/:title
-  artists:
+  artist:
+    listed: true
+    output: true
+    permalink: /:collection/:title
+  gallery:
     listed: true
     output: true
     permalink: /:collection/:title
