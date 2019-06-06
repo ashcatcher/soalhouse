@@ -16,12 +16,17 @@ layout: default
           <h2><b>Title: </b>{{art.title}}</h2><br>
         </div>
 
-        <div class="art-artist">
-          <h3><b>Artist: </b>{{art.artist}}</h3><br>
-        </div>
+        {% assign artist = art.artist %}
+        {% assign artist_url =  artist | slugify | prepend:"/artist/" | append:
+                                                                      ".html" %}
+        <a href="{{artist_url}}">
+          <div class="art-artist">
+            <h3><b>Artist: </b>{{art.artist}}</h3><br>
+          </div>
+        </a>
 
         <div class="art-value">
-          <h4><strong>${{art.value}}</strong></h4>
+          <h4><strong>{{art.value}}</strong></h4>
         </div>
       </div>
     </div>

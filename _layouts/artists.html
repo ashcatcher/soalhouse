@@ -6,16 +6,20 @@ layout: default
 <div class="artists">
   {% for artist in site.artist %}
     <div class="artist">
-      <div class="artist-image">
-        <img src="/assets/images/users/user.jpg"/>
-      </div>
+
+      <a href="{{artist.url | append: ".html" }}">
+        <div class="artist-image">
+          <img src="/assets/images/users/user.jpg"/>
+        </div>
+      </a>
 
       <div class="artist-details">
         <div class="artist-title">
-          <h2><b>Name: </b>{{artist.name}}</h2>
+          <h2><b>{{artist.artist-name}}</b></h2>
         </div>
-        <p><b>Bio: </b>{{artist.bio}}</p>
+        <p>{{artist.bio}}</p>
       </div>
+
     </div>
   {% endfor %}
 </div>
