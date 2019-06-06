@@ -32,8 +32,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Permalink", name: "permalink", widget: "string", default: "{{slug}}", required: true }
-      - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
+      - { label: "Permalink", name: "permalink", widget: "string", default: {{slug}}, required: true }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Body", name: "body", widget: "markdown", default: "", required: false }
       - { label: "Priority", name: "priority", widget: "number", default: "1", required: false}
 
