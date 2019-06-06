@@ -1,7 +1,7 @@
 ---
 layout: artisan
-artist-name: "Joe Renaud"
-full-name: ""
+name: "Joe Renaud"
+real-name: ""
 bio: |
   Blank for now
 ---

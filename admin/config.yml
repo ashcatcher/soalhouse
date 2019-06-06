@@ -46,6 +46,9 @@ collections:
         name: "name"
         widget: "string"
         required: true
+      - label: "Real Name"
+        name: "real-name"
+        required: false
       - label: "Bio"
         name: "bio"
         widget: "text"
