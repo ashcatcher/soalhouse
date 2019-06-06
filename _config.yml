@@ -49,19 +49,29 @@ collections:
 
 
 defaults:
+  # _gallery
+  - scope:
+      path: "gallery"
+    values:
+      layout: "exhibit"
+      value: ""
+      artist: ""
+  # _artisan
+  - scope:
+      path: "artist"
+    values:
+      layout: "artisan"
+      name: "Mystery Man"
+      bio: ""
   # _events
   - scope:
-      path: ""
-      type: room
+      path: "events"
     values:
       layout: default
-
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: default
+      name: "Masquerade Ball"
+      teaser_image: "/assets/images/events/party-hat.png"
+      description: ""
+      display: true
 
 # Build settings
 markdown: kramdown

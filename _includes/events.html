@@ -1,1 +1,28 @@
+{% assign events = site.events | where:"display", true %}
+
+<div id="slideshow">
+  {% assign counter = 0 %}
+  {% for event in events %}
+    {% assign counter = counter | plus: 1 %}
+    <div class="event">
+      <div class="radial-whack"></div>
+      <div class="event-image">
+        <img src="{{event.teaser_image}}" />
+      </div>
+
+      <div class="event-details">
+        <p class="event-date">{{event.date | date: '%I:%M %p  %B %d, %Y'}}</p>
+        <h1 class="event-name">{{event.name}}</h1>
+        <p class="event-description">{{event.description}}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% case counter %}
+{% when 0 %}
+{% when 1 %}
+{% else %}
+  {% include events_js.html %}
+{% endcase %}
 

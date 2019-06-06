@@ -37,6 +37,45 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", default: "", required: "false" }
       - { label: "Priority", name: "priority", widget: "number", default: "", required: "false", default: 5 }
 
+  - name: "artist"
+    label: "Artist"
+    folder: "_artist/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+        required: true
+      - label: "Bio"
+        name: "bio"
+        widget: "text"
+        required: false
+
+  - name: "gallery"
+    label: "Art Gallery"
+    folder: "_gallery/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Artist"
+        name: "artist"
+        widget: "relation"
+        collection: "artist"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: "name"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Value"
+        name: "value"
+        widget: "string"
+        default: ""
+        required: false
+
 
   - name: "events"
     label: "Event"
