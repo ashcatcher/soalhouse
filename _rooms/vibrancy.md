@@ -4,7 +4,7 @@ name: "Vibrancy"
 description: | 
   The Vibrant Room. Warm yellow walls, 2 large windows,lots of light  ample storage
   space, and plants to keep you company while you cozy up for the night.
-title: Vibrant
+title: "Vibrant"
 teaser_image: "/assets/images/vibrancy.png"
 airbnb_url: "https://www.airbnb.ca/rooms/1417347"
 ---

@@ -125,6 +125,11 @@ section.navigation {
     display: inline-block;
     float:left;
     padding-left: 25px;
+    @include breakpoint(notwide) {
+      display: block;
+      clear: both;
+      float: left;
+    }
   }
 
   &-title, &-artist {

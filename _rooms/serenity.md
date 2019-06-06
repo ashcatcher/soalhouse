@@ -2,7 +2,7 @@
 teaser_image: "#"
 name: "Serenity"
 description: "Test"
-title: Serenity
+title: "Serenity"
 teaser_image: ""
 hidden: true
 ---

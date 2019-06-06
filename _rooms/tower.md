@@ -4,7 +4,7 @@ name: "Tower"
 description: |
   Welcome to the Tower Room, at the top of our mansion, this serene butter
   yellow room is the perfect hideaway.
-title: Tower
+title: "Tower"
 teaser_image: # "/assets/images/rooms/abundance.png"
 airbnb_url: "https://www.airbnb.ca/rooms/1659915"
 hidden: false
