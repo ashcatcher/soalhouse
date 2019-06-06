@@ -32,7 +32,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Permalink", name: "permalink", widget: "string", default: {{slug}}, required: true }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Permalink", name: "permalink", widget: "string", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Body", name: "body", widget: "markdown", default: "", required: false }
       - { label: "Priority", name: "priority", widget: "number", default: "1", required: false}
@@ -156,8 +157,8 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}}"
     fields:
-      - { label: "Name", name: "name", widget: "string", default: "{{slug}}", required: true }
-      - { label: "Title", name: "title", widget: "string", default: "{{slug}}", required: true }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Description", name: "description", widget: "markdown", required: false }
       - { label: "Teaser Image", name: "teaser_image", widget: "image", required: false }
       - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: false }
