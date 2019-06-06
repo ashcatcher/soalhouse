@@ -1,3 +1,8 @@
+# soalhouse.ca - based upon the [Solace](https://github.com/ashcatcher/solace)
+Jekyll Theme (pending updates)
+
+- Site structure based upon the Flightdeck Jekyll starter
+
 ## Prerequisites
 
 To install this project, you'll need the following things installed on your machine.
@@ -5,18 +10,15 @@ To install this project, you'll need the following things installed on your mach
 1. [Jekyll](http://jekyllrb.com/) & [Bundler](https://bundler.io/) - `$ gem install jekyll bundler`
 2. [NodeJS](http://nodejs.org) - use the installer, Homebrew, etc.
 3. [Yarn](https://yarnpkg.com/en/) - `brew install yarn` _**(Optional)**_
-  4. [CloudCanoon](https://docs.cloudcannon.com/) - Give the client an interface to manage their site with a simple CMS. _**(Suggested for Clients)**_
+4. [Netlify](https://www.netlify.com/) - Give the client an interface to manage their site with a simple CMS. _**(Suggested for Clients)**_
 
->### Optional Editor settings
->
->Although your editor is a very personal thing - we'd suggest that you'd consider using [Visual Studio Code](https://code.visualstudio.com/) with the [Jekyll Snippets Extension](https://marketplace.visualstudio.com/items?itemName=ginfuru.vscode-jekyll-snippets) - with the power of IntelliSense you'll get snippets to speed up your Jekyll work development as well as syntax highlighting for Liquid.
 
 ## Local Development & Installation
 
 1. Clone this repo, or download it into a directory of your choice.
 
     ```shell
-    git clone https://github.com/PortsideIO/flightdeck.git
+    git clone https://github.com/ashcatcher/solace.git
     ```
 2. Inside the directory, run `npm install` -> **FYI** you can use `yarn` in place of `npm`
 
@@ -36,11 +38,6 @@ This will give you file watching, browser synchronisation, auto-rebuild, CSS inj
   ```shell
   npm start
   ```
-
-#### Seeing Warnings
-
-If you're seeing JSON warnings ref [issue #1](https://github.com/PortsideIO/flightdeck/issues/1) on what should be done to fix this.
-
 
 ### Production Build
 
@@ -71,7 +68,7 @@ npm run
 
 As this is just a Jekyll project, you can use any of the commands listed in their [docs](https://jekyllrb.com/docs/usage/)
 
-## What's inside the Flightdeck
+## What's inside Solace
 
 - [gulp](http://gulpjs.com/)
 - [Sass](http://sass-lang.com/)
@@ -87,7 +84,7 @@ You can change the configurations by editing `flightdeck.manifest.js`.
 
 - ### port
 
-    default: `2018`
+    default: `4000`
     options: integer
 
 - ### tasks
@@ -122,7 +119,7 @@ You can change the configurations by editing `flightdeck.manifest.js`.
         default: `true`
         options: boolean (`true` / `false`)
 
-    - #### deploly
+    - #### deploy
 
         Deploys using `gulp-rsync` to chosen server.
 
