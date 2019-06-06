@@ -1,18 +1,30 @@
-.solace, .content {
-  float: left;
-  
-  @include breakpoint(small){
-    width:100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
+section.navigation {
+  display: inline-block;
+  position: fixed;
+  // text-align:center;
+  width: 256px;
+  left: 0;
+  height: auto;
 
+  margin: 0 20px 50px 20px;
+  // Never Enter Santa's Washroom
+
+  @include breakpoint(small){
+    width: 100%;
+    height: 100%;
+    position: static;
+    display: block;
+    margin: 0 0 0 0;
+  }
 }
 
 
 .parallax {
   overflow-x: hidden;
+  @include breakpoint(small){
+    background: var(--my-gradient);
+    height: 100%;
+  }
   @include breakpoint(notsmall){
 
     background-image: url("/assets/images/house/SOAL3.jpg");
@@ -31,3 +43,36 @@
     opacity: 0.65;
   }
 }
+
+// These are styles extracted from the original theme
+#content {
+  margin: 0;
+  background: transparent;
+  // padding-top: 20px;
+  // margin-top: 40px;
+
+  @include breakpoint(small){
+    display: block;
+    width: 100%;
+    position: static;
+  }
+  @include breakpoint(notsmall){
+    left: 300px;
+    width: calc(100% - 300px);
+    position: relative;
+  }
+}
+
+.solace, .content {
+  display: flex;
+  justify-content: center;
+  @include breakpoint(small){
+    width:100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+

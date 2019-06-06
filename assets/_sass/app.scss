@@ -111,13 +111,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-#content {
-  margin: 0px 15% 0px ;
-  background: #f4f4f4;
-  // Remove padding for sidebar to reach top of page
-  // padding-top: 20px;
-  margin-top: 40px;
-}
+
 
 
 #footer {
@@ -368,7 +362,6 @@ h1.post-title {
 
 /* remake homepage */
 
-#content.hp{background: transparent}
 
 .rightblock{
   color:#444;
@@ -398,13 +391,7 @@ h1.post-title {
     margin-top: 100px;
 
   }
-  #content.hp{
-    margin: 0;
-    background:transparent;
-    // max-width: 75%;
-    left: 300px;
-    position: relative;
-  }
+  
   #posts.leftblock {
     width: 80%;
     float: left;
@@ -418,15 +405,7 @@ h1.post-title {
 
 }
 
-@media (max-width:770px) {
-  #content {
-    margin: 0;
-    background: #f4f4f4;
-    padding: 20px;
-    margin-top: 40px;
-    color: #555!important;
-  }
-}
+
 
 
 /*

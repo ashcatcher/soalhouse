@@ -6,15 +6,9 @@
         {% include sidebar.html %}
       </section>
 
-      <div id='content' class="hp">
-        {{ content }}
+      <div id="content">
+        {{content}}
       </div>
-
-      {% comment %}
-      <div id='footer'>
-        <!--<a href="/admin/">Admin</a> |--> {{site.full_name}} - {{site.copyright_year}}
-      </div>
-      {% endcomment %}
 
     </div>
     {% if page.url == '/events/' %}

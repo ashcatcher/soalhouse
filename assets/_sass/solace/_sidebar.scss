@@ -1,59 +1,8 @@
-:root {
-  --gradient-1: #450003;
-  --gradient-2: #771100;
-  --my-gradient:  repeating-linear-gradient(
-                  90deg,
-                  var(--gradient-2),
-                  var(--gradient-1) 10%,
-                  var(--gradient-2),
-                  var(--gradient-2) 50%,
-                  var(--gradient-2),
-                  var(--gradient-1) 90%,
-                  var(--gradient-2));
-}
 .blazen {
-
-  display: inline-block;
-  position: fixed;
-  text-align:center;
-  width: 256px;
-  left: 0;
-  height: auto;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  @include breakpoint(small){
-    width: 100%;
-    position: static;
-    display: block;
-    height: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+  @include breakpoint(notsmall){
+    background: var(--my-gradient);
   }
-
-  background: var(--my-gradient);
-
-  /*
-  background: repeating-linear-gradient(
-  90deg,
-  #450003,
-  #450003 11px,
-  #771100,
-  #771100 33px,
-  #450003,
-  #450003 66px,
-  #771100,
-  #771100 110px,
-  #450003,
-  #450003 165px,
-  #771100,
-  #771100 235px);
-
-  */
-
+  padding-bottom: 50px;
   > ul {
     list-style-type: none;
     padding: 0;
@@ -70,24 +19,15 @@
         font-size: 1.5rem;
         transition: opacity 0.1s;
 
-        &:hover {
+        &:hover, &#active {
+          opacity: 1;
+          color: #fff;
+          text-shadow: 1px 0px 20px white;
           -webkit-stroke-width: 5.3ps;
           -webkit-stroke-color: #FFFFF;
           -webkit-fill-color: #FFFFFF;
-          text-shadow: 1px 0px 20px white;
-          opacity: 1;
-          color: #fff;
         }
       }
     }
   }
-}
-
-#active {
-  opacity: 1;
-  color: #fff;
-  text-shadow: 1px 0px 20px white;
-  -webkit-stroke-width: 5.3ps;
-  -webkit-stroke-color: #FFFFF;
-  -webkit-fill-color: #FFFFFF;
 }
