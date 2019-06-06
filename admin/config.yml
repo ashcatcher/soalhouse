@@ -4,6 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "assets/images"
+logo_url: "https://soalhouse.ca/assets/images/soal220.png"
 
 collections:
   - name: "blog"
