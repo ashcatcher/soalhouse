@@ -149,7 +149,7 @@ collections:
         required: true
 
   - name: "rooms"
-    label: "Room"
+    label: "Rooms"
     folder: "_rooms/"
     create: true
     slug: "{{slug}}"
