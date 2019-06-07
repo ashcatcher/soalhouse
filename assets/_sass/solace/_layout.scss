@@ -95,12 +95,24 @@ section.navigation {
   margin: 20px 20px 20px 20px;
   padding: 5px 5px 5px 5px;
   display: block;
-  height: 500px;
+  height: 800px;
 
-  &-artist {
+  &-art {
+    width: 90%;
+    &-details {
+      background-color: white;
+    }
+  }
+
+  &-artist, &-art {
     display: inline-block;
     flex-direction: column;
     width: 100%;
+    &-details {
+      display: inline-block;
+      float:left;
+      width: 50%;
+    }
     &-image {
       display: flex;
       justify-content: center;
@@ -115,6 +127,9 @@ section.navigation {
       flex-direction: column;
       color: white;
       width: 50%;
+    }
+    &-value {
+      text-align: center;
     }
     &-gallery {
       background-color: var(--color-red-light);
