@@ -30,7 +30,8 @@ collections:
     label: "Pages"
     folder: "_pages/"
     extension: "html"
-    create: true
+    create: false
+    delete: false
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string", required: true, hint: "This is the name that will appear for this page in the sidebar" }
