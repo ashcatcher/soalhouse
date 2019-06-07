@@ -5,18 +5,25 @@ layout: default
 
 <div class="artists">
   {% for artist in site.artist %}
+    {% assign artist_url = artist.url | append: ".html" %}
     <div class="artist">
 
-      <a href="{{artist.url | append: ".html" }}">
+      <a href="{{artist_url}}">
         <div class="artist-image">
           <img src="{{artist.image}}"/>
         </div>
       </a>
 
       <div class="artist-details">
-        <div class="artist-title">
-          <h2><b>{{artist.name}}</b></h2>
-        </div>
+        <a href="{{artist_url}}">
+          <div class="artist-title">
+            <h2><b>{{artist.name}}</b></h2><br>
+            {% if artist.aka %}
+              <b>A.K.A.</b></br>
+            <h2>{{artist.aka}}</h2>
+          {% endif %}
+          </div>
+        </a>
         <p>{{artist.bio}}</p>
       </div>
 

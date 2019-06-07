@@ -1,7 +1,7 @@
 ---
 layout: default
 name: "CABN Feva"
-real-name: "Chris Allen Bolt-Norris"
+aka: "Christopher Allan Bolt-Norris"
 bio: |
   Visits welcome by appointment. Accepting commissioned works.
 ---

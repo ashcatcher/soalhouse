@@ -4,9 +4,13 @@ layout: default
 <h1>{{page.title}}</h1>
 <div class="gallery">
   {% for art in site.gallery %}
+    {% assign art_url = art.url | append: ".html" %}
+    {% assign artist = art.artist %}
+    {% assign artist_url =  artist | slugify | prepend:"/artist/" | append: ".html" %}
+
     <div class="art">
 
-      <a href="{{art.url | append: ".html" }}">
+      <a href="{{art_url}}">
         <div class="art-image">
           <img src="{{art.image}}"/>
         </div>
@@ -15,15 +19,14 @@ layout: default
       <div class="art-details">
 
         <div class="art-title">
-          <h2><b>Title: </b>{{art.title}}</h2><br>
+          <a href="{{art_url}}">
+            <h2><b>{{art.title}}</b></h2><br>
+          </a>
         </div>
 
-        {% assign artist = art.artist %}
-        {% assign artist_url =  artist | slugify | prepend:"/artist/" | append:
-        ".html" %}
-        <a href="{{artist_url}}">
+           <a href="{{artist_url}}">
           <div class="art-artist">
-            <h3><b>Artist: </b>{{art.artist}}</h3><br>
+            <h3>by <strong>{{art.artist}}</strong></h3><br>
           </div>
         </a>
 
