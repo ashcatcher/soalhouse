@@ -35,7 +35,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string", required: true, hint: "This is the name that will appear for this page in the sidebar" }
-      - { label: "Link URL", name: "permalink", widget: "string", required: true, hint: "This is the path this page will be found at. '/' - http://soalhouse.ca/, '/about/' at https://soalhouse.ca/about/, etc." }
+      - { label: "URL", name: "permalink", widget: "string", required: true, default: "/{{name}}/", hint: "Path this page will be found at.<br> '/' - http://soalhouse.ca/<br> '/about/' at https://soalhouse.ca/about/" }
       - { label: "Priority", name: "priority", widget: "select", options: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],  default: "1", hint: "This is the relative order in which this page will appear on the sidebar. 1 = Highest, 9 - Lowest" }
       - { label: "Title", name: "title", widget: "hidden", default: {{name}} }
 
