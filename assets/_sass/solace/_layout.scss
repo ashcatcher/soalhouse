@@ -76,7 +76,7 @@ section.navigation {
 }
 .row {
   display: flex;
- //  position: relative;
+  //  position: relative;
   height: auto;
   width: 100%;
   margin:10px;
@@ -115,6 +115,14 @@ section.navigation {
       flex-direction: column;
       color: white;
       width: 50%;
+    }
+    &-gallery {
+      background-color: var(--color-red-light);
+      width: 90%;
+      margin: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      overflow-x: scroll;
     }
   }
 }

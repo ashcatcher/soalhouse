@@ -20,6 +20,12 @@ layout: default
     <div class="profile-artist-bio">
       <p>{{page.bio}}</p>
     </div>
-
+  </div>
+  <h1>Listings by this Artist</h2>
+  <div class="profile-artist-gallery">
+    {% assign artist_gallery = site.gallery | where: "artist", page.name %}
+    {% for art in artist_gallery %}
+      {% include art.html %}
+    {% endfor %}
   </div>
 </div>

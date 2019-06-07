@@ -1,0 +1,32 @@
+{% assign art_url = art.url | append: ".html" %}
+{% assign artist = art.artist %}
+{% assign artist_url =  artist | slugify | prepend:"/artist/" | append: ".html" %}
+
+<div class="art">
+
+  <a href="{{art_url}}">
+    <div class="art-image">
+      <img src="{{art.image}}"/>
+    </div>
+  </a>
+
+  <div class="art-details">
+
+    <div class="art-title">
+      <a href="{{art_url}}">
+        <h2><b>{{art.title}}</b></h2><br>
+      </a>
+    </div>
+
+    <a href="{{artist_url}}">
+      <div class="art-artist">
+        <h3>by <strong>{{art.artist}}</strong></h3><br>
+      </div>
+    </a>
+
+    <div class="art-value">
+      <h3 style="float: left;"><strong>${{art.value}}</strong></h3>
+    </div>
+  </div>
+</div>
+
