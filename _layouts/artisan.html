@@ -1,3 +1,25 @@
 ---
 layout: default
 ---
+
+<div class="profile">
+  <div class="profile-artist">
+
+    <div class="profile-artist-image">
+      <img src="{{page.image}}"/>
+    </div>
+
+    <div class="profile-artist-title">
+      <h1><b>{{page.name}}</b></h1>
+      {% if page.aka %}
+        <i>aka</i>
+        <h2>{{page.aka}}</h2>
+      {% endif %}
+    </div>
+
+    <div class="profile-artist-bio">
+      <p>{{page.bio}}</p>
+    </div>
+
+  </div>
+</div>

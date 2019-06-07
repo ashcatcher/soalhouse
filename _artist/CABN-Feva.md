@@ -1,5 +1,4 @@
 ---
-layout: default
 name: "CABN Feva"
 aka: "Christopher Allan Bolt-Norris"
 bio: |

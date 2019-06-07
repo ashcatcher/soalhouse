@@ -90,6 +90,35 @@ section.navigation {
   display: inline-block;
 }
 
+.profile {
+  background-color: var(--color-red-dark);
+  margin: 20px 20px 20px 20px;
+  padding: 5px 5px 5px 5px;
+  display: block;
+  height: 500px;
+
+  &-artist {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    &-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 50%;
+      float: left;
+    }
+    &-title {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      width: 50%;
+    }
+  }
+}
+
 .artists, .gallery {
   background-color: var(--color-red-dark);
   margin: 20px 20px 20px 20px;
