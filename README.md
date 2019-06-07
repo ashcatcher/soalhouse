@@ -1,7 +1,5 @@
-# soalhouse.ca - based upon the [Solace](https://github.com/ashcatcher/solace)
-Jekyll Theme (pending updates)
-
-- Site structure based upon the Flightdeck Jekyll starter
+# soalhouse.ca - based upon the [Solace Jekyll Theme](https://github.com/ashcatcher/solace)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c6bbcd4-7a27-4626-98ed-ce06c5b89522/deploy-status)](https://app.netlify.com/sites/soalhouse/deploys)
 
 ## Prerequisites
 
