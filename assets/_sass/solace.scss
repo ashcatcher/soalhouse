@@ -1,6 +1,10 @@
 @charset "UTF-8";
-@import "solace/mixin/solace_mix";
 
+// BOotstrap
+@import "bootstrap/bootstrap";
+
+// Solace Original Assets
+@import "solace/mixin/solace_mix";
 @import "solace/variables";
 @import "solace/gradient";
 @import "solace/layout";
@@ -8,6 +12,7 @@
 @import "solace/sidebar";
 @import "solace/events";
 @import "solace/rooms";
+
 
 @import "custom";
 @import "shame";
