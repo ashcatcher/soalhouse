@@ -1,32 +1,23 @@
 ---
 layout: default
 ---
-<h1>{{page.title}}</h1>
-
-<div class="artists">
-  {% for artist in site.artist %}
-    {% assign artist_url = artist.url | append: ".html" %}
-    <div class="artist">
-
-      <a href="{{artist_url}}">
-        <div class="artist-image">
-          <img src="{{artist.image}}"/>
-        </div>
-      </a>
-
-      <div class="artist-details">
-        <a href="{{artist_url}}">
-          <div class="artist-title">
-            <h2><b>{{artist.name}}</b></h2><br>
-            {% if artist.aka %}
-              <b>A.K.A.</b></br>
-            <h2>{{artist.aka}}</h2>
+<div class="container gallery-style">
+  <h1 class="display-4">{{page.title}}</h1>
+  <div class="gallery row">
+    {% for artist in site.artist %}
+      {% assign artist_url = artist.url | append: ".html" %}
+      <div class="artist-card card col-sm">
+        <img src="{{artist.image}}" class="card-img-top"/>
+        <div class="card-body">
+          <h5 class="card-title"><strong>{{artist.name}}</strong></h5>
+          {% if artist.aka %}
+            <p><strong>aka</strong></p>
+            <h6 class="card-subtitle">{{artist.aka}}</h6>
           {% endif %}
-          </div>
-        </a>
-        <p>{{artist.bio}}</p>
+          <p class="card-text">{{artist.bio}}</p>
+          <a href="{{artist_url}}" class="btn btn-primary">View Profile</a>
+        </div>
       </div>
-
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

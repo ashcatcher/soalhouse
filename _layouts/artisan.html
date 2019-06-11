@@ -2,30 +2,41 @@
 layout: default
 ---
 
-<div class="profile">
-  <div class="profile-artist">
+<div class="container profile-style">
+  <div class="profile">
+    <div class="row">
+      <div class="col-6 profile-images">
+        <div class="row">
+          <img src="{{page.image}}" style="margin: auto;"/>
+        </div>
+        <div class="row" style="opacity: 0.6;">
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+        </div>
+      </div>
 
-    <div class="profile-artist-image">
-      <img src="{{page.image}}"/>
-    </div>
+      <div class="col-6">
+        <h1><b>{{page.name}}</b></h1>
+        {% if page.aka %}
+          <i>aka</i>
+          <h2>{{page.aka}}</h2>
+        {% endif %}
+        <p>{{page.bio}}</p>
 
-    <div class="profile-artist-title">
-      <h1><b>{{page.name}}</b></h1>
-      {% if page.aka %}
-        <i>aka</i>
-        <h2>{{page.aka}}</h2>
-      {% endif %}
+      </div>
     </div>
-
-    <div class="profile-artist-bio">
-      <p>{{page.bio}}</p>
+    <div class="container gallery-style">
+      <div class="gallery row">
+        {% assign artist_gallery = site.gallery | where: "artist", page.name %}
+        {% for art in artist_gallery %}
+          <div class="col-3">
+            {% include art.html %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-  <h1>Listings by this Artist</h2>
-  <div class="profile-artist-gallery">
-    {% assign artist_gallery = site.gallery | where: "artist", page.name %}
-    {% for art in artist_gallery %}
-      {% include art.html %}
-    {% endfor %}
   </div>
 </div>
