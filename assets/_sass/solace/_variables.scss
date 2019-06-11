@@ -2,24 +2,82 @@
   --color-blue-dark: #002695;
   --color-blue-light: #16aedd;
 
+
+  --radial-blues: repeating-radial-gradient(
+  circle at 50% -30%,
+  var(--color-blue-dark),
+  var(--color-blue-light)10px,
+  var(--color-blue-light),
+  var(--color-blue-light) 15px);
+
+
   --color-red-dark: #450003;
   --color-red-light: #710;
+
+  --radial-reds: repeating-radial-gradient(
+  circle at 50% -30%,
+  var(--color-red-dark),
+  var(--color-red-light)10px,
+  var(--color-red-light),
+  var(--color-red-light) 15px);
+
+
 
   --color-yellow: #b69521;
   --color-yellow-2: #c1b02c;
 
+  --radial-yellow: repeating-radial-gradient(
+  circle at 50% -30%,
+  var(--color-yellow),
+  var(--color-yellow-2)10px,
+  var(--color-yellow-2),
+  var(--color-yellow) 15px);
+
+
+
   --color-teal-light: #5dbab0;
   --color-teal-dark: #438382;
+
+  --radial-teal: repeating-radial-gradient(
+  circle at 50% -30%,
+  var(--color-teal-dark),
+  var(--color-teal-light)10px,
+  var(--color-teal-light),
+  var(--color-teal-dark) 15px);
+
+
 
   --color-violet-light: #cdc5ea;
   --color-violet-mid: #c073c5;
   --color-violet-dark: #6a41a9;
+
+  --radial-violets: repeating-radial-gradient(
+  circle at 50% -30%,
+  var(--color-violet-light),
+  var(--color-violet-light)10px,
+  var(--color-violet-mid),
+  var(--color-violet-mid) 15px,
+  var(--color-violet-dark),
+  var(--color-violet-dark) 25px);
+
+  --radical-violets: radial-gradient(circle at 80% 10%, var(--color-violet-dark), transparent),
+  radial-gradient(circle at 80% 50%, var(--color-violet-mid), transparent),
+  radial-gradient(circle at 10% 10%, var(--color-violet-light), transparent),
+  radial-gradient(circle at 20% 80%, var(--color-violet-mid), transparent);
+
 
   --color-green-light: #4dded9;
   --color-green-dark: #2a80a3;
 
   --color-sky: #9bdefb;
   --color-iron: #906984;
+
+  --radical-skies: radial-gradient(circle at 80% 10%, var(--color-iron), transparent),
+  radial-gradient(circle at 80% 50%, var(--color-sky), transparent),
+  radial-gradient(circle at 10% 10%, var(--color-green-dark), transparent),
+  radial-gradient(circle at 20em 20em, var(--color-green-light), transparent);
+
+
 
   --color-stone-dark: #817589;
   --color-stone-light: #a9b5c3;
@@ -58,17 +116,53 @@
   var(--gradient-1) 90%,
   var(--gradient-2));
 
-  --sidebar:  repeating-linear-gradient(
+  --ribbon:  repeating-linear-gradient(
   90deg,
-  rgba(0,0,0,0),
-  rgba(0,0,0,0) 10%,
   var(--gradient-1),
-  var(--gradient-2) 20%,
+  var(--gradient-1) 25%,
   var(--gradient-2) 50%,
   var(--gradient-2),
   var(--gradient-2) 80%,
   var(--gradient-1),
   rgba(0,0,0,0) 90%,
   rgba(0,0,0,0));
-}
 
+  --emblem:  repeating-linear-gradient(
+  90deg,
+  var(--gradient-1),
+  var(--gradient-1) 20%,
+  var(--gradient-1),
+  rgba(0,0,0,0) 25%,
+  rgba(0,0,0,0),
+  rgba(0,0,0,0) 70%,
+  rgba(0,0,0,0)),
+  radial-gradient(circle at 20% 0%, transparent, var(--gradient-1)),
+  radial-gradient(circle at 20% 20%, transparent, var(--gradient-1));
+
+  --godlike: radial-gradient(circle at 0px -500px, var(--gradient-1), transparent),
+  radial-gradient(circle at 0px -500px, var(--gradient-2), transparent),
+  radial-gradient(circle at 500px 500px, transparent, transparent);
+
+  --sidegod: radial-gradient(circle at -100px 0px, var(--gradient-2), transparent),
+  radial-gradient(circle at -100px 100%, var(--gradient-2), transparent),
+  radial-gradient(circle at -100px 50%, var(--gradient-1), transparent),
+  radial-gradient(circle at 0px 50%, transparent, transparent);
+
+  
+  //radial-gradient(circle at 100% calc(100% + 500px), var(--gradient-1),transparent);
+  // radial-gradient(circle at 0% calc(100% + 500px), var(--gradient-1),transparent),
+  //
+  --radial-whacked: repeating-radial-gradient(
+  circle at 50% -30%, #4dded9, #2a80a3 5px);
+
+
+  --radical-emberbrick: radial-gradient(circle at 80% 10%, var(--color-brick), transparent),
+  radial-gradient(circle at 80% 50%, var(--color-brick-border), transparent),
+  radial-gradient(circle at 10% 10%, var(--color-ember), transparent),
+  radial-gradient(circle at 20em 20em, var(--color-stone-dark), transparent);
+
+  --radical-redemption: radial-gradient(circle at 15% 15%, var(--gradient-1), transparent),
+  radial-gradient(circle at 75% 15%, var(--gradient-2), transparent),
+  radial-gradient(circle at 30% 30%, var(--color-brick-border), transparent),
+  radial-gradient(circle at 50% 50%, var(--color-stone-dark), transparent);
+}

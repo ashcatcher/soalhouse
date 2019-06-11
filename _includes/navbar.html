@@ -1,27 +1,43 @@
-<nav class="navbar navbar-expand navbar-dark bg-primary blazen" style="width:
-  250px; height: 0px">
-
+{% comment %}
+<nav class="navbar-expand navbar-dark fixed-top" id="emblem">
   <a href="menu-toggle" id="menu-toggle" class="navbar-brand">
-    <!-- <img src="/assets/images/soal220.png" alt="SOAL" />-->
-    <span class="navbar-toggler-icon"></span>
+    <span class="radial-whack" style="border-radius: 150px;"></span>
+    <img src="/assets/images/soal150.svg" alt="SOAL"/>
+    <!-- <span class="navbar-toggler-icon"></span> -->
   </a>
-
   <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                               data-target="#solaceNav"
-                                               aria-expanded="false"
-                                               aria-label="Toggle Navigation">
+    data-target="#solaceNav"
+    aria-expanded="true"
+    aria-label="Toggle Navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+</nav>
+{% endcomment %}
 
-  <!--
-  <div class="collapse navbar-collapse" id="solaceNav">
-    <ul class="navbar-nav mr-auto">
+<nav class="navbar navbar-expand navbar-dark bg-transparent fixed-top">
+  <div id="emblem">
+    <a href="menu-toggle" id="menu-toggle" class="navbar-brand">
+      <span class="radial-whack"></span>
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                 data-target="#solaceNav"
+                                                 aria-expanded="false"
+                                                 aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--
+      <div class="collapse navbar-collapse" id="solaceNav">
+      <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-    </ul>
-    <form class="form-inline my-2 my-md-0"> </form>
+      </ul>
+      <form class="form-inline my-2 my-md-0"> </form>
+      </div>
+    -->
   </div>
-  -->
 </nav>

@@ -1,6 +1,6 @@
 ---
 name: Keg's & Kakes
-teaser_image: /assets/images/events/party-hat.png
+teaser_image: /assets/images/events/kegsandkakes.jpg
 date: 'Jun 14 2019'
 description: SOAL House 7th Anniversary + Scott's Birthday Bonanza
 event_url: >-
