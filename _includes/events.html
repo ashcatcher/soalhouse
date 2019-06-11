@@ -1,19 +1,24 @@
 {% assign events = site.events | where:"display", true %}
 
-<div id="slideshow">
+<div class="jumbotron jumbotron-fluid" id="slideshow" style="background-color: black;">
   {% assign counter = 0 %}
   {% for event in events %}
     {% assign counter = counter | plus: 1 %}
-    <div class="event">
-      <div class="radial-whack"></div>
+    <div class="event container-fluid">
       <div class="event-image">
         <img src="{{event.teaser_image}}" />
       </div>
 
       <div class="event-details">
-        <p class="event-date">{{event.date | date: '%I:%M %p  %B %d, %Y'}}</p>
-        <h1 class="event-name">{{event.name}}</h1>
-        <p class="event-description">{{event.description}}</p>
+        <h1 class="event-name display-4">{{event.name}}</h1>
+        <p>{{event.date | date: '%B %d, %Y'}}</p>
+        <hr class="my-4" style="border-color: white; margin: 0 20px 0 20px;">
+        <p class="event-description lead">{{event.description}}</p>
+        <div class="event-links">
+          {% if event.event_url %}
+            <a class="btn btn-primary btn-lg" href="{{event.event_url}}" role="button">Learn More</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   {% endfor %}

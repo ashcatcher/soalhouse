@@ -145,6 +145,10 @@ collections:
         widget: "string"
         required: true
         default: ""
+      - label: "Facebook Event URL"
+        name: "event_url"
+        widget: "string"
+        required: false
       - label: "Display"
         name: "display"
         widget: "boolean"
