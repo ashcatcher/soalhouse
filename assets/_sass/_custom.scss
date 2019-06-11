@@ -1,3 +1,125 @@
+// Original COntent Merge
+section.navigation {
+  display: inline-block;
+  position: fixed;
+  // text-align:center;
+  width: 256px;
+  left: 0;
+  height: auto;
+
+  margin: 0 20px 50px 20px;
+  // Never Enter Santa's Washroom
+
+  @include breakpoint(small){
+    width: 100%;
+    height: 100%;
+    position: static;
+    display: block;
+    margin: 0 0 0 0;
+  }
+}
+
 #content {
   padding-top: 15px;
+  margin: 0;
+  background: transparent;
+
+}
+// Bootsnipp Sidebar Layout CSS
+// https://bootsnipp.com/snippets/7np2j
+#wrapper {
+  padding-left: 0;
+  transition: all 0.5s ease;
+  &.toggled {
+    padding-left: 250px;
+
+    #sidebar-wrapper {
+      width: 250px;
+    }
+    #page-content-wrapper {
+      margin-right: 0px;
+      position: absolute;
+    }
+  }
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+}
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+// Bootsnipp Sidebar Styles
+// https://bootsnipp.com/snippets/7np2j
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  > .sidebar-brand {
+    font-size: 18px;
+    line-height: 60px;
+    a {
+      color: #999;
+      &:hover {
+        color: #fff;
+        background: none;
+      }
+    }
+  }
+  li {
+    text-indent: 20px;
+    line-height: 40px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: #999;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      &:active, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  #wrapper {
+    padding-left: 0;
+    &.toggled {
+      padding-left: 250px;
+
+      #sidebar-wrapper {
+        width: 250px;
+      }
+
+      #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+      }
+    }
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
 }

@@ -1,7 +1,5 @@
 .blazen {
-  @include breakpoint(notsmall){
-    background: var(--my-gradient);
-  }
+  background: var(--my-gradient);
   padding-bottom: 50px;
   > ul {
     list-style-type: none;

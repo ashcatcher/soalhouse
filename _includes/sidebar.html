@@ -1,22 +1,30 @@
+<ul class="sidebar-nav blazen">
+  <li class="sidebar-brand">
+    <a href="/">
+      <img src="/assets/images/soal220.png" alt="SOAL" />
+    </a>
+  </li>
+  {% for i in (1..9) %}
+    {% for paige in site.pages %}
+      {% assign priority = paige.priority | plus: 0 %}
+      {% if priority == i %}
+        <li>
+          <a href="{{paige.permalink}}"
+             {% if page.url == paige.permalink %}
+               id="active"
+             {% endif %}>
+            {{ paige.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+{% comment %}
 <nav class="blazen">
   <a href="/">
-    <img src="/assets/images/soal220.png" alt="SOAL" />
   </a>
   <ul>
-    {% for i in (1..9) %}
-      {% for paige in site.pages %}
-        {% assign priority = paige.priority | plus: 0 %}
-        {% if priority == i %}
-          <li>
-            <a href="{{paige.permalink}}"
-               {% if page.url == paige.permalink %}
-                 id="active"
-                {% endif %}>
-                {{ paige.title }}
-              </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
   </ul>
 </nav>
+{% endcomment %}
