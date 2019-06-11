@@ -43,6 +43,16 @@ section.navigation {
   }
 }
 
+#solaceSelect {
+  > img, a {
+    margin: 0 0 0 0;
+  }
+}
+
+#menu-toggle {
+  margin: 0 0 0 0;
+}
+
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
@@ -81,7 +91,7 @@ section.navigation {
     }
   }
   li {
-    text-indent: 20px;
+    // text-indent: 20px;
     line-height: 40px;
     a {
       display: block;

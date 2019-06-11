@@ -1,25 +1,38 @@
-<ul class="sidebar-nav blazen">
-  <li class="sidebar-brand">
-    <a href="/">
-      <img src="/assets/images/soal220.png" alt="SOAL" />
-    </a>
-  </li>
-  {% for i in (1..9) %}
-    {% for paige in site.pages %}
-      {% assign priority = paige.priority | plus: 0 %}
-      {% if priority == i %}
-        <li>
-          <a href="{{paige.permalink}}"
-             {% if page.url == paige.permalink %}
-               id="active"
-             {% endif %}>
-            {{ paige.title }}
-          </a>
-        </li>
-      {% endif %}
+<nav class="navbar-expand navbar-dark fixed-top" id="emblem">
+  <a href="menu-toggle" id="menu-toggle" class="navbar-brand">
+    <span class="radial-whack" style="border-radius: 150px;"></span>
+    <img src="/assets/images/soal150.svg" alt="SOAL"/>
+    <!-- <span class="navbar-toggler-icon"></span> -->
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                               data-target="#solaceNav"
+                                               aria-expanded="true"
+                                               aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+
+
+<div class="ribbon">
+  <ul class="sidebar-nav">
+    {% for i in (1..9) %}
+      {% for paige in site.pages %}
+        {% assign priority = paige.priority | plus: 0 %}
+        {% if priority == i %}
+          <li>
+            <a href="{{paige.permalink}}"
+               {% if page.url == paige.permalink %}
+                 id="active"
+               {% endif %}>
+              {{ paige.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
-</ul>
+  </ul>
+</div>
 {% comment %}
 <nav class="blazen">
   <a href="/">

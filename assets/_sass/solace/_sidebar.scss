@@ -1,3 +1,29 @@
+.ribbon {
+  background: var(--sidebar);
+  overflow-y: hidden;
+  margin-top: 100px;
+  height: 400px;
+  > ul {
+    margin-top: 220px;
+  }
+}
+
+nav#emblem {
+  width: 250px;
+  height: 250px;
+  > a {
+    > img {
+      border: 3px solid white;
+      border-radius: 150px;
+      padding-bottom: 0px;
+      margin-right: 0px;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+
 .blazen {
   background: var(--my-gradient);
   padding-bottom: 50px;
