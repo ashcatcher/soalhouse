@@ -9,56 +9,51 @@
   background-size: cover;
   position: relative;
 }
+// Gallery layout styles
 .gallery {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  &-style {
-    background: var(--radical-skies);
+  background: rgba(33,33,33,0.8);
+  &-row {
+    justify-content: space-evenly;
   }
-  &-artist, &-art {
-    width: 200px;
-  }
-  &-object {
-    width: 200px;
+  &-card {
+    width: 250px;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 10px auto;
     align-items: center;
-    opacity: 0.6;
+    opacity: 0.8;
     color: black;
     text-align: center;
-    background-color: #fff;
-    > h1, h2, h3, h4, h5, h6, p {
-      margin: 10px 0 10px 0;
-      color: black;
+    background: var(--emblem);
+    > card-body {
+      > h1, h2, h3, h4, h5, h6, p {
+        color: white;
+      }
+    }
+    > img {
+      align-self: center;
+      max-widtH: 220px;
+      margin: 10px auto;
+      border-style: 3px solid white;
     }
   }
 }
 
-// Styles for _layout/profile.html
+// Profile layout styles
 .profile {
+  background: var(--radical-skies);
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  &-style {
-    background: var(--radical-skies);
-  }
   &-images {
     border: 1px solid white;
     border-radius: 10px;
-  }
-}
-// Styles for _includes/artist_card.html
-.artist-card {
-  color: black;
-  opacity: 0.6;
-  > img {
-    margin-top: 10px;
-    max-width: 200px;
-    align-self: center;
-  }
-  > .card-body {
-    > h1, h2, h3, h4, h5, h6, p {
-      margin: 10px 0 10px 0;
-      color: black;
+    margin: 10px auto auto 10px;
+    > img {
+    }
+    &-more {
+      margin: 5px 5px 5px 5px;
+      opacity: 0.6;
     }
   }
 }
