@@ -3,21 +3,6 @@ name: Gallery
 permalink: /gallery/
 title: Art Gallery
 priority: "3"
-layout: gallery
+layout: art_gallery
 ---
-{% for art in site.gallery %}
-  {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
-  <a href="{{art.url | append: ".html"}}">
-    <div class="gallery-card card col">
-      <img src="{{art.image}}" class="card-img-top"/>
-      <div class="card-body">
-        <h5 class="card-title"><strong>{{art.title}}</strong></h5>
-        <a href="{{artist_url}}">
-          <h6 class="card-subtitle">by {{art.artist}}</h6>
-        </a>
-        <p class="card-text">${{art.value}}</p>
-      </div>
-    </div>
-  </a>
-{% endfor %}
 
