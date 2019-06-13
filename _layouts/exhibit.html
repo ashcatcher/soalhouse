@@ -1,31 +1,8 @@
 ---
-layout: default
+layout: profile
 ---
 
-<div class="profile">
-  <div class="profile-art">
-
-    <div class="profile-art-image">
-      <img src="{{page.image}}" />
-    </div>
-
-    <div class="profile-art-title">
-      <h2><b>{{page.title}}</b></h2><br>
-    </div>
-
-    <div class="profile-art-artist">
-      <h2>by <b>{{page.artist}}</b></h2>
-    </div>
-
-    <div class="profile-art-value">
-      <h3><strong>${{page.value}}</strong></h3>
-    </div>
-  </div>
-  <h1>More by this Artist</h1>
-  <div class="profile-art-gallery">
-    {% assign artist_gallery = site.gallery | where: "artist", page.artist %}
-    {% for art in artist_gallery %}
-      {% include art.html %}
-    {% endfor %}
-  </div>
-</div>
+  <h1><b>{{page.title}}</b></h1>
+  <h2>by {{page.artist}}</h2>
+  <p>{{page.bio}}</p>
+  <p>${{page.value}}</p>

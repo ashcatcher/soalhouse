@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="container profile-style">
+  <div class="profile">
+    <div class="row align-items-center">
+      <div class="col-6 profile-images">
+        <div class="row">
+          <img src="{{page.image}}" style="margin: auto;"/>
+        </div>
+        <div class="row justify-content-center" style="opacity: 0.6;">
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+          <img src="{{page.image}}" class="col"/>
+        </div>
+      </div>
+
+      <div class="col-6">
+        {{content}}
+      </div>
+    </div>
+
+    <h1>More by this Artist</h1>
+    <div class="container gallery-style">
+      <div class="gallery row">
+        {% assign artist_gallery = site.gallery | where: "artist", page.artist %}
+        {% for art in artist_gallery %}
+          {% include art.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
