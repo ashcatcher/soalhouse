@@ -3,6 +3,9 @@ name: Artists
 permalink: /artists/
 title: Artists
 priority: "2"
-layout: artists
+layout: gallery
 ---
+{% for artist in site.artist %}
+  {% include artist_card.html %}
+{% endfor %}
 

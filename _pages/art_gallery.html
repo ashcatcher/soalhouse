@@ -5,4 +5,8 @@ title: Art Gallery
 priority: "3"
 layout: gallery
 ---
+{% for art in site.gallery %}
+  {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+  {% include art_gallery.html %}
+{% endfor %}
 

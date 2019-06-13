@@ -39,8 +39,16 @@ layout: default
       <div class="gallery row">
         {% assign artist_gallery = site.gallery | where: "artist", page.name %}
         {% for art in artist_gallery %}
-          <div class="col-3">
-            {% include art.html %}
+          <div class="column gallery-object">
+            <a href="{{art_url | append: ".html"}}">
+              <div class="artist-card card col-sm gallery-object">
+
+                <img src="{{art.image}}" class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>{{art.title}}</strong></h5>
+                </div>
+              </div>
+            </a>
           </div>
         {% endfor %}
       </div>
