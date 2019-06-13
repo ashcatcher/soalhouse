@@ -6,18 +6,19 @@ layout: default
   <div class="gallery row">
     {% for artist in site.artist %}
       {% assign artist_url = artist.url | append: ".html" %}
-      <div class="artist-card card col-sm">
-        <img src="{{artist.image}}" class="card-img-top"/>
-        <div class="card-body">
-          <h5 class="card-title"><strong>{{artist.name}}</strong></h5>
-          {% if artist.aka %}
-            <p><strong>aka</strong></p>
-            <h6 class="card-subtitle">{{artist.aka}}</h6>
-          {% endif %}
-          <p class="card-text">{{artist.bio}}</p>
-          <a href="{{artist_url}}" class="btn btn-primary">View Profile</a>
+      <a href="{{artist_url}}">
+        <div class="artist-card card col-sm gallery-artist">
+          <img src="{{artist.image}}" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title"><strong>{{artist.aka}}</strong></h5>
+            {% if artist.aka %}
+              <p><strong>aka</strong></p>
+              <h6 class="card-subtitle">{{artist.name}}</h6>
+            {% endif %}
+            <p class="card-text">{{artist.bio}}</p>
+          </div>
         </div>
-      </div>
+      </a>
     {% endfor %}
   </div>
 </div>

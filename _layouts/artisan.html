@@ -4,12 +4,12 @@ layout: default
 
 <div class="container profile-style">
   <div class="profile">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-6 profile-images">
         <div class="row">
           <img src="{{page.image}}" style="margin: auto;"/>
         </div>
-        <div class="row" style="opacity: 0.6;">
+        <div class="row justify-content-center" style="opacity: 0.6;">
           <img src="{{page.image}}" class="col"/>
           <img src="{{page.image}}" class="col"/>
           <img src="{{page.image}}" class="col"/>
@@ -25,6 +25,13 @@ layout: default
           <h2>{{page.aka}}</h2>
         {% endif %}
         <p>{{page.bio}}</p>
+        {% comment %}
+        <div class="row justify-content-center align-items-center">
+          <i class="col"><a href="#" class="fa fa-facebook-square"></a></i>
+          <i class="col"><a href="#" class="fa fa-twitter"></a></i>
+          <i class="fa fa-facebook-square"></i>
+        </div>
+        {% endcomment %}
 
       </div>
     </div>
