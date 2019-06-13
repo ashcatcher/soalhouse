@@ -102,3 +102,162 @@
     }
   }
 }
+
+// Sidebar Styles
+div#emblem {
+  height: 220px;
+  width: 220px;
+  //background: var(--emblem);
+  //background: var(--godlike);
+  background: var(--radical-redemption);
+  z-index: 1000;
+  border: 3px solid white;
+  border-radius: 150px;
+  border-left: none;
+  border-right: none;
+  > a {
+    width: 200px;
+    height: 200px;
+    z-index: 1001;
+    background: var(radical-violets);
+    > span.radial-whack {
+      z-index: 1000;
+      width: 200px;
+      height: 200px;
+      margin-left: 25px;
+      margin-top: 15px;
+    }
+  }
+}
+a#menu-toggle {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+
+.blazen {
+  background: var(--my-gradient);
+  padding-bottom: 50px;
+  > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+
+    > li {
+      margin-bottom: 10px;
+      font-size: 1.5em;
+
+      > a {
+        opacity: 0.75;
+        color: #ccc;
+        font-size: 1.5rem;
+        transition: opacity 0.1s;
+
+        &:hover, &#active {
+          opacity: 1;
+          color: #fff;
+          text-shadow: 1px 0px 20px white;
+          -webkit-stroke-width: 5.3ps;
+          -webkit-stroke-color: #FFFFF;
+          -webkit-fill-color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+div#content{
+  &:first-child {
+    //margin-top: 200px;
+  }
+
+}
+
+#sidebar-wrapper {
+  // margin-top: 200px;
+}
+.ribbon {
+  background-image: var(--sidegod);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  // margin: 0 3px 3px 0;
+  height: 600px;
+  border: 3px inset var(--color-violet-light);
+  box-shadow: inset -1px 0 0 var(--color-violet-light), inset 0 -1px 0
+  var(--color-violet-dark), inset 0 1px 0 var(--color-violet-mid);
+  //border-radius: 8px;
+  // border-top: 5one;
+  z-index: 1005;
+  > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 220px;
+    > li {
+      font-size: 1.5em;
+
+      > a {
+        opacity: 0.75;
+        color: #ccc;
+        font-size: 1.5rem;
+        transition: opacity 0.1s;
+
+        &:hover, &#active {
+          opacity: 1;
+          color: #fff;
+          text-shadow: 1px 0px 20px white;
+          -webkit-stroke-width: 5.3ps;
+          -webkit-stroke-color: #FFFFF;
+          -webkit-fill-color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+
+// Room Styles
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-direction: row;
+
+  @include breakpoint(small){
+    flex-direction: column;
+    width: 100%;
+    > .scroll-card {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: visible;
+    }
+  }
+
+  > .scroll-card {
+    display: flex;
+    flex: 0 0 auto;
+  }
+}
+.room {
+  display: inline-block;
+  width: 100%;
+
+  &-image {
+    > img {
+      width: 100px;
+      height: 100px;
+      display: flex;
+    }
+  }
+
+  &-details {
+    display: inline-block;
+    width: 250px;
+    padding: auto;
+  }
+}
