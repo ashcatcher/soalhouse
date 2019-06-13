@@ -5,8 +5,7 @@ layout: default
   <h1 class="display-4">{{page.title}}</h1>
   <div class="gallery row">
     {% for artist in site.artist %}
-      {% assign artist_url = artist.url | append: ".html" %}
-      <a href="{{artist_url}}">
+      <a href="{{artist.url | append: ".html"}}">
         <div class="artist-card card col-sm gallery-artist">
           <img src="{{artist.image}}" class="card-img-top"/>
           <div class="card-body">

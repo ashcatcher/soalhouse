@@ -2,31 +2,17 @@
 {% assign artist = art.artist %}
 {% assign artist_url =  artist | slugify | prepend:"/artist/" | append: ".html" %}
 
-<div class="art">
+<div class="column gallery-object">
+  <a href="{{art_url | append: ".html"}}">
+    <div class="artist-card card col-sm gallery-object">
 
-  <a href="{{art_url}}">
-    <div class="art-image">
-      <img src="{{art.image}}"/>
+      <img src="{{art.image}}" class="card-img-top"/>
+      <div class="card-body">
+        <h5 class="card-title"><strong>{{art.title}}</strong></h5>
+        <h6 class="card-subtitle">by {{art.artist}}</h6>
+        <p class="card-text">${{art.value}}</p>
+      </div>
     </div>
   </a>
-
-  <div class="art-details">
-
-    <div class="art-title">
-      <a href="{{art_url}}">
-        <h2><b>{{art.title}}</b></h2><br>
-      </a>
-    </div>
-
-    <a href="{{artist_url}}">
-      <div class="art-artist">
-        <h3>by <strong>{{art.artist}}</strong></h3><br>
-      </div>
-    </a>
-
-    <div class="art-value">
-      <h3 style="float: left;"><strong>${{art.value}}</strong></h3>
-    </div>
-  </div>
 </div>
 

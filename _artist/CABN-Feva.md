@@ -1,6 +1,6 @@
 ---
 name: "CABN Feva"
-aka: "Christopher Allan Bolt-Norris"
+aka: "Chris"
 bio: |
   Visits welcome by appointment. Accepting commissioned works.
 ---
