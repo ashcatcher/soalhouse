@@ -1,197 +1,64 @@
 // Body Background Effect
 .parallax {
   background-image: url("/assets/images/house/SOAL3.jpg");
-
   height: 100vh;
-  // Change to greater than 100vh to enable the same static picture to host more
-  // scrolling content
   width: 100vw;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   position: relative;
 }
-
-// These are styles extracted from the original theme
-.solace, .content {
-  display: flex;
-  justify-content: center;
-  @include breakpoint(small){
-    width:100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-
-}
-.row {
-  display: flex;
-  //  position: relative;
-  height: auto;
-  width: 100%;
-  margin:10px;
+.gallery {
+  display:flex;
   flex-wrap: wrap;
-}
-/*
-.profile {
-&-art {
-width: 90%;
-&-details {
-background-color: white;
-}
-}
-
-&-artist, &-art {
-display: inline-block;
-flex-direction: column;
-width: 100%;
-&-details {
-display: inline-block;
-float:left;
-width: 50%;
-}
-&-image {
-display: flex;
-justify-content: center;
-margin-top: 20px;
-margin-bottom: 20px;
-width: 50%;
-float: left;
-}
-&-title {
-float: left;
-display: flex;
-flex-direction: column;
-color: white;
-width: 50%;
-}
-&-value {
-text-align: center;
-}
-&-gallery {
-background-color: var(--color-red-light);
-width: 90%;
-margin: 5%;
-display: flex;
-flex-wrap: wrap;
-overflow-x: scroll;
-}
-}
-}
- */
-
-  .gallery {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    &-style {
-      background: var(--radical-skies);
-    }
-    &-artist, &-art {
-      width: 200px;
-    }
-    &-object {
-      width: 200px;
-      align-items: center;
-      opacity: 0.6;
-      color: black;
-      text-align: center;
-      background-color: #fff;
-      > h1, h2, h3, h4, h5, h6, p {
-        margin: 10px 0 10px 0;
-        color: black;
-      }
-    }
+  justify-content: space-around;
+  &-style {
+    background: var(--radical-skies);
   }
-
-  .profile {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    &-style {
-      background: var(--radical-skies);
-    }
-    &-images {
-      border: 1px solid white;
-      border-radius: 10px;
-    }
+  &-artist, &-art {
+    width: 200px;
   }
-
-
-  #content {
-    z-index: 1002;
-  }
-
-  .artist-card {
-    color: black;
-    opacity: 0.6;
-    > img {
-      margin-top: 10px;
-      max-width: 200px;
-      align-self: center;
-    }
-    > .card-body {
-      > h1, h2, h3, h4, h5, h6, p {
-        margin: 10px 0 10px 0;
-        color: black;
-      }
-    }
-  }
-
-
-  .art, .artist {
+  &-object {
+    width: 200px;
     align-items: center;
-    display: flex;
     opacity: 0.6;
     color: black;
     text-align: center;
     background-color: #fff;
-    // flex: auto;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-
     > h1, h2, h3, h4, h5, h6, p {
       margin: 10px 0 10px 0;
       color: black;
     }
+  }
+}
 
-    &-image {
-      max-height: 220px;
-      max-width: 220px;
-      float: left;
-      display: inline-block;
-    }
-
-    &-details {
-      display: inline-block;
-      float:left;
-      @include breakpoint(notwide) {
-        display: block;
-        clear: both;
-        float: left;
-      }
-    }
-
-    &-title, &-artist {
-      display: flex;
-      flex-direction: column;
+// Styles for _layout/profile.html
+.profile {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &-style {
+    background: var(--radical-skies);
+  }
+  &-images {
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+}
+// Styles for _includes/artist_card.html
+.artist-card {
+  color: black;
+  opacity: 0.6;
+  > img {
+    margin-top: 10px;
+    max-width: 200px;
+    align-self: center;
+  }
+  > .card-body {
+    > h1, h2, h3, h4, h5, h6, p {
+      margin: 10px 0 10px 0;
       color: black;
     }
-    &-artist {
-      border-bottom-style: solid;
-      border-top-style: solid;
-      border-width: 1px;
-    }
   }
-  .artist {
-    &-title {
-      border-top-style: solid;
-      border-bottom-style: solid;
-      border-width: 1px;
-      margin-top: 10px;
-    }
-  }
+}
