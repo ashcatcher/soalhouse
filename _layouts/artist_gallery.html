@@ -6,12 +6,12 @@ layout: gallery
     <div class="gallery-card card col">
       <img src="{{artist.image}}" class="card-img-top"/>
       <div class="card-body">
-        <h5 class="card-title"><strong>{{artist.aka}}</strong></h5>
+        <h5 class="card-title text-secondary"><strong>{{artist.aka}}</strong></h5>
         {% if artist.aka %}
           <p><strong>aka</strong></p>
-          <h6 class="card-subtitle">{{artist.name}}</h6>
+          <h6 class="card-subtitle text-secondary">{{artist.name}}</h6>
         {% endif %}
-        <p class="card-text">{{artist.bio}}</p>
+        <p class="card-text text-secondary">{{artist.bio}}</p>
       </div>
     </div>
   </a>

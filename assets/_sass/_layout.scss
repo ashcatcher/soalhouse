@@ -11,7 +11,7 @@
 }
 // Gallery layout styles
 .gallery {
-  background: rgba(33,33,33,0.8);
+  background: var(--color-red-dark);
   &-row {
     justify-content: space-evenly;
     margin: 10px auto;;
@@ -25,10 +25,10 @@
     opacity: 0.8;
     color: black;
     text-align: center;
-    background: var(--emblem);
+    background: #fff;
     > card-body {
       > h1, h2, h3, h4, h5, h6, p {
-        color: white;
+        color: black;
       }
     }
     > img {
@@ -42,7 +42,7 @@
 
 // Profile layout styles
 .profile {
-  background: var(--emblem);
+  background: var(--color-red-dark);
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
