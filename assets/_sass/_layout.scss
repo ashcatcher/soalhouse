@@ -100,6 +100,11 @@
 }
 
 // Sidebar Styles
+nav#emblem {
+  left: 50px;
+  top: 25px;
+}
+
 div#emblem {
   height: 220px;
   width: 220px;
@@ -170,9 +175,7 @@ div#content{
 
 }
 
-#sidebar-wrapper {
-  // margin-top: 200px;
-}
+
 .ribbon {
   background-image: var(--sidegod);
   overflow-y: hidden;

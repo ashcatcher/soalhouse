@@ -34,7 +34,8 @@ section.navigation {
     padding-left: 250px;
 
     #sidebar-wrapper {
-      width: 250px;
+      width: 300px;
+      padding-left: 50px;
     }
     #page-content-wrapper {
       margin-right: 0px;
@@ -116,7 +117,7 @@ section.navigation {
       padding-left: 250px;
 
       #sidebar-wrapper {
-        width: 250px;
+        width: 300px;
       }
 
       #page-content-wrapper {
@@ -127,6 +128,7 @@ section.navigation {
   }
   #sidebar-wrapper {
     width: 0;
+    overflow-x: hidden;
   }
   #page-content-wrapper {
     padding: 20px;
