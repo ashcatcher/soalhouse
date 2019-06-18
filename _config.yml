@@ -1,8 +1,8 @@
 # Saigon Jekyll Theme Config
 permalink: /:categories/:title/
 author_img_name_path: "/images/users/user.jpg"
-disqus_shortname: "example"
-google_analytics_code: ""
+
+google_analytics_code: "UA-142289661-1"
 
 
 # Site settings
