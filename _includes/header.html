@@ -1,6 +1,6 @@
 
 <header class="navbar" style="height: 50px;">
-<div class="skylift"></div>
+  <div class="skylift"></div>
   <section class="navbar-section">
     {% comment %}
     <a href="#" class="btn btn-link">Example</a>
@@ -15,10 +15,19 @@
   </section>
 
   <section class="navbar-section">
-  {% comment %}
+    {% if page.layout == 'exhibit' %}
+      {% if page.artist %}
+        {% assign artist_url = page.artist | slugify | prepend: "/artist" |
+        append: ".html" %}
+        
+        <a href="{{artist_url}}"><h2> <small>by  </small>{{page.artist}}</h2></a>
+      {% endif %}
+    {% endif %}
+
+    {% comment %}
     <a href="#" class="btn btn-link">Example</a>
     <a href="#" class="btn btn-link">Example2</a>
-  {% endcomment %}
+    {% endcomment %}
   </section>
 </header>
 

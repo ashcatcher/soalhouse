@@ -9,11 +9,11 @@ layout: sidebar
       {% assign art_url = art.url | append: ".html" %}
       <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
         <div class="card-header">
-          <div class="card-title h5">{{art.title}}</div>
         </div>
 
         <a href="{{art_url}}">
           <div class="card-image">
+            <div class="h5">{{art.title}}</div>
             <img src="{{art.image}}" class="img-responsive"/>
           </div>
         </a>
