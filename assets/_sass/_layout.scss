@@ -274,6 +274,7 @@ div#content{
   background: var(--radial-violets);
   filter: blur(5px);
   mask: url('/assets/images/soal150.svg') exclude;
+  mask-size: contain;
   opacity: 1;
   position: absolute;
   top: 0;
