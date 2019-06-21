@@ -1,45 +1,38 @@
 ---
 layout: sidebar
 ---
-<div class="container profile">
-  <div class="row align-items-center">
-    <div class="col-lg profile-images">
-      <div class="profile-images-main row justify-content-center">
-        <img src="{{page.image}}"/>
-      </div>
-      <div class="profile-images-more row justify-content-center">
-        <img src="{{page.image}}" class="col"/>
-        <img src="{{page.image}}" class="col"/>
-        <img src="{{page.image}}" class="col"/>
-        <img src="{{page.image}}" class="col"/>
-        <img src="{{page.image}}" class="col"/>
-      </div>
+<div class="container">
+  <div class="columns">
+    <div class="column col-6" style="background-color: black; z-index: 40;
+      width: 250px; height: 250px; margin-left: auto; margin-right: auto;">
+      <img src="{{page.image}}"/>
     </div>
-
-    <div class="col-lg">
-      {{content}}
-    </div>
-  </div>
-
-  <h1>More by this Artist</h1>
-  <div class="container gallery">
-    <div class="gallery-row row">
-      {% for art in site.gallery %}
-        {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
-        <a href="{{art.url | append: ".html"}}">
-          <div class="gallery-card card col">
-            <img src="{{art.image}}" class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title"><strong>{{art.title}}</strong></h5>
-              <a href="{{artist_url}}">
-                <h6 class="card-subtitle">by {{art.artist}}</h6>
-              </a>
-              <p class="card-text">${{art.value}}</p>
-            </div>
-          </div>
-        </a>
-      {% endfor %}
+    <div class="column col-6">
+      <p>{{page.bio}}</p>
+      <p>{{page.value}}</p>
     </div>
   </div>
 </div>
 
+<div class="container gallery">
+  <div class="purple-reign"></div>
+  <h1>More by this Artist</h1>
+  <div class="columns">
+    {% for art in site.gallery %}
+      {% if art.artist == page.artist %}
+        {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+        {% assign art_url = art.url | append: ".html" %}
+        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+          <a href="{{art_url}}">
+            <div class="card-image">
+              <img src="{{art.image}}" class="img-responsive"/>
+            </div>
+            <div class="card-body">
+              <div class="h5">{{art.title}}</div>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
