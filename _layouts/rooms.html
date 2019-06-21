@@ -1,0 +1,12 @@
+---
+layout: sidebar
+---
+<div class="solace scrolling-wrapper">
+  {% for room in site.rooms %}
+    {% unless room.hidden == true %}
+      <div class="scroll-card">
+        {{room.content}}
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div>

@@ -2,14 +2,7 @@
 name: Rooms
 permalink: /rooms/
 title: Accommodations
+layout: rooms
 priority: "6"
 ---
-<div class="solace scrolling-wrapper">
-  {% for room in site.rooms %}
-    {% unless room.hidden == true %}
-      <div class="scroll-card">
-        {{room.content}}
-      </div>
-    {% endunless %}
-  {% endfor %}
-</div>
+
