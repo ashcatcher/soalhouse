@@ -1,35 +1,30 @@
-<head>
-  <meta name="viewport" id="viewport" content="width=device-width,
-  initial-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/bundle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="/blog/rss.xml" rel="alternate" type="application/rss+xml" title="{{site.title}}" />
-  <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <script type="text/javascript" src='/assets/js/jquery.min.js'></script>
-  <script type="text/javascript" src='/assets/js/jquery.masonry.min.js'></script>
-  <script type="text/javascript" src='/assets/js/jquery.imagesloaded.min.js'></script>
-  <script type="text/javascript" src='/assets/js/highlight.pack.js'></script>
-  <!-- Netlify Identify Widget -->
-  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <!-- Google is Tracking You. Woooooo. Scary. -->
-  {% include analytics/google-gtag.html %}
-  <script type="text/javascript">
-    hljs.initHighlightingOnLoad();
-    function applyTiles() {
-      var posts = $('#posts ul');
-      posts.imagesLoaded(function() {
-        $('#posts ul').masonry({ itemSelector : '.post' });;
-      });
-    }
-    $(function() {
-      applyTiles();
+<meta name="viewport" id="viewport" content="width=device-width,
+                                    initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bundle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/blog/rss.xml" rel="alternate" type="application/rss+xml" title="{{site.title}}" />
+<title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src='/assets/js/jquery.min.js'></script>
+<script type="text/javascript" src='/assets/js/jquery.masonry.min.js'></script>
+<script type="text/javascript" src='/assets/js/jquery.imagesloaded.min.js'></script>
+<script type="text/javascript" src='/assets/js/highlight.pack.js'></script>
+<!-- Netlify Identify Widget -->
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Google is Tracking You. Woooooo. Scary. -->
+{% include analytics/google-gtag.html %}
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+  function applyTiles() {
+    var posts = $('#posts ul');
+    posts.imagesLoaded(function() {
+      $('#posts ul').masonry({ itemSelector : '.post' });;
     });
-    $(window).resize(function() {
-      applyTiles();
-    });
-  </script>
-  <style type="text/css">
-  </style>
-</head>
-
+  }
+  $(function() {
+    applyTiles();
+  });
+  $(window).resize(function() {
+    applyTiles();
+  });
+</script>
