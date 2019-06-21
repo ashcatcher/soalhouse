@@ -1,0 +1,17 @@
+<ul class="sidebar-nav">
+  {% for i in (1..9) %}
+    {% for paige in site.pages %}
+      {% assign priority = paige.priority | plus: 0 %}
+      {% if priority == i %}
+        <li>
+          <a href="{{paige.permalink}}"
+             {% if page.url == paige.permalink %}
+               id="active"
+             {% endif %}>
+            {{ paige.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>

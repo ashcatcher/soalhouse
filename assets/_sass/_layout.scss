@@ -171,13 +171,10 @@ div#content{
   overflow-y: hidden;
   overflow-x: hidden;
   width: 100%;
-  // margin: 0 3px 3px 0;
   height: 600px;
-  border: 3px inset var(--color-violet-light);
+  border: 1px inset var(--color-violet-light);
   box-shadow: inset -1px 0 0 var(--color-violet-light), inset 0 -1px 0
   var(--color-violet-dark), inset 0 1px 0 var(--color-violet-mid);
-  //border-radius: 8px;
-  // border-top: 5one;
   z-index: 1005;
   > ul {
     list-style-type: none;
@@ -186,12 +183,12 @@ div#content{
     margin-top: 20px;
     padding-top: 220px;
     > li {
-      font-size: 1.5em;
+      font-size: 1.2em;
 
       > a {
         opacity: 0.75;
         color: #ccc;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         transition: opacity 0.1s;
 
         &:hover, &#active {

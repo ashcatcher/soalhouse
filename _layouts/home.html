@@ -1,29 +1,49 @@
 ---
-layout: sidebar
+layout: default
 title: Home
 permalink: /
 priority: 1
 ---
-{% comment %}{% include events.html %}
-<div class="row">
-  <div class="col">
-    <div class="row">
-      <div class="card col">
-        <a href="https://www.facebook.com/soalhouse/">
-          <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
-        </a>
-      </div>
-      <div class="card col" style="width: 100%;">
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KEQFWKDEY3G34&item_name=Donations+to+support+SOAL+House&currency_code=CAD&source=url">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Donate to us on Paypal!</h5>
-            <div class="card-subtitle">
-              {% include paypal_button.html %}
+<div class="parallax">
+  <div class="container">
+    <div class="columns">
+      <div class="column col-6">
+        <div class="columns">
+          <div class="column col-xs-12 col-sm-10 col-md-9 col-lg-6 col-ml-auto"
+            style="margin-right: 9%; min-width: 250px;">
+            <div class="ribbon">
+              <nav id="emblem"><a href="/"><span
+                                  class="radial-whack"></span></a></nav>
+              {% include nav-list.html %}
+            </div><!--End div.ribbon-->
+          </div><!--End div.col-6.col-ml-auto-->
+        </div><!--End div.columns-->
+      </div><!--End div.column.col-6-->
+      <div class="column col-6">
+      </div><!--End div.column.col-6-->
+    </div><!--End div.columns-->
+  </div><!--End div.container-->
+</div><!--End div.parallax-->
+      {% comment %}{% include events.html %}
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="card col">
+              <a href="https://www.facebook.com/soalhouse/">
+                <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
+              </a>
+            </div>
+            <div class="card col" style="width: 100%;">
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KEQFWKDEY3G34&item_name=Donations+to+support+SOAL+House&currency_code=CAD&source=url">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Donate to us on Paypal!</h5>
+                  <div class="card-subtitle">
+                    {% include paypal_button.html %}
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-{% endcomment %}
+      {% endcomment %}
