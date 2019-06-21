@@ -22,7 +22,7 @@
 // Room Styles
 .scrolling-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   flex-direction: row;
