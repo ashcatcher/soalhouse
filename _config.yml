@@ -116,3 +116,4 @@ exclude:
   - README.md
   - vendor
   - yarn.lock # for those that use yarn
+  - assets/_sass/unused.scss

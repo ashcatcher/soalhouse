@@ -1,12 +1,16 @@
 <div class="ribbon">
-  <nav id="emblem">
-    <a href="menu-toggle" id="menu-toggle"><span class="radial-whack"></span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                                 data-target="#solaceNav"
-                                                 aria-expanded="false"
-                                                 aria-label="Toggle Navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-  {% include nav-list.html %}
+  <div class="emblem-rapper">
+    <div id="emblem">
+      <a href="menu-toggle" id="menu-toggle"><span class="radial-whack"></span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                   data-target="#solaceNav"
+                                                   aria-expanded="false"
+                                                   aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div>
+    {% include nav-list.html %}
+  </div>
 </div>

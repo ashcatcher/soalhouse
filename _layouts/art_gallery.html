@@ -1,19 +1,28 @@
 ---
-layout: gallery
+layout: sidebar
 ---
-{% for art in site.gallery %}
-  {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
-  <a href="{{art.url | append: ".html"}}">
-    <div class="gallery-card card col">
-      <img src="{{art.image}}" class="card-img-top"/>
-      <div class="card-body">
-        <h5 class="card-title text-secondary"><strong>{{art.title}}</strong></h5>
-        <a href="{{artist_url}}">
-          <h6 class="card-subtitle text-secondary">by {{art.artist}}</h6>
-        </a>
-        <p class="card-text text-secondary">${{art.value}}</p>
-      </div>
-    </div>
-  </a>
-{% endfor %}
+<div class="gallery container">
+  <div class="purple-reign"></div>
+  <div class="columns">
+    {% for art in site.gallery %}
+      {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+      <a href="{{art.utl}}">
+        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+          <div class="card-header">
+            <div class="card-title h5">{{art.title}}</div>
+          </div>
 
+          <div class="card-image">
+            <img src="{{art.image}}" class="img-responsive"/>
+          </div>
+          <div class="card-footer">
+            <a href="{{artist.url}}">
+              <div class="card-subtitle text-gray">
+                <small>by</small> {{art.artist}}</div>
+            </a>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

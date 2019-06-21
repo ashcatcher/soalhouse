@@ -1,9 +1,17 @@
-{% comment %}
-<div id='heading'>
-	<div id='logo'>
-		<a href='{{site.url}}'>{{site.first_name}}</a>
-		<a href='{{site.url}}' id='logo_docs'>{{site.last_name}}</a>
-  </div>
-</div>
-{% endcomment %}
-<section id="home-hero"></section>
+<header class="navbar" style="height: 50px;">
+  <section class="navbar-section">
+    <h2>{{page.title}}</h2>
+    <a href="#" class="btn btn-link">Example</a>
+    <a href="#" class="btn btn-link">Example2</a>
+  </section>
+
+  <section class="navbar-center">
+    <a href="/" class="navbar-brand mr-2"><img src="{{site.logo}}"></a>
+  </section>
+
+  <section class="navbar-section">
+    <a href="#" class="btn btn-link">Example</a>
+    <a href="#" class="btn btn-link">Example2</a>
+  </section>
+</header>
+
