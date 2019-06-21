@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
 // Bootstrap
-@import "bootstrap/bootstrap";
 
 // Bulma
 // @import "../../node_modules/bulma/bulma";
+// Spectre
+@import "../../node_modules/spectre.css/src/spectre";
+@import "../../node_modules/spectre.css/src/spectre-icons";
+@import "../../node_modules/spectre.css/src/spectre-exp";
 
+@import "bootstrap/bootstrap";
 // Solace Original Assets
 @import "mixin/breakpoint";
 @import "variables";

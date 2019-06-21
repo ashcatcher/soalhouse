@@ -34,8 +34,7 @@ section.navigation {
     padding-left: 250px;
 
     #sidebar-wrapper {
-      width: 300px;
-      padding-left: 50px;
+      width: 250px;
     }
     #page-content-wrapper {
       margin-right: 0px;
@@ -109,20 +108,20 @@ section.navigation {
     }
   }
 }
+
+nav#emblem {
+  position: fixed;
+}
+
 @media(min-width: 768px) {
   #wrapper {
     padding-left: 0;
-    nav#emblem {
-      position: fixed;
-    }
+
     &.toggled {
       padding-left: 250px;
-      nav#emblem {
-        position: relative;
-      }
 
       #sidebar-wrapper {
-        width: 300px;
+        width: 250px;
       }
 
       #page-content-wrapper {
