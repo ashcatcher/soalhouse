@@ -5,7 +5,7 @@
       {% if priority == i %}
         <li>
           <a href="{{paige.permalink}}"
-             {% if page.url == paige.permalink %}
+             {% if page.url contains  paige.collection %}
                id="active"
              {% endif %}>
             {{ paige.title }}

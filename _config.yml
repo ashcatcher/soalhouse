@@ -65,7 +65,7 @@ defaults:
       path: ""
       type: "gallery"
     values:
-      layout: "exhibit"
+      layout: "profile"
       image: "/assets/images/soal220.png"
   # _artisan
   - scope:

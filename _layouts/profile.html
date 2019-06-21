@@ -3,9 +3,21 @@ layout: sidebar
 ---
 <div class="container">
   <div class="columns">
-    <div class="column col-6" style="background-color: black; z-index: 40;
-      width: 250px; height: 250px; margin-left: auto; margin-right: auto;">
-      <img src="{{page.image}}"/>
+    <div class="column col-6">
+      <div class="bzoom_wrap">
+        <ul id="bzoom">
+          <li>
+            <img class="bzoom_thumb_image" src="{{page.image}}" title="first
+            img" />
+            <img class="bzoom_big_image" src="{{page.image}}" />
+          </li>
+          <li>
+            <img class="bzoom_thumb_image" src="{{page.image}}"/>
+            <img class="bzoom_big_image" src="{{page.image}}" />
+          </li>
+
+        </ul>
+      </div>
     </div>
     <div class="column col-6">
       <p>{{page.bio}}</p>
