@@ -58,7 +58,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: "sidebar"
       priority: 5
   # _gallery
   - scope:
@@ -82,10 +82,8 @@ defaults:
       type: "events"
     values:
       layout: default
-      name: "Masquerade Ball"
       teaser_image: "/assets/images/events/party-hat.png"
       description: ""
-      display: true
 
 # Build settings
 markdown: kramdown
