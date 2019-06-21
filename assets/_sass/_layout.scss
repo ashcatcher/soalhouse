@@ -101,24 +101,11 @@
 
 // Sidebar Styles
 nav#emblem {
-  left: 50px;
-  top: 25px;
-  padding: .5rem 1rem;
-  position: fixed;
-  z-index: 1030;
-}
-
-div#emblem {
   height: 220px;
   width: 220px;
-  //background: var(--emblem);
-  //background: var(--godlike);
-  background: var(--radical-redemption);
-  z-index: 1000;
-  border: 3px solid white;
-  border-radius: 150px;
-  border-left: none;
-  border-right: none;
+  padding: .5rem 1rem;
+  position: relative;
+  z-index: 1030;
   > a {
     width: 200px;
     height: 200px;

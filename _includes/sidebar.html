@@ -1,22 +1,13 @@
-<!-- Logo toggler -->
-<nav id="emblem">
-  <div id="emblem">
-    <a href="menu-toggle" id="menu-toggle" class="navbar-brand">
-      <span class="radial-whack"></span>
-    </a>
-
+<div class="ribbon">
+  <nav id="emblem">
+    <a href="menu-toggle" id="menu-toggle"><span class="radial-whack"></span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
                                                  data-target="#solaceNav"
                                                  aria-expanded="false"
                                                  aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  </div>
-</nav>
-
-<!-- Navigation Menu -->
-
-<div class="ribbon">
+  </nav>
   <ul class="sidebar-nav">
     {% for i in (1..9) %}
       {% for paige in site.pages %}

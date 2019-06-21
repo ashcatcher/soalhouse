@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div id="wrapper" class="toggled">
+  <div id="sidebar-wrapper">
+    {% include sidebar.html %}
+  </div>
+
+  <div id="page-content-wrapper">
+    <div class="container-fluid" id="content">
+      {{content}}
+    </div>
+  </div>
+</div>
+<script>
+  $(function(){
+    $('#menu-toggle').click(function(e) {
+      e.preventDefault();
+      $('#wrapper').toggleClass('toggled');
+    });
+
+    $(window).resize(function(e) {
+      if($(window).width()<=768){
+        $('#wrapper').removeClass('toggled');
+      }else{
+        $('#wrapper').addClass('toggled');
+      }
+    });
+  });
+</script>
+

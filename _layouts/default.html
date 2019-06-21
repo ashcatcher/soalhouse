@@ -3,35 +3,9 @@
     {% include head.html %}
     {% seo %}
   </head>
-  <body class="parallax">
-    <div id="wrapper" class="toggled">
-
-      <div id="sidebar-wrapper">
-        {% include sidebar.html %}
-      </div>
-
-      <div id="page-content-wrapper">
-        <div class="container-fluid" id="content">
-          {{content}}
-        </div>
-      </div>
+  <body>
+    <div class="parallax">
+      {{content}}
     </div>
-
-    <script>
-      $(function(){
-        $('#menu-toggle').click(function(e) {
-          e.preventDefault();
-          $('#wrapper').toggleClass('toggled');
-        });
-
-        $(window).resize(function(e) {
-          if($(window).width()<=768){
-            $('#wrapper').removeClass('toggled');
-          }else{
-            $('#wrapper').addClass('toggled');
-          }
-        });
-      });
-    </script>
   </body>
 </html>

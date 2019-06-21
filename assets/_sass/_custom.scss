@@ -109,12 +109,17 @@ section.navigation {
     }
   }
 }
-
 @media(min-width: 768px) {
   #wrapper {
     padding-left: 0;
+    nav#emblem {
+      position: fixed;
+    }
     &.toggled {
       padding-left: 250px;
+      nav#emblem {
+        position: relative;
+      }
 
       #sidebar-wrapper {
         width: 300px;
