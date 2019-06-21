@@ -6,23 +6,24 @@ layout: sidebar
   <div class="columns">
     {% for art in site.gallery %}
       {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
-      <a href="{{art.utl}}">
-        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
-          <div class="card-header">
-            <div class="card-title h5">{{art.title}}</div>
-          </div>
+      {% assign art_url = art.url | append: ".html" %}
+      <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+        <div class="card-header">
+          <div class="card-title h5">{{art.title}}</div>
+        </div>
 
+        <a href="{{art_url}}">
           <div class="card-image">
             <img src="{{art.image}}" class="img-responsive"/>
           </div>
-          <div class="card-footer">
-            <a href="{{artist_url}}">
-              <div class="card-subtitle text-gray">
-                <small>by</small> {{art.artist}}</div>
-            </a>
-          </div>
+        </a>
+        <div class="card-footer">
+          <a href="{{artist_url}}">
+            <div class="card-subtitle text-gray">
+              <small>by</small> {{art.artist}}</div>
         </div>
-      </a>
+          </a>
+      </div>
     {% endfor %}
   </div>
 </div>
