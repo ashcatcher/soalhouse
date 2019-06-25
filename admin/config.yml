@@ -83,6 +83,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
       - label: "Artist"
         name: "artist"
         widget: "relation"
@@ -91,12 +95,8 @@ collections:
         valueField: "name"
         displayFields: "name"
         required: true
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        required: true
       - label: "Asking Price"
-        name: "value"
+        name: "price"
         widget: "string"
         default: ""
         required: false

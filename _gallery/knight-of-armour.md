@@ -1,5 +1,5 @@
 ---
-artist: Joe Renaud
-value: 5000
 title: Knight of Armour
+artist: Joe Renaud
+price: 5000
 ---

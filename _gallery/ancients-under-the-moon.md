@@ -1,5 +1,5 @@
 ---
-artist: CABN Feva
-value: 120
 title: Ancients under the Moon
+artist: CABN Feva
+price: 120
 ---

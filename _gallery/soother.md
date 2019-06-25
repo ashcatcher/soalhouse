@@ -1,5 +1,5 @@
 ---
-artist: Joe Renaud
-value: 1000
 title: Soother
+artist: Joe Renaud
+price: 1000
 ---

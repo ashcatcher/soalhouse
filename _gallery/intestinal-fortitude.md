@@ -1,5 +1,5 @@
 ---
-artist: Joe Renaud
-value:  300
 title:  Intestinal Fortitude
+artist: Joe Renaud
+price:  300
 ---
