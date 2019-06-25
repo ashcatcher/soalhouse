@@ -111,7 +111,7 @@ collections:
         allow_add: true
         required: true
         field: {label: Image, name: image, widget: image}
-        - name: "events"
+  - name: "events"
     label: "Event"
     folder: "_events/"
     create: true
