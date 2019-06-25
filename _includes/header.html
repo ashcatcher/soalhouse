@@ -1,12 +1,13 @@
 <header class="navbar" style="height: 50px;">
   <div class="skylift"></div>
   <section class="navbar-section">
-    <h1>House</h1>
-    {% if page.collection == 'pages' %}
-      <h2 style="margin: 0 5px auto 5px;">{{page.title | capitalize}}</h2>
-    {% else %}
-      <h2 style="margin: 0 5px auto 5px;">{{page.collection | capitalize}}</h2>
-    {% endif %}
+    <h1>House | 
+      {% if page.collection == 'pages' %}
+        {{page.title | capitalize}}
+      {% else %}
+        {{page.collection | capitalize}}
+      {% endif %}
+    </h1>
   </section>
   <section class="navbar-center">
     {% unless page.collection == 'pages' %}
