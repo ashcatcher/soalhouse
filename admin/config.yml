@@ -78,7 +78,7 @@ collections:
         required: false
 
   - name: "gallery"
-    label: "Art Gallery"
+    label: "Gallery Exhibit"
     folder: "_gallery/"
     create: true
     slug: "{{slug}}"
@@ -109,6 +109,9 @@ collections:
         widget: "image"
         default: "/assets/images/soal220.png"
         required: true
+        media_library:
+          config:
+            multiple: true
 
   - name: "events"
     label: "Event"
