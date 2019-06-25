@@ -95,17 +95,13 @@ collections:
         name: "title"
         widget: "string"
         required: true
-      - label: "Value"
+      - label: "Asking Price"
         name: "value"
         widget: "string"
         default: ""
         required: false
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        required: false
       - label: "Images"
-        name: "Profile Images"
+        name: "images"
         widget: "list"
         default: ["/assets/images/soal220.png"]
         allow_add: true
