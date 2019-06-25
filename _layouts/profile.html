@@ -6,36 +6,24 @@ layout: sidebar
     <div class="column col-6">
       <section id="#gallery" class="simplegallery">
         <div class="content">
-          <img src="/assets/images/bigs/1.jpg" class="active image_1" />
-          <img src="/assets/images/bigs/2.jpg" class="image_2" style="display:
-          none;"/>
-          <img src="/assets/images/bigs/3.jpg" class="image_3" style="display:
-          none;"/>
-          <img src="/assets/images/bigs/4.jpg" class="image_4" style="display:
-          none;"/>
+          {% for image in page.images %}
+            {% if forloop.index == 1 %}
+              <img src={{image.url}} class="active image_{{forloop.index}}" />
+            {% else %}
+              <img src={{image.url}} class="image_{{forloop.index}}"
+                                     style="display: none;" />
+            {% endif %}
+          {% endfor %}
         </div>
         <div class="clear"></div>
         <div class="thumbnail">
-          <div class="thumb">
-            <a href="#" rel="1">
-              <img src="/assets/images/thumbs/1.jpg" id="thumb_1" alt=""/>
-            </a>
-          </div>
-          <div class="thumb">
-            <a href="#" rel="2">
-              <img src="/assets/images/thumbs/2.jpg" id="thumb_2" alt=""/>
-            </a>
-          </div>
-          <div class="thumb">
-            <a href="#" rel="3">
-              <img src="/assets/images/thumbs/3.jpg" id="thumb_3" alt=""/>
-            </a>
-          </div>
-          <div class="thumb last">
-            <a href="#" rel="4">
-              <img src="/assets/images/thumbs/4.jpg" id="thumb_4" alt=""/>
-            </a>
-          </div>
+          {% for image in page.images %}
+            <div class="thumb{% if forloop.last %} last{% endif %}">
+              <a href="#" rel="{{forloop.index}}">
+                <img src="{{image.url}}" id="thumb_{{forloop.index}}" alt="" />
+              </a>
+            </div>
+          {% endfor %}
         </div>
       </section>
     </div>

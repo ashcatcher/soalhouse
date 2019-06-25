@@ -104,23 +104,11 @@ collections:
         name: "image"
         widget: "image"
         required: false
-      - label: "Image 2"
-        name: "image-2"
+      - label: "Images"
+        name: "images"
         widget: "image"
-        required: false
-      - label: "Image 3"
-        name: "image-3"
-        widget: "image"
-        required: false
-      - label: "Image 4"
-        name: "image-4"
-        widget: "image"
-        required: false
-      - label: "Image 5"
-        name: "image-5"
-        widget: "image"
-        required: false
-
+        default: "/assets/images/soal220.png"
+        required: true
 
   - name: "events"
     label: "Event"
