@@ -5,17 +5,28 @@ layout: sidebar
   <div class="columns">
     <div class="column col-6">
       <div class="bzoom_wrap">
-        <ul id="bzoom">
+        <ul id="bzoom" class="bzoom clearfix" style="width: 400px; height:
+          400px;  z-index: 50;">
           <li>
-            <img class="bzoom_thumb_image" src="{{page.image}}" title="first
-            img" />
-            <img class="bzoom_big_image" src="{{page.image}}" />
+            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=201" title="first img" />
+            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=201"/>
           </li>
           <li>
-            <img class="bzoom_thumb_image" src="{{page.image}}"/>
-            <img class="bzoom_big_image" src="{{page.image}}" />
+            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=203"/>
+            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=203"/>
           </li>
-
+          <li>
+            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=212"/>
+            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=212"/>
+          </li>
+          <li>
+            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=220"/>
+            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=220"/>
+          </li>
+          <li>
+            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=223"/>
+            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=223"/>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,3 +59,4 @@ layout: sidebar
     {% endfor %}
   </div>
 </div>
+{% include js/jqzoom.html %}
