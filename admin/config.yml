@@ -111,39 +111,6 @@ collections:
         allow_add: true
         required: true
         field: {label: Image, name: image, widget: image}
-  - name: "events"
-    label: "Event"
-    folder: "_events/"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - label: "Name"
-        name: "name"
-        widget: "string"
-      - label: "Teaser_Image"
-        name: "teaser_image"
-        widget: "image"
-        required: false
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
-        default: ""
-        required: false
-      - label: "Description"
-        name: "description"
-        widget: "string"
-        required: true
-        default: ""
-      - label: "Facebook Event URL"
-        name: "event_url"
-        widget: "string"
-        required: false
-      - label: "Display"
-        name: "display"
-        widget: "boolean"
-        default: true
-        required: true
-
   - name: "rooms"
     label: "Rooms"
     folder: "_rooms/"
