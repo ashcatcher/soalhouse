@@ -345,3 +345,52 @@
     opacite: 1;
   }
 }
+
+
+// Styles for the Profile image gallery
+.simplegallery {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  .content {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 5px auto 0 auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #9c9c9c;
+      display: none;
+      &.active {
+        display: inline;
+      }
+    }
+  }
+  .thumbnail {
+    margin: 5px auto 5px auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    .thumb {
+      float: left;
+      width: 20%;
+      height: auto;
+      margin: 0 5px 0 0;
+      cursor: pointer;
+
+      img {
+        border: 1px solid #9c9c9c;
+        width: 100px;
+      }
+    }
+
+    .last { margin: 0; }
+  }
+}
+.clear { clear: both; }

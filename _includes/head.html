@@ -3,26 +3,6 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/bundle.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="/blog/rss.xml" rel="alternate" type="application/rss+xml" title="{{site.title}}" />
-<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src='/assets/js/jquery.min.js'></script>
-<script type="text/javascript" src='/assets/js/jquery.masonry.min.js'></script>
-<script type="text/javascript" src='/assets/js/jquery.imagesloaded.min.js'></script>
-<script type="text/javascript" src='/assets/js/highlight.pack.js'></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script type="text/javascript" src="/assets/js/jqzoom.js"></script>
 {% include analytics/google-gtag.html %}
-<script type="text/javascript">
-  hljs.initHighlightingOnLoad();
-  function applyTiles() {
-    var posts = $('#posts ul');
-    posts.imagesLoaded(function() {
-      $('#posts ul').masonry({ itemSelector : '.post' });;
-    });
-  }
-  $(function() {
-    applyTiles();
-  });
-  $(window).resize(function() {
-    applyTiles();
-  });
-</script>

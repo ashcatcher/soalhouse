@@ -3,59 +3,81 @@ layout: sidebar
 ---
 <div class="container">
   <div class="columns">
-    <div class="column col-9">
-      <div class="container bzoom_wrap">
-        <ul id="bzoom" class="bzoom clearfix" style="width: 400px; z-index: 50;">
-          <li>
-            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=201" title="first img" />
-            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=201"/>
-          </li>
-          <li>
-            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=203"/>
-            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=203"/>
-          </li>
-          <li>
-            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=212"/>
-            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=212"/>
-          </li>
-          <li>
-            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=220"/>
-            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=220"/>
-          </li>
-          <li>
-            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=223"/>
-            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=223"/>
-          </li>
-        </ul>
-      </div>
+    <div class="column col-6">
+      <section id="#gallery" class="simplegallery">
+        <div class="content">
+          <img src="/assets/images/bigs/1.jpg" class="active image_1" />
+          <img src="/assets/images/bigs/2.jpg" class="image_2" style="display:
+          none;"/>
+          <img src="/assets/images/bigs/3.jpg" class="image_3" style="display:
+          none;"/>
+          <img src="/assets/images/bigs/4.jpg" class="image_4" style="display:
+          none;"/>
+        </div>
+        <div class="clear"></div>
+        <div class="thumbnail">
+          <div class="thumb">
+            <a href="#" rel="1">
+              <img src="/assets/images/thumbs/1.jpg" id="thumb_1" alt=""/>
+            </a>
+          </div>
+          <div class="thumb">
+            <a href="#" rel="2">
+              <img src="/assets/images/thumbs/2.jpg" id="thumb_2" alt=""/>
+            </a>
+          </div>
+          <div class="thumb">
+            <a href="#" rel="3">
+              <img src="/assets/images/thumbs/3.jpg" id="thumb_3" alt=""/>
+            </a>
+          </div>
+          <div class="thumb last">
+            <a href="#" rel="4">
+              <img src="/assets/images/thumbs/4.jpg" id="thumb_4" alt=""/>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="column col-3">
-      <h2>More by this Artist</h2>
-      <div class="columns">
-        {% for art in site.gallery %}
-          {% if art.artist == page.artist %}
-            {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
-            {% assign art_url = art.url | append: ".html" %}
-            <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
-              <a href="{{art_url}}">
-                <div class="card-image">
-                  <img src="{{art.image}}" class="img-responsive"/>
-                </div>
-                <div class="card-body">
-                  <div class="h5">{{art.title}}</div>
-                </div>
-              </a>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <p>{{page.bio}}</p>
-      <p>{{page.value}}</p>
+    <div class="column col-6" style="background-color: black;">
+      <h3>{{page.title}}</h3>
+      <h4><small>by </small>{{page.artist}}
+    </div>
+  </div>
+  <h2>More by this Artist</h2>
+  <div class="container">
+    <div class="columns">
+      {% for art in site.gallery %}
+        {% if art.artist == page.artist %}
+          {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+          {% assign art_url = art.url | append: ".html" %}
+          <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+            <a href="{{art_url}}">
+              <div class="card-image">
+                <img src="{{art.image}}" class="img-responsive"/>
+              </div>
+              <div class="card-body">
+                <div class="h5">{{art.title}}</div>
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
-
-<div class="container gallery">
-  <div class="purple-reign"></div>
-</div>
-{% include js/jqzoom.html %}
+<script type="text/javascript">
+  function hideImages(number) {
+    var image = ".image_" + number
+    $(".content").children("img").hide();
+    console.log(image);
+    $(image).show();
+  }
+  $(document).ready(function(){
+    $(".thumb").children('a').click(function(event){
+      event.preventDefault();
+      console.log(this.rel);
+      hideImages(this.rel);
+    });
+  });
+</script>
