@@ -100,12 +100,8 @@ collections:
         widget: "string"
         default: ""
         required: false
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        required: false
-      - label: "Images"
-        name: "Profile Images"
+      - label: "Profile Images"
+        name: "images"
         widget: "list"
         default: ["/assets/images/soal220.png"]
         allow_add: true
