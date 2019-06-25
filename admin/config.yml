@@ -95,7 +95,11 @@ collections:
         valueField: "name"
         displayFields: "name"
         required: true
-      - label: "Asking Price"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: true
+      - label: "Price"
         name: "price"
         widget: "string"
         default: ""
@@ -107,7 +111,7 @@ collections:
         allow_add: true
         required: true
         field: {label: Image, name: image, widget: image}
-  - name: "events"
+        - name: "events"
     label: "Event"
     folder: "_events/"
     create: true
