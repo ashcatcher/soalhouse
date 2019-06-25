@@ -3,7 +3,7 @@ layout: sidebar
 ---
 <div class="container">
   <div class="columns">
-    <div class="column col-6">
+    <div class="column col-6" style="background-color: rgba(0,0,0,0.5);">
       <section id="#gallery" class="simplegallery">
         <div class="content">
           {% for image in page.images %}
@@ -11,7 +11,7 @@ layout: sidebar
               <img src={{image}} class="active image_{{forloop.index}}" />
             {% else %}
               <img src={{image}} class="image_{{forloop.index}}"
-                                     style="display: none;" />
+                                 style="display: none;" />
             {% endif %}
           {% endfor %}
         </div>
@@ -29,11 +29,35 @@ layout: sidebar
     </div>
     <div class="column col-6" style="background-color: black;">
       <h3>{{page.title}}</h3>
-      <h4><small>by </small>{{page.artist}}
+      <h4><small>by </small>{{page.artist}}</h4>
+      <div class="profile-description" style="min-height: 150px;
+      background-color: rgba(255,255,255,0.15);">
+        <p>{{page.description}}</p>
+      </div>
+      <div class="columns">
+        <div class="column col-4">
+          <h3>Asking Price</h3><br/>
+          <h4>{{page.price}}</h4>
+        </div>
+        <div class="column col-8">
+          <div class="columns">
+            <div class="column col-12">
+              {% assign artist_url = page.artist | slugify | prepend: "/artist/"
+              | append: ".html" %}
+              <a href="{{artist_url}}">
+                <button class="btn btn-primary btn-large profile-button">View Artist Profile</button>
+              </a>
+            </div>
+            <div class="column col-12">
+              <button class="btn btn-secondary btn-large profile-button">Contact Artist</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <h2>More by this Artist</h2>
-  <div class="container">
+  <div class="container" style="background-color: rgba(0,0,0,0.5);">
+    <h2>More by this Artist</h2>
     <div class="columns">
       {% for art in site.gallery %}
         {% if art.artist == page.artist %}
