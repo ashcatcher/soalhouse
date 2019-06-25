@@ -2,32 +2,26 @@
 <header class="navbar" style="height: 50px;">
   <div class="skylift"></div>
   <section class="navbar-section">
-    {% comment %}
-    <a href="#" class="btn btn-link">Example</a>
-    <a href="#" class="btn btn-link">Example2</a>
-    {% endcomment %}
+    <h1>House</h1>
+    {% if page.collection == 'pages' %}
+      <h2 style="margin: 0 5px auto 5px;">{{page.title | capitalize}}</h2>
+    {% else %}
+      <h2 style="margin: 0 5px auto 5px;">{{page.collection | capitalize}}</h2>
+    {% endif %}
   </section>
   <section class="navbar-center">
-    {% comment %}
-    <a href="/" class="navbar-brand mr-2"><img src="{{site.logo}}"></a>
-    {% endcomment %}
-    <h1>{{page.title}}</h1>
+    {% unless page.collection == 'pages' %}
+      <h2>{{page.title}}</h2>
+    {% endunless %}
   </section>
 
   <section class="navbar-section">
-    {% if page.layout == 'exhibit' %}
-      {% if page.artist %}
-        {% assign artist_url = page.artist | slugify | prepend: "/artist" |
-        append: ".html" %}
-        
-        <a href="{{artist_url}}"><h2> <small>by  </small>{{page.artist}}</h2></a>
-      {% endif %}
+    {% if page.artist %}
+      {% assign artist_url = page.artist | slugify | prepend: "/artist" | append: ".html" %}
+      <a href="{{artist_url}}">
+        <h3><small>by </small>{{page.artist}}</h3>
+      </a>
     {% endif %}
-
-    {% comment %}
-    <a href="#" class="btn btn-link">Example</a>
-    <a href="#" class="btn btn-link">Example2</a>
-    {% endcomment %}
   </section>
 </header>
 
