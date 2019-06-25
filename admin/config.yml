@@ -78,7 +78,7 @@ collections:
         required: false
 
   - name: "gallery"
-    label: "Art Gallery"
+    label: "Gallery Exhibit"
     folder: "_gallery/"
     create: true
     slug: "{{slug}}"
@@ -105,11 +105,13 @@ collections:
         widget: "image"
         required: false
       - label: "Images"
-        name: "images"
-        widget: "image"
-        default: "/assets/images/soal220.png"
+        name: "Profile Images"
+        widget: "list"
+        default: ["/assets/images/soal220.png"]
+        allow_add: true
         required: true
-
+        field: {label: Image, name: image, widget: image}
+        
   - name: "events"
     label: "Event"
     folder: "_events/"

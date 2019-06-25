@@ -68,10 +68,10 @@ defaults:
       layout: "profile"
       image: "/assets/images/soal220.png"
       images:
-        - url: "/assets/images/bigs/1.jpg"
-        - url: "/assets/images/bigs/2.jpg"
-        - url: "/assets/images/bigs/3.jpg"
-        - url: "/assets/images/bigs/4.jpg"
+        - "/assets/images/bigs/1.jpg"
+        - "/assets/images/bigs/2.jpg"
+        - "/assets/images/bigs/3.jpg"
+        - "/assets/images/bigs/4.jpg"
   # _artisan
   - scope:
       path: ""
