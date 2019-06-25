@@ -72,6 +72,9 @@ defaults:
         - "/assets/images/bigs/2.jpg"
         - "/assets/images/bigs/3.jpg"
         - "/assets/images/bigs/4.jpg"
+      description: >
+        This is a sample description to aid in formatting the site.
+        Add your own on <a href="https://www.soalhouse.ca/admin">the Soalhouse Admin Panel.</a>
   # _artisan
   - scope:
       path: ""
