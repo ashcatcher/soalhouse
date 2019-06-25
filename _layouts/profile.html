@@ -3,10 +3,9 @@ layout: sidebar
 ---
 <div class="container">
   <div class="columns">
-    <div class="column col-6">
-      <div class="bzoom_wrap">
-        <ul id="bzoom" class="bzoom clearfix" style="width: 400px; height:
-          400px;  z-index: 50;">
+    <div class="column col-9">
+      <div class="container bzoom_wrap">
+        <ul id="bzoom" class="bzoom clearfix" style="width: 400px; z-index: 50;">
           <li>
             <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=201" title="first img" />
             <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=201"/>
@@ -30,7 +29,26 @@ layout: sidebar
         </ul>
       </div>
     </div>
-    <div class="column col-6">
+    <div class="column col-3">
+      <h2>More by this Artist</h2>
+      <div class="columns">
+        {% for art in site.gallery %}
+          {% if art.artist == page.artist %}
+            {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+            {% assign art_url = art.url | append: ".html" %}
+            <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+              <a href="{{art_url}}">
+                <div class="card-image">
+                  <img src="{{art.image}}" class="img-responsive"/>
+                </div>
+                <div class="card-body">
+                  <div class="h5">{{art.title}}</div>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
       <p>{{page.bio}}</p>
       <p>{{page.value}}</p>
     </div>
@@ -39,24 +57,5 @@ layout: sidebar
 
 <div class="container gallery">
   <div class="purple-reign"></div>
-  <h1>More by this Artist</h1>
-  <div class="columns">
-    {% for art in site.gallery %}
-      {% if art.artist == page.artist %}
-        {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
-        {% assign art_url = art.url | append: ".html" %}
-        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
-          <a href="{{art_url}}">
-            <div class="card-image">
-              <img src="{{art.image}}" class="img-responsive"/>
-            </div>
-            <div class="card-body">
-              <div class="h5">{{art.title}}</div>
-            </div>
-          </a>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
 </div>
 {% include js/jqzoom.html %}
