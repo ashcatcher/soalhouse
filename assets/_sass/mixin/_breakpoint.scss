@@ -8,11 +8,11 @@
   @else if $point == notwide {
     @media (min-width: 50em) { @content ; }
   }
-  @if $point == notsmall {
-    @media (min-width: 37.5em)  { @content ; }
+  @if $point == 1024 {
+    @media (max-width: 1024px)  { @content ; }
   }
   @else if $point == small {
-    @media (max-width: 37.5em)  { @content ; }
+    @media (max-width: 768px)  { @content ; }
 
   }
 }

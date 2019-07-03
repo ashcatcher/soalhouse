@@ -96,13 +96,27 @@
 
 .solace-header {
   position: absolute;
-  height: 250px;
+  height: var(--logo-height);
   width: 100%;
   z-index: 1100;
-  background-color: transparent;
-  &-left {
-    h1 {
-      margin-left: 1rem;
+    background-color: transparent;
+    a,p,b,i,h1,h2,h3,h4,h5,h6 {
+      margin-bottom: 0;
+    }
+  div.container {
+    position: absolute;
+    padding-left: var(--sidebar-width);
+    margin-top: calc(0.25 * var(--logo-height));
+    height: calc(0.5 * var(--logo-height));
+    div.columns {
+      height: 100%;
+      align-content: center;
+      div.column {
+        align-self: center;
+        h1 {
+          margin-left: 1rem;
+        }
+      }
     }
   }
   &-center {
@@ -113,7 +127,7 @@
   }
 }
 
-.navbar {
+header {
   a {
     text-decoration: none;
     color: #ddd;
@@ -156,7 +170,7 @@
     overflow-x: hidden;
   }
   #page-content-wrapper {
-      }
+  }
 }
 
 
@@ -238,6 +252,9 @@
   &.toggled {
     left: 0;
   }
+  @include breakpoint(small) {
+    left: 0;
+  }
 }
 
 .navbar {
@@ -249,7 +266,7 @@
 
 
 .card {
-  }
+}
 
 // Profile layout styles
 .profile {

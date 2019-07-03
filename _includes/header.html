@@ -1,28 +1,47 @@
-<header class="navbar">
-  {% include emblem.html %}
-  <div class="skylift"></div>
-  <section class="navbar-section solace-header-left">
-    <h1><b>House</b> | 
-      {% if page.collection == 'pages' %}
-        {{page.title | capitalize}}
-      {% else %}
-        {{page.collection | capitalize}}
-      {% endif %}
-    </h1>
-  </section>
-  <section class="navbar-center solace-header-center">
-    {% unless page.collection == 'pages' %}
-      <h2>{{page.title}}</h2>
-      {% if page.artist %}
-      {% assign artist_url = page.artist | slugify | prepend: "/artist" | append: ".html" %}
-      <a href="{{artist_url}}">
-        <h3><small>by </small>{{page.artist}}</h3>
-      </a>
-    {% endif %}
-    {% endunless %}
-  </section>
+<section class="solace-header">
+  <header class="navbar">
+    {% include emblem.html %}
+    <div class="skylift"></div>
+    <div class="container">
+      <div class="columns">
+        <div class="column col-auto">
+          <h1><b>House</b> | 
+            {% if page.collection == 'pages' %}
+              {{page.title | capitalize}}
+            {% else %}
+              {{page.collection | capitalize}}
+            {% endif %}
+          </h1>
+        </div>
+        <div class="column col-auto">
+          {% unless page.collection == 'pages' %}
+            <h2>{{page.title}}</h2>
+            {% if page.artist %}
+              {% assign artist_url = page.artist | slugify | prepend: "/artist/" | append: ".html" %}
+              <a href="{{artist_url}}">
+                <h3><small>by </small>{{page.artist}}</h3>
+              </a>
+            {% endif %}
+          {% endunless %}
+        </div>
+      </div>
+    </div>
 
-  <!--<section class="navbar-section solace-header-end">
-    </section>-->
-</header>
+    {% comment %}
+    <section class="navbar-center solace-header-center">
+      {% unless page.collection == 'pages' %}
+        <h2>{{page.title}}</h2>
+        {% if page.artist %}
+          {% assign artist_url = page.artist | slugify | prepend: "/artist" | append: ".html" %}
+          <a href="{{artist_url}}">
+            <h3><small>by </small>{{page.artist}}</h3>
+          </a>
+        {% endif %}
+      {% endunless %}
+    </section>
+    {% endcomment %}
 
+    <!--<section class="navbar-section solace-header-end">
+      </section>-->
+  </header>
+</section>
