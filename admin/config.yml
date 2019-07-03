@@ -121,3 +121,22 @@ collections:
       - { label: "Name", name: "name", widget: "string", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: false }
+  - name: "content"
+    label: "Content"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: Tennants
+            name: tennants
+            widget: list
+            fields:
+              - {label: Order, name: order, widget: number}
+              - {label: Title, name: title, widget: string}
+              - label: Description
+                name: description
+                widget: list
+                required: false
+                field: {label: Content, name: content, widget: string}

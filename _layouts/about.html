@@ -3,32 +3,19 @@ layout: sidebar
 ---
 <div class="columns">
   <div class="column col-3 tennants" style="background-color: rgba(0,0,0,0.5);">
-    <h3>10 Tennants of Sheppard Museum of Social Culture</h3>
+    <h3>{{site.data.about.title}}</h3>
     <ol>
-      <li>deLight</li>
-      <li>silence</li>
-      <li>embodiment
-        <ul>
-          <li>~your dreams</li>
-        </ul>
-      </li>
-      <li>genuineness</li>
-      <li>discernment
-        <ul>
-          <li>~fiscal</li>
-          <li>~emotional</li>
-          <li>~mental</li>
-          <li>~spiritual</li>
-        </ul></li>
-        <li>wonder</li>
-        <li>tenderness
-          <ul><li>~how you affect others</li></ul></li>
-        <li>empathy
-          <ul><li>~how other affects you</li></ul></li>
-        <li>Togetherness
-          <ul><li>~community values</li></ul></li>
-        <li>Celebrating the <u>Now</u>
-          <ul><li>~Where, How, WHy, Where, Who... Now =) =)</li></ul></li>
+      {% for tennant in site.data.about.tennants %}
+        <li>{{tennant.title}}
+          {% if tennant.description %}
+            <ul>
+              {% for description in tennant.description %}
+                <li>{{description}}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
     </ol>
   </div>
   <div class="column col-6">
