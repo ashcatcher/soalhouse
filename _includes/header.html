@@ -1,7 +1,8 @@
-<header class="navbar" style="height: 50px;">
+<header class="navbar">
+  {% include emblem.html %}
   <div class="skylift"></div>
-  <section class="navbar-section">
-    <h1>House | 
+  <section class="navbar-section solace-header-left">
+    <h1><b>House</b> | 
       {% if page.collection == 'pages' %}
         {{page.title | capitalize}}
       {% else %}
@@ -9,19 +10,19 @@
       {% endif %}
     </h1>
   </section>
-  <section class="navbar-center">
+  <section class="navbar-center solace-header-center">
     {% unless page.collection == 'pages' %}
       <h2>{{page.title}}</h2>
-    {% endunless %}
-  </section>
-
-  <section class="navbar-section">
-    {% if page.artist %}
+      {% if page.artist %}
       {% assign artist_url = page.artist | slugify | prepend: "/artist" | append: ".html" %}
       <a href="{{artist_url}}">
         <h3><small>by </small>{{page.artist}}</h3>
       </a>
     {% endif %}
+    {% endunless %}
   </section>
+
+  <!--<section class="navbar-section solace-header-end">
+    </section>-->
 </header>
 

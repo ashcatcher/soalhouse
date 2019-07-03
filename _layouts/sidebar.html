@@ -3,6 +3,9 @@ layout: default
 ---
 
 <div class="parallax">
+  <section class="solace-header">
+    {% include header.html %}
+  </section>
   <div id="wrapper" class="toggled">
     <div id="sidebar-wrapper">
       {% include sidebar.html %}
@@ -10,26 +13,9 @@ layout: default
 
     <div id="page-content-wrapper">
       <div class="container-fluid" id="content">
-        {% include header.html %}
         {{content}}
       </div>
     </div>
   </div>
 </div>
-<script>
-  $(function(){
-    $('#menu-toggle').click(function(e) {
-      e.preventDefault();
-      $('#wrapper').toggleClass('toggled');
-    });
-
-    $(window).resize(function(e) {
-      if($(window).width()<=768){
-        $('#wrapper').removeClass('toggled');
-      }else{
-        $('#wrapper').addClass('toggled');
-      }
-    });
-  });
-</script>
-
+<script src="/assets/js/solace.js"></script>
