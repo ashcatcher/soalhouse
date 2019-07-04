@@ -13,6 +13,7 @@ $(document).ready(function() {
       $('.radial-whack').addClass('toggled');
     }else{
       $('#wrapper').addClass('toggled');
+      $('.radial-whack').removeClass('toggled');
     }
   });
 });
