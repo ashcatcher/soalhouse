@@ -10,7 +10,7 @@ $(document).ready(function() {
     if($(window).width()<=768){
       $('#wrapper').removeClass('toggled');
       $('.skylift').removeClass('toggled');
-      $('.radial-whack').removeClass('toggled');
+      $('.radial-whack').addClass('toggled');
     }else{
       $('#wrapper').addClass('toggled');
     }
