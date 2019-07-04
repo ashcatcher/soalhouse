@@ -16,6 +16,7 @@
     #page-content-wrapper {
       margin-right: 0px;
       position: absolute;
+      height: 300px;
     }
   }
 }
@@ -45,11 +46,11 @@
 }
 #sidebar-wrapper {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: var(--sidebar-width);
   width: 0;
-  height: 100%;
+  height: 100vh;
   margin-left: calc(0px - var(--sidebar-width));
   overflow-y: auto;
   transition: all 0.5s ease;
@@ -367,17 +368,22 @@ header {
   mask: url('/assets/images/soal150.svg') exclude;
   mask-size: contain;
   opacity: 1;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  position:fixed;
+  height: 250px;
+  width: 250px;
   z-index: 1100;
   transition: opacity 0.6s;
   border: 3px solid var(--violet-light);
+  &.toggled {
+  position: absolute;
+  }
 
   &:hover {
-    opacite: 1;
+    opacity: 1;
   }
 }
 
@@ -435,6 +441,15 @@ header {
   margin: 5% 5% 5% 5%;
 }
 
-.tennants ul {
-  list-style-type: none;
+.tennants {
+  ul {
+    list-style-type: none;
+  }
+  ol {
+    column-count: 2;
+  }
+}
+
+.header-image {
+  height: 125px;
 }

@@ -13,16 +13,20 @@
             {% endif %}
           </h1>
         </div>
-        <div class="column col-auto">
-          {% unless page.collection == 'pages' %}
+        <div class="column col-auto col-ml-auto">
+          {% if page.collection == 'pages' %}
+            {% comment %}
+            {% if page.header_image %}
+              <img src="{{page.header_image}}" class="header-image"/>
+            {% endif %}
+            {% endcomment %}
+          {% else %}
             <h2>{{page.title}}</h2>
             {% if page.artist %}
               {% assign artist_url = page.artist | slugify | prepend: "/artist/" | append: ".html" %}
-              <a href="{{artist_url}}">
-                <h3><small>by </small>{{page.artist}}</h3>
-              </a>
+              <a href="{{artist_url}}"><h3><small>by </small>{{page.artist}}</h3></a>
             {% endif %}
-          {% endunless %}
+          {% endif %}
         </div>
       </div>
     </div>
