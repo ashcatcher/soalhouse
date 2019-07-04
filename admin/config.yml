@@ -110,7 +110,14 @@ collections:
         default: ["/assets/images/soal220.png"]
         allow_add: true
         required: true
-        field: {label: Image, name: image, widget: image}
+        fields:
+          - label: Image
+            name: image
+            widget: image
+          - label: Caption
+            name: caption
+            widget: string
+            required: false
   - name: "rooms"
     label: "Rooms"
     folder: "_rooms/"

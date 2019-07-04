@@ -307,8 +307,8 @@ header {
   background-image: var(--sidegod);
   overflow-y: hidden;
   overflow-x: hidden;
-  width: 250px;
-  height: 500px;
+  width: var(--sidebar-width);
+  height: var(--ribbon-height);
   border: 1px inset var(--color-violet-light);
   z-index: 1005;
   ul {

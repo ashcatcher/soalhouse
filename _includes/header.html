@@ -26,22 +26,5 @@
         </div>
       </div>
     </div>
-
-    {% comment %}
-    <section class="navbar-center solace-header-center">
-      {% unless page.collection == 'pages' %}
-        <h2>{{page.title}}</h2>
-        {% if page.artist %}
-          {% assign artist_url = page.artist | slugify | prepend: "/artist" | append: ".html" %}
-          <a href="{{artist_url}}">
-            <h3><small>by </small>{{page.artist}}</h3>
-          </a>
-        {% endif %}
-      {% endunless %}
-    </section>
-    {% endcomment %}
-
-    <!--<section class="navbar-section solace-header-end">
-      </section>-->
   </header>
 </section>
