@@ -6,6 +6,7 @@
 // SIdebar
 #wrapper {
   padding-left: 0;
+  padding-top: calc(0.75 * var(--logo-height));
   transition: all 0.5s ease;
   &.toggled {
     padding-left: var(--sidebar-width);
@@ -97,7 +98,7 @@
 
 .solace-header {
   position: absolute;
-  height: var(--logo-height);
+  height: calc(0.75 * var(--logo-height));
   width: 100%;
   z-index: 1100;
     background-color: transparent;
@@ -145,10 +146,6 @@ header {
     }
   }
 }
-#wrapper {
-  padding-top: 250px;
-}
-
 @media(min-width: 768px) {
   #wrapper {
     padding-left: 0;
@@ -214,7 +211,7 @@ header {
   z-index: 39;
   opacity: 0.3;
   width: 100%;
-  height: 100%;
+  height: 200vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -230,7 +227,7 @@ header {
 .gallery {
   margin-top: 25px;
   &-card {
-    background-color: black;
+    background: var(--radical-redemption);
     z-index: 50;
     max-width: 250px;
     align-items: center;
@@ -259,6 +256,7 @@ header {
 
 .navbar {
   z-index: 50;
+  height: calc(0.75 * var(--logo-height));
   &-section, &-center {
     z-index: 50;
   }
