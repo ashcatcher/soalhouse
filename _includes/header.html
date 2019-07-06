@@ -1,3 +1,4 @@
+{% assign title_spacer = " | " %}
 <section class="solace-header">
   <header class="navbar">
     {% include emblem.html %}
@@ -5,11 +6,13 @@
     <div class="container">
       <div class="columns">
         <div class="column col-auto">
-          <h1><b>House</b> | 
+          <h1><b>House</b>
             {% if page.collection == 'pages' %}
-              {{page.title | capitalize}}
+              {% unless page.relative_path contains 'home' %}
+                {{title_spacer}}{{page.title | capitalize}}
+              {% endunless %}
             {% else %}
-              {{page.collection | capitalize}}
+              {{title_spacer}}{{page.collection | capitalize}}
             {% endif %}
           </h1>
         </div>
