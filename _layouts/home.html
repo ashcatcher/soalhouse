@@ -1,9 +1,43 @@
 ---
-layout: default
+layout: sidebar
 title: Home
 permalink: /
 priority: 1
 ---
+<div class="columns">
+  <div class="column col-6">
+
+  </div>
+
+  <div class="column col-6">
+    <div class="bulletin">
+      {%- if site.posts.size > 0 -%}
+      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+      <ul>
+        {%- for post in site.posts -%}
+        <li class="clear">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <p class="rss-subscribe clear">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      {%- endif -%}
+
+    </div>
+  </div>
+</div>
+
+{% comment %}
 <div class="parallax">
   <div class="container grid-xl">
     <div class="columns">
@@ -13,7 +47,7 @@ priority: 1
             style="margin-right: 4vw; min-width: 250px; max-width: 300px;">
             <div class="ribbon">
               <nav id="emblem" style="position: relative;"><a href="/"><span
-                                  class="radial-whack"></span></a></nav>
+                    class="radial-whack"></span></a></nav>
               {% include nav-list.html %}
             </div><!--End div.ribbon-->
           </div><!--End div.col-6.col-ml-auto-->
@@ -24,26 +58,27 @@ priority: 1
     </div><!--End div.columns-->
   </div><!--End div.container-->
 </div><!--End div.parallax-->
-      {% comment %}{% include events.html %}
-      <div class="row">
-        <div class="col">
-          <div class="row">
-            <div class="card col">
-              <a href="https://www.facebook.com/soalhouse/">
-                <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
-              </a>
-            </div>
-            <div class="card col" style="width: 100%;">
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KEQFWKDEY3G34&item_name=Donations+to+support+SOAL+House&currency_code=CAD&source=url">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Donate to us on Paypal!</h5>
-                  <div class="card-subtitle">
-                    {% include paypal_button.html %}
-                  </div>
-                </div>
-              </a>
+{% endcomment %}
+{% comment %}{% include events.html %}
+<div class="row">
+  <div class="col">
+    <div class="row">
+      <div class="card col">
+        <a href="https://www.facebook.com/soalhouse/">
+          <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
+        </a>
+      </div>
+      <div class="card col" style="width: 100%;">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KEQFWKDEY3G34&item_name=Donations+to+support+SOAL+House&currency_code=CAD&source=url">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Donate to us on Paypal!</h5>
+            <div class="card-subtitle">
+              {% include paypal_button.html %}
             </div>
           </div>
-        </div>
+        </a>
       </div>
-      {% endcomment %}
+    </div>
+  </div>
+</div>
+{% endcomment %}
