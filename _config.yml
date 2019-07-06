@@ -92,6 +92,12 @@ defaults:
       layout: default
       teaser_image: "/assets/images/events/party-hat.png"
       description: ""
+  # _posts
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "sidebar"
 
 # Build settings
 markdown: kramdown

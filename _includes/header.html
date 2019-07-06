@@ -11,6 +11,8 @@
               {% unless page.relative_path contains 'home' %}
                 {{title_spacer}}{{page.title | capitalize}}
               {% endunless %}
+            {% elsif page.collection == 'posts' %}
+              {{title_spacer}}Blog
             {% else %}
               {{title_spacer}}{{page.collection | capitalize}}
             {% endif %}
