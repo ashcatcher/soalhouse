@@ -3,7 +3,7 @@ layout: sidebar
 ---
 <div class="gallery container">
   {% for artist in site.artist %}
-    {% assign artist_url = artist_url = artist.url | append: ".html" %}
+    {% assign artist_url = artist.url | append: ".html" %}
     <div class="artisan-card">
       <div class="artisan-card-image">
         <img src="{{artist.image}}" class="img-responsive"/>
@@ -18,11 +18,3 @@ layout: sidebar
     </div>
   {% endfor %}
 </div>
-{% comment %}
-<div class="artisan-card-top">
-  <div class="artisan-card-top-right">
-  </div>
-</div>
-</div>
-</div>
-{% endcomment %}
