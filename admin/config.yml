@@ -39,9 +39,9 @@ collections:
       - { label: "URL", name: "permalink", widget: "string", required: true, default: "/", hint: "The URL this page will be found at." }
       - { label: "Priority", name: "priority", widget: "select", options: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],  default: "1", hint: "This is the relative order in which this page will appear on the sidebar. 1 = Highest, 9 - Lowest" }
 
-  - name: "artist"
-    label: "Artist"
-    folder: "_artist/"
+  - name: "artisan"
+    label: "artisan"
+    folder: "_artisan/"
     create: true
     slug: "{{slug}}"
     fields:
@@ -87,10 +87,10 @@ collections:
         name: "title"
         widget: "string"
         required: true
-      - label: "Artist"
-        name: "artist"
+      - label: "artisan"
+        name: "artisan"
         widget: "relation"
-        collection: "artist"
+        collection: "artisan"
         searchFields: ["name"]
         valueField: "name"
         displayFields: "name"

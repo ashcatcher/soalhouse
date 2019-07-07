@@ -34,7 +34,7 @@ collections:
     listed: true
     output: true
     permalink: /:collection/:title
-  artist:
+  artisan:
     listed: true
     output: true
     permalink: /:collection/:title
@@ -78,7 +78,7 @@ defaults:
   # _artisan
   - scope:
       path: ""
-      type: "artist"
+      type: "artisan"
     values:
       layout: "artisan"
       name: "Mystery Man"
