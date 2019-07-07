@@ -1,6 +1,6 @@
 ---
 title:  Penal Parachute
-artist: Joe Renaud
+artisan: Joe Renaud
 price:  1000
 ---
 

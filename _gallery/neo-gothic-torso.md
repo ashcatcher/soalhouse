@@ -1,5 +1,5 @@
 ---
 title:  Neo Gothic Torso
-artist: Joe Renaud
+artisan: Joe Renaud
 price:  1000
 ---

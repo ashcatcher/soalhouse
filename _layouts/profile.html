@@ -29,7 +29,7 @@ layout: sidebar
     </div>
     <div class="column col-6" style="background-color: black; margin-top: 5px;">
       <h3>{{page.title}}</h3>
-      <h4><small>by </small>{{page.artist}}</h4>
+      <h4><small>by </small>{{page.artisan}}</h4>
       <div class="profile-description" style="min-height: 150px;
       background-color: rgba(255,255,255,0.15);">
         <p>{{page.description}}</p>
@@ -42,14 +42,15 @@ layout: sidebar
         <div class="column col-8">
           <div class="columns">
             <div class="column col-12">
-              {% assign artist_url = page.artist | slugify | prepend: "/artist/"
+              {% assign artisan_url = page.artisan | slugify | prepend:
+              "/artisan/"
               | append: ".html" %}
-              <a href="{{artist_url}}">
-                <button class="btn btn-primary btn-large profile-button">View Artist Profile</button>
+              <a href="{{artisan_url}}">
+                <button class="btn btn-primary btn-large profile-button">View artisan Profile</button>
               </a>
             </div>
             <div class="column col-12">
-              <button class="btn btn-secondary btn-large profile-button">Contact Artist</button>
+              <button class="btn btn-secondary btn-large profile-button">Contact artisan</button>
             </div>
           </div>
         </div>
@@ -57,13 +58,13 @@ layout: sidebar
     </div>
   </div>
   <div class="container" style="background-color: rgba(0,0,0,0.5);">
-    <h2>More by this Artist</h2>
+    <h2>More by this artisan</h2>
     <div class="columns">
       {% for art in site.gallery %}
-        {% if art.artist == page.artist %}
-          {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+        {% if art.artisan == page.artisan %}
+          {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
           {% assign art_url = art.url | append: ".html" %}
-          <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+          <div class="column col-auto col-mx-auto col-ml-auto col-mr-auto gallery-card card">
             <a href="{{art_url}}">
               <div class="card-image">
                 <img src="{{art.image}}" class="img-responsive"/>

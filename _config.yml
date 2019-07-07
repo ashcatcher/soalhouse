@@ -81,8 +81,6 @@ defaults:
       type: "artisan"
     values:
       layout: "artisan"
-      name: "Mystery Man"
-      bio: ""
       image: "/assets/images/soal150.svg"
   # _events
   - scope:
