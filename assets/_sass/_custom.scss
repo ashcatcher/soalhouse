@@ -235,6 +235,36 @@ header {
     text-align: center;
   }
 }
+
+.artisan-card {
+  background: var(--radical-redemption);
+  z-index: 50;
+  width: 45%;
+  float: left;
+  margin: 5px;
+  border-radius: 8px;
+  &-image {
+    width: 150px;
+    margin: 8px;
+    display: inline-block;
+    float: left;
+  }
+  &-content {
+    display: inline-block;
+    float: left;
+    width: calc(100% - 200px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    margin-top: 13px;
+  }
+  button {
+    margin-bottom: 13px;
+  }
+  
+}
+
 .skylift {
   background: var(--radical-skies);
   opacity: 0.75;

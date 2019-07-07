@@ -1,0 +1,28 @@
+---
+layout: sidebar
+---
+<div class="gallery container">
+  {% for artist in site.artist %}
+    {% assign artist_url = artist_url = artist.url | append: ".html" %}
+    <div class="artisan-card">
+      <div class="artisan-card-image">
+        <img src="{{artist.image}}" class="img-responsive"/>
+      </div>
+      <div class="artisan-card-content">
+        <h3>{{artist.name}}</h3>
+        <p>{{artist.bio}}</p>
+        <a href="{{artist_url}}">
+          <button class="btn btn-primary">View Profile</button>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% comment %}
+<div class="artisan-card-top">
+  <div class="artisan-card-top-right">
+  </div>
+</div>
+</div>
+</div>
+{% endcomment %}
