@@ -123,6 +123,16 @@ collections:
           - label: Image
             name: image
             widget: image
+          - label: Thumbnail_Image
+            name: thumbnail_image
+            widget: image
+            required: false
+            media_library:
+              config:
+                default_transformations:
+                  -   - fetch_format: auto
+                        width: 150
+                        crop: fill
           - label: Caption
             name: caption
             widget: string
