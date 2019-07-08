@@ -22,6 +22,8 @@ images:
   - image: >-
       https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623192/koa6_fkxrpq.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623194/koa7_d8uyj3.jpg
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623194/koa7_d8uyj3.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623194/koa7_d8uyj3.jpg
 ---
 
