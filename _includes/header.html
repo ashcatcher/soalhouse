@@ -19,11 +19,13 @@
           </h1>
         </div>
         <div class="column col-auto col-ml-auto col-mr-auto">
-          <h2 style="margin-bottom: 10px">{{page.title}}</h2>
-          {% if page.artisan %}
-            {% assign artisan_url = page.artisan | slugify | prepend: "/artisan/" | append: ".html" %}
-            <a href="{{artisan_url}}"><h3><small>by </small>{{page.artisan}}</h3></a>
-          {% endif %}
+          {% unless page.collection == 'pages' %}
+            <h2 style="margin-bottom: 10px">{{page.title}}</h2>
+            {% if page.artisan %}
+              {% assign artisan_url = page.artisan | slugify | prepend: "/artisan/" | append: ".html" %}
+              <a href="{{artisan_url}}"><h3><small>by </small>{{page.artisan}}</h3></a>
+            {% endif %}
+          {% endunless %}
         </div>
       </div>
     </div>
