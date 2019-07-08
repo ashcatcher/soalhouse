@@ -25,7 +25,7 @@ body {
   position: absolute;
   height: calc(0.75 * var(--logo-height));
   width: 100%;
-  z-index: 1100;
+  //z-index: 1100;
   background-color: transparent;
   a,p,b,i,h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
@@ -404,7 +404,15 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 1005;
-  margin: 0 0 5% 5%;
+  margin: -125px 0 4% 4%;
+  border-radius: 5px;
+  hr {
+    margin: 0 4% 0 4%;
+    color: rgba(0,0,0,0.5);
+  }
+  h2 {
+    margin-top: 30px;
+  }
   h3 {
     float: right;
     margin: 8px;
@@ -438,8 +446,16 @@ body {
   }
 }
 
-.pimping {
-  padding-top: 250px;
+.pimp {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: row;
+  div {
+    width: 50%;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 4px;
+    margin: 0 4% 0 4%;
+  }
 }
 
 .ribbon {

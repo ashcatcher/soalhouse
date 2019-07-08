@@ -5,18 +5,21 @@ permalink: /
 priority: 1
 ---
 <div class="columns">
-  <div class="column col-6">
-
-    <div class="pimping">
+  <div class="column col-6 pimp">
+    <div>
+      <a href="https://www.facebook.com/soalhouse/">
+        <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
+      </a>
+    </div>
+    <div>
       {% include paypal_button.html %}
     </div>
-
   </div>
-
   <div class="column col-6">
     <div class="bulletin">
       {%- if site.posts.size > 0 -%}
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+      <hr>
       <ul>
         {%- for post in site.posts -%}
         <li class="clear">
