@@ -10,20 +10,32 @@ description: >-
 price: 5000
 images:
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623192/koa1_asn3dk.jpg
-  - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623192/koa2_pvgdfu.jpg
-  - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623192/koa3_kgqod4.jpg
-  - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623192/koa4_yp2hu9.jpg
-  - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623193/koa5_o9bknu.jpg
-  - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_scale,h_3200/v1562623192/koa6_fkxrpq.jpg
-  - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623194/koa7_d8uyj3.jpg
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa1_asn3dk.jpg
     thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623194/koa7_d8uyj3.jpg
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa1_asn3dk.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa2_pvgdfu.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa2_pvgdfu.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa3_kgqod4.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa3_kgqod4.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa4_yp2hu9.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa4_yp2hu9.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623193/Gallery/koa5_o9bknu.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623193/Gallery/koa5_o9bknu.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa6_fkxrpq.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa6_fkxrpq.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623194/Gallery/koa7_d8uyj3.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623194/Gallery/koa7_d8uyj3.jpg
 ---
 
