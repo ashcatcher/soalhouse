@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container" style="background-color: rgba(0,0,0,0.5);">
   <div class="columns">
-    <div class="column col-8">
+    <div class="column col-6">
       <section id="gallery" class="simplegallery">
         <div class="content">
           {% for image in page.images %}
@@ -11,7 +11,7 @@ layout: default
               <img src="{{image.image}}" class="active image_{{forloop.index}}" />
             {% else %}
               <img src="{{image.image}}" class="image_{{forloop.index}}"
-                                 style="display: none;" />
+                                         style="display: none;" />
             {% endif %}
           {% endfor %}
         </div>
@@ -27,15 +27,19 @@ layout: default
         </div>
       </section>
     </div>
-    <div class="column col-4">
+    <div class="column col-6">
       <div class="profile-title">
-
+        <h2 style="margin-bottom: 10px">{{page.title}}</h2>
+        {% if page.artisan %}
+          {% assign artisan_url = page.artisan | slugify | prepend: "/artisan/" | append: ".html" %}
+          <a href="{{artisan_url}}"><h3><small>by </small>{{page.artisan}}</h3></a>
+        {% endif %}
       </div>
       <div class="profile-description" style="min-height: 150px;
       background-color: rgba(255,0,0,0.25);">
         <p>{{page.description}}</p>
       </div>
-        <h4>Asking ${{page.price}}</h4>
+      <h4>Asking ${{page.price}}</h4>
       <div class="btn-group btn-group-block profile-action">
         <button class="btn btn-primary">View artisan Profile</button>
         <button class="btn btn-secondary">Contact artisan</button>
