@@ -8,9 +8,9 @@ layout: default
         <div class="content">
           {% for image in page.images %}
             {% if forloop.index == 1 %}
-              <img src={{image}} class="active image_{{forloop.index}}" />
+              <img src="{{image.image}}" class="active image_{{forloop.index}}" />
             {% else %}
-              <img src={{image}} class="image_{{forloop.index}}"
+              <img src="{{image.image}}" class="image_{{forloop.index}}"
                                  style="display: none;" />
             {% endif %}
           {% endfor %}
@@ -20,7 +20,7 @@ layout: default
           {% for image in page.images %}
             <div class="thumb{% if forloop.last %} last{% endif %}">
               <a href="#" rel="{{forloop.index}}">
-                <img src="{{image}}" id="thumb_{{forloop.index}}" alt="" />
+                <img src="{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
               </a>
             </div>
           {% endfor %}
