@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-
-<div>
-  {% include header.html %}
-  <div id="wrapper" class="toggled">
-    <div id="sidebar-wrapper">
-      {% include sidebar.html %}
-    </div>
-
-    <div id="page-content-wrapper">
-      <div class="container-fluid" id="content">
-        {{content}}
-      </div>
-    </div>
+<div id="wrapper" class="toggled">
+  <div id="sidebar-wrapper">
+    {% include sidebar.html %}
   </div>
 
+  <div id="page-content-wrapper">
+    <div class="container-fluid" id="content">
+      {{content}}
+    </div>
+  </div>
 </div>
+
 <script src="/assets/js/solace.js"></script>
