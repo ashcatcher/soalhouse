@@ -1,10 +1,22 @@
 ---
-layout: profile
+layout: default
 ---
 
-<h1><b>{{page.name}}</b></h1>
-{% if page.aka %}
-  <i>aka</i>
-  <h2>{{page.aka}}</h2>
-{% endif %}
-<p>{{page.bio}}</p>
+<div class="container" style="background-color: rgba(0,0,0,0.5);">
+  <div class="columns">
+    <div class="column col-4">
+      <img src="{{site.logo}}">
+    </div>
+
+    <div class="column col-8">
+      <div>
+        <h1><b>{{page.name}}</b></h1>
+      </div>
+      <div>
+        <p>{{page.bio}}</p>
+      </div>
+    </div>
+  </div>
+  <p>{{page.artisan}}</p>
+  {% include more_by_artist.html %}
+</div>
