@@ -1,28 +1,38 @@
 ---
 layout: sidebar
 ---
-<div class="gallery container">
-  <div class="columns">
-    {% for art in site.gallery %}
-      {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
-      {% assign art_url = art.url | append: ".html" %}
-      <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
-        <div class="card-header">
-        </div>
+<div class="gallery">
+  <aside class="sidebar-right">
+    <nav class="knows-picker">
+      <header>
+        <h4>Sample Header</h4>
+      </header>
+    </nav>
+  </aside>
+  <div class="container">
 
-        <a href="{{art_url}}">
-          <div class="card-image">
-            <div class="h5">{{art.title}}</div>
-            <img src="{{art.image}}" class="img-responsive"/>
+    <div class="columns">
+      {% for art in site.gallery %}
+        {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
+        {% assign art_url = art.url | append: ".html" %}
+        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+          <div class="card-header">
           </div>
-        </a>
-        <div class="card-footer">
-          <a href="{{artisan_url}}">
-            <div class="card-subtitle text-gray">
-              <small>by</small> {{art.artisan}}</div>
-        </div>
+
+          <a href="{{art_url}}">
+            <div class="card-image">
+              <div class="h5">{{art.title}}</div>
+              <img src="{{art.image}}" class="img-responsive"/>
+            </div>
           </a>
-      </div>
-    {% endfor %}
+          <div class="card-footer">
+            <a href="{{artisan_url}}">
+              <div class="card-subtitle text-gray">
+                <small>by</small> {{art.artisan}}</div>
+          </div>
+            </a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>

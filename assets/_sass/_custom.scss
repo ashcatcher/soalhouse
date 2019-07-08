@@ -1,8 +1,121 @@
+// Classes in order of appearance
+body {
+  background-image: url("/assets/images/SOAL3.1-2x.png");
+  height: 250%;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax {
+  background-image: url("/assets/images/SOAL3.1-2x.png");
+  height: 250%;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.masthead {
+  position: absolute;
+  height: calc(0.75 * var(--logo-height));
+  width: 100%;
+  z-index: 1100;
+  background-color: transparent;
+  a,p,b,i,h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #ddd;
+    small {
+      text-decoration: none;
+      color: #fff;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+  div.container {
+    position: absolute;
+    padding-left: var(--sidebar-width);
+    margin-top: calc(0.25 * var(--logo-height));
+    height: calc(0.5 * var(--logo-height));
+    div.columns {
+      height: 100%;
+      align-content: center;
+      div.column {
+        align-self: center;
+        h1 {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &-center {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
 #content {
   //padding-top: 60px;
   margin: 0;
   background: transparent;
+  position: relative;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
 }
+
+// Right sidebar on gallery pages
+.sidebar-right {
+  margin-bottom: 1em;
+  z-index: 2000;
+  @include minwidth(80em) {
+    width: 300px;
+    margin-right: -300px;
+    right: 300px;
+  }
+  @include minwidth(64em) {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    width: 200px;
+    margin-right: -200px;
+    padding-left: 1em;
+  }
+}
+
+.knows-picker {
+  color: #7a8288;
+  background-color: #fff;
+  border: 1px solid #f2f3f3;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.125);
+}
+
+
+
 // SIdebar
 #wrapper {
   padding-left: 0;
@@ -96,56 +209,9 @@
   }
 }
 
-.solace-header {
-  position: absolute;
-  height: calc(0.75 * var(--logo-height));
-  width: 100%;
-  z-index: 1100;
-  background-color: transparent;
-  a,p,b,i,h1,h2,h3,h4,h5,h6 {
-    margin-bottom: 0;
-  }
-  div.container {
-    position: absolute;
-    padding-left: var(--sidebar-width);
-    margin-top: calc(0.25 * var(--logo-height));
-    height: calc(0.5 * var(--logo-height));
-    div.columns {
-      height: 100%;
-      align-content: center;
-      div.column {
-        align-self: center;
-        h1 {
-          margin-left: 1rem;
-        }
-      }
-    }
-  }
-  &-center {
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
-header {
-  a {
-    text-decoration: none;
-    color: #ddd;
-    small {
-      text-decoration: none;
-      color: #fff;
-    }
-    &:hover {
-      text-decoration: none;
-      color: #fff;
-    }
-    &:active, &:focus {
-      text-decoration: none;
-    }
-  }
-}
+
+
 @media(min-width: 768px) {
   #wrapper {
     padding-left: 0;
@@ -196,16 +262,7 @@ header {
 // Old custom.scss
 //
 // Body Background Effect
-.parallax {
-  background-image: url("/assets/images/SOAL3.1-2x.png");
-  height: 250%;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 .purple-reign {
   background: var(--radical-violets);
   z-index: 39;
@@ -226,6 +283,12 @@ header {
 }
 .gallery {
   margin-top: 25px;
+  position: relative;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
   &-card {
     background: var(--radical-redemption);
     z-index: 50;
@@ -262,7 +325,7 @@ header {
   button {
     margin-bottom: 13px;
   }
-  
+
 }
 
 .skylift {

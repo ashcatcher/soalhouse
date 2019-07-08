@@ -16,6 +16,15 @@
 
   }
 }
+
+@mixin minwidth($point) {
+  @media (min-width: $point) { @content ; }
+}
+
+@mixin maxwidth($point) {
+  @media (max-width: $point) { @content ; }
+}
+
 /* EXAMPLE USAGE */
 /*
 .podcasts {
