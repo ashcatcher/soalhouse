@@ -398,11 +398,13 @@ body {
 }
 
 
+// Home Page Layout
 .bulletin {
   background-image: var(--rightgod);
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 1005;
+  margin: 0 0 5% 5%;
   h3 {
     float: right;
     margin: 8px;
@@ -434,6 +436,10 @@ body {
       }
     }
   }
+}
+
+.pimping {
+  padding-top: 250px;
 }
 
 .ribbon {
