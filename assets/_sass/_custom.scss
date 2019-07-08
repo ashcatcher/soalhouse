@@ -289,6 +289,11 @@ body {
   margin-right: 0;
   width: 100%;
   clear: both;
+
+  .content img {
+    padding: 10px;
+    border: none;
+  }
   &-card {
     background: var(--radical-redemption);
     z-index: 50;
@@ -556,13 +561,14 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
     overflow: hidden;
 
     img {
       width: 100%;
       height: auto;
       border: 1px solid #9c9c9c;
+      border-radius: 5px;
       display: none;
       &.active {
         display: inline;
