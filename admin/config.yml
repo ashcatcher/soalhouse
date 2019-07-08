@@ -3,7 +3,12 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
-media_folder: "assets/_images"
+# media_folder: "assets/_images"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: soalhouse
+    api_key: 947772475781272
 public_folder: "assets/images"
 logo_url: "https://soalhouse.ca/assets/images/soal150.svg"
 
