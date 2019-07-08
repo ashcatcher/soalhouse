@@ -10,10 +10,10 @@ $(document).ready(function() {
     if($(window).width()<=768){
       $('#wrapper').removeClass('toggled');
       $('.skylift').removeClass('toggled');
-      $('.radial-whack').addClass('toggled');
+      $('.whack').addClass('toggled');
     }else{
       $('#wrapper').addClass('toggled');
-      $('.radial-whack').removeClass('toggled');
+      $('.whack').removeClass('toggled');
     }
   });
 });

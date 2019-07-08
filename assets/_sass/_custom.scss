@@ -522,6 +522,19 @@ body {
   );
 }
 
+.whack {
+  top: 25px;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  position:fixed;
+  height: 200px;
+  width: 200px;
+  &.toggled {
+    position: absolute;
+  }
+}
+
 .radial-whack {
   //background: var(--radical-skies);
   background-color: white;
