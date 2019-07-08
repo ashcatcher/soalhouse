@@ -58,7 +58,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "sidebar"
+      layout: "default"
       priority: 5
   # _gallery
   - scope:
@@ -95,7 +95,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "sidebar"
+      layout: "default"
 
 # Build settings
 markdown: kramdown
