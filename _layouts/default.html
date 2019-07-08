@@ -10,7 +10,9 @@
     {% include head.html %}
     {% seo %}
   </head>
-  <body>
+
+  <body class="{{ page.layout | default: layout.layout}}-layout">
     {{content}}
   </body>
+
 </html>
