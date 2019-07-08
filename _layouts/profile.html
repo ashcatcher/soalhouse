@@ -1,10 +1,10 @@
 ---
 layout: sidebar
 ---
-<div class="container">
+<div class="container" style="background-color: rgba(0,0,0,0.5);">
   <div class="columns">
-    <div class="column col-6" style="background-color: rgba(0,0,0,0.5);">
-      <section id="#gallery" class="simplegallery">
+    <div class="column col-8">
+      <section id="gallery" class="simplegallery">
         <div class="content">
           {% for image in page.images %}
             {% if forloop.index == 1 %}
@@ -27,18 +27,24 @@ layout: sidebar
         </div>
       </section>
     </div>
-    <div class="column col-6" style="background-color: black; margin-top: 5px;">
-      <h3>{{page.title}}</h3>
-      <h4><small>by </small>{{page.artisan}}</h4>
+    <div class="column col-4">
+      <div class="profile-title">
+
+      </div>
       <div class="profile-description" style="min-height: 150px;
-      background-color: rgba(255,255,255,0.15);">
+      background-color: rgba(255,0,0,0.25);">
         <p>{{page.description}}</p>
       </div>
+        <h4>Asking ${{page.price}}</h4>
+      <div class="btn-group btn-group-block profile-action">
+        <button class="btn btn-primary">View artisan Profile</button>
+        <button class="btn btn-secondary">Contact artisan</button>
+      </div>
+
+
+
+      {% comment %}
       <div class="columns">
-        <div class="column col-4">
-          <h3>Asking Price</h3><br/>
-          <h4>{{page.price}}</h4>
-        </div>
         <div class="column col-8">
           <div class="columns">
             <div class="column col-12">
@@ -55,29 +61,10 @@ layout: sidebar
           </div>
         </div>
       </div>
+      {% endcomment %}
     </div>
   </div>
-  <div class="container" style="background-color: rgba(0,0,0,0.5);">
-    <h2>More by this artisan</h2>
-    <div class="columns">
-      {% for art in site.gallery %}
-        {% if art.artisan == page.artisan %}
-          {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
-          {% assign art_url = art.url | append: ".html" %}
-          <div class="column col-auto col-mx-auto col-ml-auto col-mr-auto gallery-card card">
-            <a href="{{art_url}}">
-              <div class="card-image">
-                <img src="{{art.image}}" class="img-responsive"/>
-              </div>
-              <div class="card-body">
-                <div class="h5">{{art.title}}</div>
-              </div>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+  {% include more_by_artist.html %}
 </div>
 <script type="text/javascript">
   function hideImages(number) {

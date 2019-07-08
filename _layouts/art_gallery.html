@@ -2,10 +2,9 @@
 layout: sidebar
 ---
 <div class="gallery container">
-  <div class="purple-reign"></div>
   <div class="columns">
     {% for art in site.gallery %}
-      {% assign artist_url =  art.artist | slugify | prepend:"/artist/" | append: ".html" %}
+      {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
       {% assign art_url = art.url | append: ".html" %}
       <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
         <div class="card-header">
@@ -18,9 +17,9 @@ layout: sidebar
           </div>
         </a>
         <div class="card-footer">
-          <a href="{{artist_url}}">
+          <a href="{{artisan_url}}">
             <div class="card-subtitle text-gray">
-              <small>by</small> {{art.artist}}</div>
+              <small>by</small> {{art.artisan}}</div>
         </div>
           </a>
       </div>

@@ -198,7 +198,7 @@ header {
 // Body Background Effect
 .parallax {
   background-image: url("/assets/images/SOAL3.1-2x.png");
-  height: 150%;
+  height: 250%;
   width: 100vw;
   background-attachment: fixed;
   background-position: top center;
@@ -292,11 +292,21 @@ header {
   }
 }
 // Profile layout styles
+//
+//
 .profile {
   background: var(--color-red-dark);
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 5px auto;
+  &-button {
+    width: 50%;
+    margin: 5% 5% 5% 5%;
+  }
+  &-description {
+    margin-top: 5%;
+  }
   &-images {
     border: 1px solid white;
     border-radius: 10px;
@@ -459,7 +469,7 @@ header {
     position: relative;
     width: 100%;
     height: auto;
-    margin: 5px auto 0 auto;
+    margin: 5px 5px 5px 5px;
     overflow: hidden;
 
     img {
@@ -495,10 +505,7 @@ header {
 }
 .clear { clear: both; }
 
-.profile-button {
-  width: 50%;
-  margin: 5% 5% 5% 5%;
-}
+
 
 .tennants {
   ul {
