@@ -20,7 +20,12 @@ layout: default
           {% for image in page.images %}
             <div class="thumb{% if forloop.last %} last{% endif %}">
               <a href="#" rel="{{forloop.index}}">
-                <img src="{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
+                {% if image.thumbnail_image %}
+                  <img src="{{image.thumbnail_image}}"
+                       id="thumb_{{forloop.index}}" alt="" />
+                {% else %}
+                  <img src="{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
+                {% endif %}
               </a>
             </div>
           {% endfor %}
