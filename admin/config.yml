@@ -106,7 +106,7 @@ collections:
         required: true
       - label: "Description"
         name: "description"
-        widget: "markdown"
+        widget: "text"
         required: true
       - label: "Price"
         name: "price"
