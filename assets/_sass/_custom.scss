@@ -1,26 +1,4 @@
 // Classes in order of appearance
-body {
-  background-image: url("/assets/images/SOAL3.1-2x.png");
-  height: 250%;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.parallax {
-  background-image: url("/assets/images/SOAL3.1-2x.png");
-  height: 250%;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 .masthead {
   position: absolute;
   height: calc(0.75 * var(--logo-height));
@@ -75,6 +53,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
 #content {
   //padding-top: 60px;
   margin: 0;
@@ -260,27 +239,6 @@ body {
 }
 
 // Old custom.scss
-//
-// Body Background Effect
-
-.purple-reign {
-  background: var(--radical-violets);
-  z-index: 39;
-  opacity: 0.3;
-  width: 100%;
-  height: 200vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.purple-pain {
-  background: var(--radical-violets);
-  z-index: 40;
-  opacity: 0.9;
-  width: auto;
-  height: auto;
-  position: relative;
-}
 
 .gallery {
   margin-top: 25px;
@@ -343,25 +301,6 @@ body {
 
 }
 
-.skylift {
-  background: var(--radical-skies);
-  opacity: 0.75;
-  width: 100%;
-  height: calc(0.5 * var(--logo-height));
-  position: absolute;
-  top: calc(0.25 * var(--logo-height));
-  left: var(--sidebar-width);
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  transition: all 0.5s ease;
-  &.toggled {
-    left: 0;
-  }
-  @include breakpoint(small) {
-    left: 0;
-  }
-}
-
 .navbar {
   z-index: 50;
   height: calc(0.75 * var(--logo-height));
@@ -369,9 +308,6 @@ body {
     z-index: 50;
   }
 }
-// Profile layout styles
-//
-//
 .profile {
   background: var(--color-red-dark);
   display:flex;
@@ -513,28 +449,6 @@ body {
   }
 }
 
-
-// Gradients for Background
-.sidestripe {
-  background-image: 
-  repeating-linear-gradient(
-  45deg,
-  #c1b02c,
-  #c1b02c 10px,
-  #b69521 10px,
-  #b69521
-  );
-}
-
-.radial {
-  background:
-  repeating-radial-gradient(
-  circle at 0 0,
-  #4dded9,
-  #2a80a3 50px
-  );
-}
-
 .whack {
   top: 25px;
   left: 25px;
@@ -547,33 +461,6 @@ body {
     position: absolute;
   }
 }
-
-.radial-whack {
-  //background: var(--radical-skies);
-  background-color: white;
-  filter: blur(5px);
-  mask: url('/assets/images/soal150.svg') exclude;
-  mask-size: contain;
-  opacity: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position:fixed;
-  height: 250px;
-  width: 250px;
-  z-index: 1100;
-  transition: opacity 0.6s;
-  //border: 3px solid var(--violet-light);
-  &.toggled {
-    position: absolute;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
 
 // Styles for the Profile image gallery
 .simplegallery {
