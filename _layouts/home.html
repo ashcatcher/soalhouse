@@ -21,13 +21,14 @@ priority: 1
     <div class="bulletin">
       <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
+      {% comment %}
       {% for post in paginator.posts %}
         <h1>{{ post.title }}</h1>
         {% include archive-single.html %}
       {% endfor %}
 
       {% include paginator.html %}
-      {% comment %}
+      {% endcomment %}
       {%- if site.posts.size > 0 -%}
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
       <hr>
@@ -49,7 +50,6 @@ priority: 1
       </ul>
       <p class="rss-subscribe clear">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
       {%- endif -%}
-      {% endcomment %}
     </div>
   </div>
 </div>
