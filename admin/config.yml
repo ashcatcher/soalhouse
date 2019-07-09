@@ -147,9 +147,20 @@ collections:
       - { label: "Name", name: "name", widget: "string", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: false }
-  - name: "content"
-    label: "Content"
+  - name: "settings"
+    label: "Settings"
     files:
+      - label: "Sidebar Navigation"
+        name: "sidebar_navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: {Title, name: title, widget: string}
+              - label: {URL, name: url, widget: string}
+
       - label: "About Page"
         name: "about"
         file: "_data/about.yml"

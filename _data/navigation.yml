@@ -1,0 +1,11 @@
+sidebar:
+  - title: "Gallery"
+    url: /gallery/
+  - title: "Artisans"
+    url: /artisans/
+  - title: "Accomodations"
+    url: /rooms/
+  - title: "House"
+    url: /
+  - title: "About"
+    url: /about/

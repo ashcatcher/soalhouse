@@ -1,20 +1,15 @@
 <div class="ribbon">
   <div style="margin-top: 250px;">
     <ul class="sidebar-nav">
-      {% for i in (1..9) %}
-        {% for paige in site.pages %}
-          {% assign priority = paige.priority | plus: 0 %}
-          {% if priority == i %}
-            <li>
-              <a href="{{paige.permalink}}"
-                 {% if page.url contains  paige.collection %}
-                   id="active"
-                 {% endif %}>
-                {{ paige.title }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
+      {% for nav in site.data.navigation.sidebar %}
+        <li>
+          <a href="{{nav.url}}"
+             {% if page.url contains  nav.url %}
+               id="active"
+             {% endif %}>
+            {{ nav.title }}
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </div>
