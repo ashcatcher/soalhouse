@@ -9,7 +9,11 @@
           <div class="column col-auto col-mx-auto col-ml-auto col-mr-auto gallery-card card">
             <a href="{{art_url}}">
               <div class="card-image">
-                <img src="{{art.image}}" class="img-responsive"/>
+                {% if art.images.first.thumbnail_image %}
+                  <img src="{{art.images.first.thumbnail_image}}" class="img-responsive"/>
+                {% elsif art.images.first.image %}
+                  <img src="{{art.images.first.image}}" class="img-responsive"/>
+                {% endif %}
               </div>
               <div class="card-body">
                 <div class="h5">{{art.title}}</div>
@@ -24,7 +28,11 @@
           <div class="column col-auto col-mx-auto col-ml-auto col-mr-auto gallery-card card">
             <a href="{{art_url}}">
               <div class="card-image">
-                <img src="{{art.image}}" class="img-responsive"/>
+                {% if art.images.first.thumbnail_image %}
+                  <img src="{{art.images.first.thumbnail_image}}" class="img-responsive"/>
+                {% else %}
+                  <img src="{{art.images.first.image}}" class="img-responsive"/>
+                {% endif %}
               </div>
               <div class="card-body">
                 <div class="h5">{{art.title}}</div>

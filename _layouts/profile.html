@@ -49,28 +49,6 @@ layout: default
         <button class="btn btn-primary">View artisan Profile</button>
         <button class="btn btn-secondary">Contact artisan</button>
       </div>
-
-
-
-      {% comment %}
-      <div class="columns">
-        <div class="column col-8">
-          <div class="columns">
-            <div class="column col-12">
-              {% assign artisan_url = page.artisan | slugify | prepend:
-              "/artisan/"
-              | append: ".html" %}
-              <a href="{{artisan_url}}">
-                <button class="btn btn-primary btn-large profile-button">View artisan Profile</button>
-              </a>
-            </div>
-            <div class="column col-12">
-              <button class="btn btn-secondary btn-large profile-button">Contact artisan</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endcomment %}
     </div>
   </div>
   {% include more_by_artist.html %}
