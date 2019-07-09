@@ -150,12 +150,12 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
-      - label: "Sidebar Navigation"
+      - label: "Navigation"
         name: "sidebar_navigation"
         file: "_data/navigation.yml"
         fields:
-          - label: Links
-            name: links
+          - label: Sidebar
+            name: sidebar
             widget: list
             fields:
               - label: {Title, name: title, widget: string}
