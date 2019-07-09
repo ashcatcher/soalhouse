@@ -1,7 +1,7 @@
 # Saigon Jekyll Theme Config
 permalink: /:categories/:title/
 author_img_name_path: "/images/users/user.jpg"
-
+theme: minimal-mistakes
 
 
 # Site settings
