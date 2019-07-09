@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container" style="background-color: rgba(0,0,0,0.5);">
   <div class="columns">
-    <div class="column col-6">
+    <div class="column col-6 col-xs-12">
       <section id="gallery" class="simplegallery">
         <div class="content">
           {% for image in page.images %}
@@ -32,7 +32,7 @@ layout: default
         </div>
       </section>
     </div>
-    <div class="column col-6">
+    <div class="column col-6 col-xs-12">
       <div class="profile-title">
         <h2 style="margin-bottom: 10px">{{page.title}}</h2>
         {% if page.artisan %}
@@ -44,10 +44,14 @@ layout: default
       background-color: rgba(255,0,0,0.25);">
         <p>{{page.description}}</p>
       </div>
-      <h4>Asking ${{page.price}}</h4>
+      <div class="profile-final">
+        <h4 style="float: left;">Asking</h4>
+        <button style="float: right; width: calc(100% - 100px);" class="btn btn-primary">View artisan Profile</button>
+        <h5 style="clear: both; float: left;">${{page.price}}</h5>
+        <button style="float: right; width: 100%; width: calc(100% - 100px);" class="btn btn-secondary">Contact artisan</button>
+
+      </div>
       <div class="btn-group btn-group-block profile-action">
-        <button class="btn btn-primary">View artisan Profile</button>
-        <button class="btn btn-secondary">Contact artisan</button>
       </div>
     </div>
   </div>

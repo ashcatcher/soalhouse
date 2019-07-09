@@ -1,6 +1,6 @@
 <div class="container" style="background-color: rgba(0,0,0,0.5);">
   <h2>More by this artist</h2>
-  <div class="columns">
+  <div class="columns" style="justify-content: space-around;">
     {% for art in site.gallery %}
       {% if page.collection == 'gallery' %}
         {% if art.artisan == page.artisan %}
@@ -15,9 +15,11 @@
                   <img src="{{art.images.first.image}}" class="img-responsive"/>
                 {% endif %}
               </div>
+              {% comment %}
               <div class="card-body">
                 <div class="h5">{{art.title}}</div>
               </div>
+              {% endcomment %}
             </a>
           </div>
         {% endif %}
