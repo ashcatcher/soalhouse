@@ -2,21 +2,22 @@
 layout: default
 ---
 
-<div class="container" style="background-color: rgba(0,0,0,0.5);">
+<div class="artisan container">
   <div class="columns">
     <div class="column col-4">
       <img src="{{site.logo}}">
     </div>
 
     <div class="column col-8">
-      <div>
-        <h1><b>{{page.name}}</b></h1>
+      <div class="artisan-header">
+        <h2><b>{{page.name}}</b></h2>
       </div>
-      <div>
+      <div class="artisan-bio">
         <p>{{page.bio}}</p>
       </div>
     </div>
   </div>
-  <p>{{page.artisan}}</p>
+  <h3>Gallery</h3>
+  <hr>
   {% include more_by_artist.html %}
 </div>

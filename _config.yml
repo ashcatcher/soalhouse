@@ -2,7 +2,6 @@
 permalink: /:categories/:title/
 author_img_name_path: "/images/users/user.jpg"
 
-google_analytics_code: "UA-142289661-1"
 
 
 # Site settings
@@ -25,8 +24,8 @@ description: >
   Shephards of Abundant Living
 
 # SEO
-#image: /assets/images/open_graph_image.png
-google_analytics: # UA-XXXXXXXX-XX -> https://minimalanalytics.com/
+image: /assets/images/soal150.svg
+google_analytics_code: "UA-142289661-1"
 
 
 collections:
@@ -66,15 +65,13 @@ defaults:
       type: "gallery"
     values:
       layout: "profile"
-      image: "/assets/images/soal220.png"
       images:
         - "/assets/images/soal150.svg"
         - "/assets/images/soal150.svg"
         - "/assets/images/soal150.svg"
         - "/assets/images/soal150.svg"
       description: >
-        This is a sample description to aid in formatting the site.
-        Add your own on <a href="https://www.soalhouse.ca/admin">the Soalhouse Admin Panel.</a>
+        ""
   # _artisan
   - scope:
       path: ""
@@ -82,20 +79,6 @@ defaults:
     values:
       layout: "artisan"
       image: "/assets/images/soal150.svg"
-  # _events
-  - scope:
-      path: ""
-      type: "events"
-    values:
-      layout: default
-      teaser_image: "/assets/images/events/party-hat.png"
-      images:
-        - "/assets/images/bigs/1.jpg"
-        - "/assets/images/bigs/2.jpg"
-        - "/assets/images/bigs/3.jpg"
-        - "/assets/images/bigs/4.jpg"
-
-      description: ""
   # _posts
   - scope:
       path: ""
