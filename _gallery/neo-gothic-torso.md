@@ -1,15 +1,26 @@
 ---
-title:  Neo Gothic Torso
+title: Neo Gothic Torso
 artisan: Joe Renaud
-price:  1000
-description: >-
+description: |-
   Torso of a Neo Gothic Warrior, made from repurposed materials formed together
-  to show a strong yet softer side of the combined metals
-price: 1000
+    to show a strong yet softer side of the combined metals
+price: '5000'
 images:
-  - image: /assets/images/ngt1.jpg
-  - image: /assets/images/ngt2.jpg
-  - image: /assets/images/ngt3.jpg
-  - image: /assets/images/ngt4.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623205/Gallery/ngt1_dkqrmt.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623205/Gallery/ngt1_dkqrmt.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623205/Gallery/ngt2_ud3qsn.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623205/Gallery/ngt2_ud3qsn.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623204/Gallery/ngt3_zdncyv.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623204/Gallery/ngt3_zdncyv.jpg
+  - image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623201/Gallery/ngt4_qrtfqf.jpg
+    thumbnail_image: >-
+      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623201/Gallery/ngt4_qrtfqf.jpg
 ---
 
