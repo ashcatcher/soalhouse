@@ -4,24 +4,23 @@ title: Home
 permalink: /
 priority: 1
 ---
-<div class="bulletins ribbon">
+<div class="bulletins ribbon ribbon-right">
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   {% assign thedate = '' %}
   {% for post in paginator.posts %}
     {% capture date %}{{ post.date | date: "%m%d%Y"}}{% endcapture %}
     {% capture nday %}{{ post.next.date | date: "%m%d%Y" }}{% endcapture %}
 
-    {% if day != nday %}
+    {% if date != nday %}
       <h5 class="date">{{post.date | date: "%A, %B %e, %Y"}}</h5>
+      <hr>
     {% endif %}
     <div class="bulletin">
-      <div class="bulletin-title">
-        <h2>
-          <a href="{{ post.url | relative_url }}" rel="permalink">
-            {{post.title}}
-          </a>
-        </h2>
-      </div>
+      <h3>
+        <a href="{{ post.url | relative_url }}" rel="permalink">
+          {{post.title}}
+        </a>
+      </h3>
     </div>
   {% endfor %}
 

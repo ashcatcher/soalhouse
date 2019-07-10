@@ -406,31 +406,17 @@ ul {
 // Home Page Layout
 .bulletin {
   clear: both;
+  float: left;
   padding: 5px 5px 5px 5px;
   margin: 0 5px 0 5px;
-  border: 1px solid;
-  border-radius: 10px;
   display: inline-block;
   width: calc(100% - 10px);
-  &-left {
-    width: 100px;
-    float: left;
-  }
-  &-right {
-    width: 100px;
-    float: right;
-  }
-  &-content {
-    //margin-top: 25px;
-    float: left;
-    width: calc(100% - 100px);
-    //min-height: 80px;
 
-    h2 {
-      margin: 0 0 0 0;
-    }
-  }
 
+  h3 {
+  margin: 0 0 0 50px;
+  float: left;
+}
   &-date {
     float: right;
     p { margin: 0 0 0 0; }
@@ -448,6 +434,7 @@ ul {
   }
 }
 .bulletins {
+  h5.date { margin: 0 0 0 0; font-size: 0.8rem; }
   background-image: var(--rightgod);
   overflow-x: hidden;
   overflow-y: hidden;
@@ -463,10 +450,6 @@ ul {
   //  margin-top: 40px;
   //  margin-bottom: 40px;
   //}
-  h3 {
-    float: right;
-    margin: 8px;
-  }
   span {
     float: left;
     margin: 8px;
@@ -509,15 +492,16 @@ ul {
   }
 }
 
+
 .ribbon {
-  background-image: var(--sidegod);
+  &-right { background-image: var(--rightgod); }
+  &-left { background-image: var(--sidegod); }
   overflow-y: hidden;
   overflow-x: hidden;
   width: var(--sidebar-width);
   //height: var(--ribbon-height);
   //border: 1px inset var(--color-violet-dark);
   z-index: 1005;
-  
 }
 
 .whack {

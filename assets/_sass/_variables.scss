@@ -153,10 +153,10 @@
   radial-gradient(circle at -100px 50%, var(--gradient-1), transparent),
   radial-gradient(circle at 0px 50%, transparent, transparent);
   
-  --rightgod: radial-gradient(circle at  0px calc(50% - 92px), var(--gradient-2), transparent),
-  radial-gradient(circle at  100% calc(50% - 92px), var(--gradient-2), transparent),
-  radial-gradient(circle at  50% calc(50% - 92px), var(--gradient-1), transparent),
-  radial-gradient(circle at  50% calc(50% - 92px), transparent, transparent);
+  --rightgod: radial-gradient(circle at calc(100% + 100px) 0px, var(--gradient-2), transparent),
+  radial-gradient(circle at  calc(100% + 100px) 100%, var(--gradient-2), transparent),
+  radial-gradient(circle at  calc(100% + 100px) 50%, var(--gradient-1), transparent),
+  radial-gradient(circle at  100% 50%, transparent, transparent);
 
 
   --radial-whacked: repeating-radial-gradient(
