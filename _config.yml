@@ -105,20 +105,8 @@ collections:
     listed: true
     output: true
     permalink: /:collection/:title
-  pages:
-    listed: true
-    output: true
-    permalink: /:title
-
 
 defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-      priority: 5
   # _gallery
   - scope:
       path: ""
@@ -168,7 +156,6 @@ sidebar:
 
 
 include:
-  ["_pages"]
 
 exclude:
   - flightdeck.manifest.js

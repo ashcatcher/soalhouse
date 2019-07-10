@@ -35,19 +35,6 @@ collections:
           config:
             multiple: true
 
-  - name: "pages"
-    label: "Pages"
-    folder: "_pages/"
-    extension: "html"
-    create: false
-    delete: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Name", name: "name", widget: "hidden", required: true }
-      - { label: "Title", name: "title", widget: "string", default: {{name}}, required: true, hint: "Displayed in sidebar" }
-      - { label: "URL", name: "permalink", widget: "string", required: true, default: "/", hint: "The URL this page will be found at." }
-      - { label: "Priority", name: "priority", widget: "select", options: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],  default: "1", hint: "This is the relative order in which this page will appear on the sidebar. 1 = Highest, 9 - Lowest" }
-
   - name: "artisan"
     label: "artisan"
     folder: "_artisan/"
