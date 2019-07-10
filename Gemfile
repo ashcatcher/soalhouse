@@ -26,7 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", ">= 2.4.0"
   gem "jekyll-archives"
   gem "jekyll-include-cache", "~> 0.1"
-  gem "jekyll-paginate-v2"
+  gem "jekyll-paginate"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

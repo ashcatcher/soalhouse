@@ -2,6 +2,7 @@
 permalink: /:categories/:title/
 author_img_name_path: "/images/users/user.jpg"
 theme: minimal-mistakes-jekyll
+teaser: 
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -77,6 +78,7 @@ copyright_year: "2019"
 email: clboulter@shaw.ca
 
 logo: /assets/images/soal150.svg
+teaser: /assets/images/soal150.svg
 
 description: >
   Shephards of Abundant Living
@@ -142,7 +144,8 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "splash"
+      layout: "single"
+      image: /assets/images/soal150.svg
       pagination:
         enabled: true
 
@@ -154,8 +157,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
+paginate: 4 # amount of posts to show
+paginate_path: /page:num/
 
 sidebar:
   - gradient-light: #450003

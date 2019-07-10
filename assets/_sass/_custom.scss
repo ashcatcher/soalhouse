@@ -362,6 +362,32 @@
 
 // Home Page Layout
 .bulletin {
+  clear: both;
+  padding: 5px 5px 5px 5px;
+  margin: 0 5px 0 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: inline-block;
+  width: calc(100% - 10px);
+  &-image {
+    width: 100px;
+    float: left;
+  }
+  &-content {
+    float: left;
+    width: calc(100% - 100px);
+    min-height: 80px;
+
+    h2 {
+      margin: 0 0 0 0;
+    }
+  }
+  &-prompt {
+    float: right;
+    margin-right: 10px;
+  }
+}
+.bulletins {
   background-image: var(--rightgod);
   overflow-x: hidden;
   overflow-y: hidden;
@@ -372,10 +398,10 @@
     margin: 0 4% 0 4%;
     color: rgba(0,0,0,0.5);
   }
-  h2 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+  //h2 {
+  //  margin-top: 40px;
+  //  margin-bottom: 40px;
+  //}
   h3 {
     float: right;
     margin: 8px;

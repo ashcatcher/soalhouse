@@ -18,10 +18,17 @@ priority: 1
   </div>
 
   <div class="column col-6">
-    <div class="bulletin">
-      <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+    <div class="bulletins">
+      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+      {% for post in paginator.posts %}
+        {% include bulletin.html %}
+      {% endfor %}
+
+      {% include paginator.html %}
 
       {% comment %}
+      <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
       {% for post in paginator.posts %}
         <h1>{{ post.title }}</h1>
         {% include archive-single.html %}
@@ -29,6 +36,7 @@ priority: 1
 
       {% include paginator.html %}
       {% endcomment %}
+      {% comment %}
       {%- if site.posts.size > 0 -%}
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
       <hr>
@@ -50,6 +58,7 @@ priority: 1
       </ul>
       <p class="rss-subscribe clear">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
       {%- endif -%}
+      {% endcomment %}
     </div>
   </div>
 </div>
