@@ -1,6 +1,18 @@
 <div class="ribbon ribbon-left">
-  {% include emblem.html %}
-  <ul class="sidebar-nav">
+  <div class="emblem-wrapper">
+    <div id="emblem">
+      <a href="menu-toggle" id="menu-toggle">
+        <img class="whack" src="{{site.logo}}"/>
+        <input class="navbar-toggler" type="image" data-toggle="collapse"
+                                                   data-target="#solaceNav"
+                                                   aria-expanded="false"
+                                                   value="&nbsp;"
+                                                   aria-label="Toggle Navigation">
+        </input>
+      </a>
+    </div>
+  </div>
+  <ul>
     {% for nav in site.data.navigation.sidebar %}
       <li>
         <a href="{{nav.url}}"

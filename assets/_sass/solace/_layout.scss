@@ -1,0 +1,70 @@
+#sidebar-wrapper {
+  left: var(--sidebar-width);
+  margin-left: calc(0px - var(--sidebar-width));
+}
+#right-sidebar {
+  right: var(--sidebar-width);
+  margin-right: -250px;
+}
+#wrapper {
+  padding-left: 0;
+  //padding-top: calc(0.75 * var(--logo-height));
+  transition: all 0.5s ease;
+
+  #page-content-wrapper {
+    width: 100vw;
+    margin: 0;
+    background: transparent;
+    position: relative;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+    transition: 1s all;
+
+  }
+  &.toggled {
+    padding-left: var(--sidebar-width);
+    padding-right: var(--sidebar-width);
+
+    #sidebar-wrapper, #right-sidebar {
+      width: var(--sidebar-width);
+    }
+    #page-content-wrapper {
+      margin: 0;
+      padding: 0;
+      margin-right: 0px;
+      position: absolute;
+      width: calc( 100% - 500px);
+      padding: 0 0 0 0;      //height: 300px;
+    position: absolute;    }
+  }
+}
+
+@media(min-width: 768px) {
+  #wrapper {
+    padding-left: 0;
+    padding-right: 0;
+
+    &.toggled {
+      padding-left: var(--sidebar-width);
+      padding-right: var(--sidebar-width);
+
+      #sidebar-wrapper {
+        width: var(--sidebar-width);
+      }
+
+      #page-content-wrapper {
+        position: absolute;
+        margin-right: 0;
+        width: calc(100% - 500px);
+      }
+    }
+  }
+  #sidebar-wrapper {
+    width: 0;
+    overflow-x: hidden;
+  }
+  #page-content-wrapper {
+  }
+}

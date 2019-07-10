@@ -12,9 +12,6 @@
   </head>
 
   <body class="{{ page.layout | default: layout.layout}}-layout">
-    {% comment %}
-    {% include masthead.html %}
-    {% endcomment %}
     <div id="wrapper" class="toggled">
       <div id="sidebar-wrapper" class="sidebars">
         {% include sidebar.html %}
@@ -22,20 +19,12 @@
       <div id="right-sidebar" class="sidebars">
         {% include right-sidebar.html %}
       </div>
-
-
       <div id="page-content-wrapper">
         <div class="container-fluid" id="content">
           {{content}}
         </div>
       </div>
-
-      
-
-
     </div>
-
     {% include scripts.html %}
-
   </body>
 </html>
