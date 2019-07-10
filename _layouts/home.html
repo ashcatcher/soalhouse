@@ -28,14 +28,15 @@ priority: 1
   {% include paginator.html %}
 </div>
 
-<div style="width: 250px; margin-top: 250px;">
-  <a href="https://www.facebook.com/{{site.data.settings.facebook_page}}/">
-    <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
-  </a>
-</div>
-
-<div>
-  {% include paypal_button.html %}
+<div class = "whore">
+  <div class="whore-fb">
+    <a href="https://www.facebook.com/{{site.data.settings.facebook_page}}/">
+      <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
+    </a>
+  </div>
+  <div class="whore-pp">
+    {% include paypal_button.html %}
+  </div>
 </div>
 
 
