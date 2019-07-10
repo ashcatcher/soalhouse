@@ -12,7 +12,9 @@
   </head>
 
   <body class="{{ page.layout | default: layout.layout}}-layout">
+    {% comment %}
     {% include masthead.html %}
+    {% endcomment %}
     <div id="wrapper" class="toggled">
       <div id="sidebar-wrapper">
         {% include sidebar.html %}

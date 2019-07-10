@@ -3,7 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     $('#wrapper').toggleClass('toggled');
     $('.skylift').toggleClass('toggled');
-    $('.radial-whack').toggleClass('toggled');
+    $('.whack').toggleClass('toggled');
   });
 
   $(window).resize(function(event) {

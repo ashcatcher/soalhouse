@@ -1,16 +1,15 @@
 <div class="ribbon">
-  <div style="margin-top: 250px;">
-    <ul class="sidebar-nav">
-      {% for nav in site.data.navigation.sidebar %}
-        <li>
-          <a href="{{nav.url}}"
-             {% if page.url contains  nav.url %}
-               id="active"
-             {% endif %}>
-            {{ nav.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  {% include emblem.html %}
+  <ul class="sidebar-nav">
+    {% for nav in site.data.navigation.sidebar %}
+      <li>
+        <a href="{{nav.url}}"
+           {% if page.url contains  nav.url %}
+             id="active"
+           {% endif %}>
+          {{ nav.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

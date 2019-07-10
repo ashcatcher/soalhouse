@@ -98,7 +98,7 @@
 // SIdebar
 #wrapper {
   padding-left: 0;
-  padding-top: calc(0.75 * var(--logo-height));
+  //padding-top: calc(0.75 * var(--logo-height));
   transition: all 0.5s ease;
   &.toggled {
     padding-left: var(--sidebar-width);
@@ -107,9 +107,11 @@
       width: var(--sidebar-width);
     }
     #page-content-wrapper {
+      margin: 0;
+      padding: 0;
       margin-right: 0px;
       position: absolute;
-      height: 300px;
+      //height: 300px;
     }
   }
 }
@@ -409,7 +411,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 1005;
-  margin: -125px 0 4% 4%;
+  //margin: -125px 0 4% 4%;
   border-radius: 5px;
   hr {
     margin: 0 4% 0 4%;
@@ -505,11 +507,12 @@
   left: 25px;
   right: 0;
   bottom: 0;
-  position:fixed;
+  position:absolute;
   height: 200px;
   width: 200px;
+  transition: all 1s;
   &.toggled {
-    position: absolute;
+    position: fixed;
   }
 }
 
