@@ -12,7 +12,7 @@
 
 <div class="bulletin">
 
-  <div class="bulletin-image">
+  <div class="bulletin-left">
     <img src=
          {% if teaser contains "://" %}
            "{{ teaser }}"
@@ -21,23 +21,22 @@
        {% endif %}
          alt="">
   </div>
-  <div class="bulletin-content">
-    <h2 itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
-
-
+  <div class="bulletin-date">
+    <p>July 9, 2019</p>
   </div>
-  <div class="bulletin-prompt">
-    <a href="{{ post.url | relative_url }}" rel="permalink">Read More...</a>
+  <div class="bulletin-title">
+    <h2>{{post.title}}</h2>
+  </div>
+
+  <div class="bulletin-content">
+
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </div>
+  <div class="bulletin-right">
+
+    <div class="bulletin-prompt">
+      <a href="{{ post.url | relative_url }}" rel="permalink">Read More...</a>
+    </div>
   </div>
 
 

@@ -369,22 +369,39 @@
   border-radius: 10px;
   display: inline-block;
   width: calc(100% - 10px);
-  &-image {
+  &-left {
     width: 100px;
     float: left;
   }
+  &-right {
+    width: 100px;
+    float: right;
+  }
   &-content {
+    //margin-top: 25px;
     float: left;
     width: calc(100% - 100px);
-    min-height: 80px;
+    //min-height: 80px;
 
     h2 {
       margin: 0 0 0 0;
     }
   }
+
+  &-date {
+    float: right;
+    p { margin: 0 0 0 0; }
+  }
   &-prompt {
     float: right;
     margin-right: 10px;
+  }
+  &-title {
+    width: calc(100% - 100px);
+    float: left;
+    h2 {
+      //font-size:vw;
+    }
   }
 }
 .bulletins {
