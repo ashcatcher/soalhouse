@@ -11,9 +11,11 @@ $(document).ready(function() {
       $('#wrapper').removeClass('toggled');
       $('.skylift').removeClass('toggled');
       $('.whack').addClass('toggled');
+      $('#content').addClass('toggled');
     }else{
       $('#wrapper').addClass('toggled');
       $('.whack').removeClass('toggled');
+      $('#content').removeClass('toggled');
     }
   });
 });

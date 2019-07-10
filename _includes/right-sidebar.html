@@ -8,17 +8,22 @@
       {% capture nday %}{{ post.next.date | date: "%m%d%Y" }}{% endcapture %}
 
       {% if date != nday %}
+        {% unless forloop.first == true %}
+          </ol>
+        {% endunless %}
         <h5 class="date">{{post.date | date: "%A, %B %e, %Y"}}</h5>
         <hr>
-      {% endif %}
-      <div class="bulletin">
-        <h3>
+        <ol>
+        {% endif %}
+        <li class="bulletin">
           <a href="{{ post.url | relative_url }}" rel="permalink">
             {{post.title}}
           </a>
-        </h3>
-      </div>
-    {% endfor %}
+        </li>
+        {% if forloop.last == true %}
+          </ol>
+        {% endif %}
+      {% endfor %}
   </div>
   {% include paginator.html %}
 </div>
