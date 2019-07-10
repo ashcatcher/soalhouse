@@ -4,61 +4,38 @@ title: Home
 permalink: /
 priority: 1
 ---
-<div class="columns">
-  <div class="column col-6 pimp">
-    <div>
-      <a href="https://www.facebook.com/{{site.data.settings.facebook_page}}/">
-        <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"
-                                                      style="margin-top: 1.5rem;"/>
-      </a>
+<div class="bulletins ribbon">
+  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  {% assign thedate = '' %}
+  {% for post in paginator.posts %}
+    {% capture date %}{{ post.date | date: "%m%d%Y"}}{% endcapture %}
+    {% capture nday %}{{ post.next.date | date: "%m%d%Y" }}{% endcapture %}
+
+    {% if day != nday %}
+      <h5 class="date">{{post.date | date: "%A, %B %e, %Y"}}</h5>
+    {% endif %}
+    <div class="bulletin">
+      <div class="bulletin-title">
+        <h2>
+          <a href="{{ post.url | relative_url }}" rel="permalink">
+            {{post.title}}
+          </a>
+        </h2>
+      </div>
     </div>
-    <div>
-      {% include paypal_button.html %}
-    </div>
-  </div>
+  {% endfor %}
 
-  <div class="column col-6">
-    <div class="bulletins">
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      {% for post in paginator.posts %}
-        {% include bulletin.html %}
-      {% endfor %}
-
-      {% include paginator.html %}
-
-      {% comment %}
-      <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-      {% for post in paginator.posts %}
-        <h1>{{ post.title }}</h1>
-        {% include archive-single.html %}
-      {% endfor %}
-
-      {% include paginator.html %}
-      {% endcomment %}
-      {% comment %}
-      {%- if site.posts.size > 0 -%}
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <hr>
-      <ul>
-        {%- for post in site.posts -%}
-        <li class="clear">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-      <p class="rss-subscribe clear">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-      {%- endif -%}
-      {% endcomment %}
-    </div>
-  </div>
+  {% include paginator.html %}
 </div>
+
+<div style="width: 250px; margin-top: 250px;">
+  <a href="https://www.facebook.com/{{site.data.settings.facebook_page}}/">
+    <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
+  </a>
+</div>
+
+<div>
+  {% include paypal_button.html %}
+</div>
+
+
