@@ -116,7 +116,7 @@
   overflow-y: hidden;
   overflow-x: hidden;
   width: var(--sidebar-width);
-  height: 90%;
+  height: 100%;
   //border: 1px inset var(--color-violet-dark);
   z-index: 1005;
 }
@@ -192,7 +192,7 @@
 }
 .bulletins {
   h5.date { margin: 0 0 0 0; font-size: 0.8rem; }
-  h2.post-list-heading { padding-top: 62.5px; }
+  h2.post-list-heading { padding: 62.5px 0 42.5px 0; }
   //width: 100%;
   //background-image: var(--rightgod);
   overflow-x: hidden;

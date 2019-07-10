@@ -4,37 +4,5 @@ title: Home
 permalink: /
 priority: 1
 ---
-<div class="ribbon ribbon-right">
-  <div class="bulletins">
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    {% assign thedate = '' %}
-    {% for post in paginator.posts %}
-      {% capture date %}{{ post.date | date: "%m%d%Y"}}{% endcapture %}
-      {% capture nday %}{{ post.next.date | date: "%m%d%Y" }}{% endcapture %}
-
-      {% if date != nday %}
-        <h5 class="date">{{post.date | date: "%A, %B %e, %Y"}}</h5>
-        <hr>
-      {% endif %}
-      <div class="bulletin">
-        <h3>
-          <a href="{{ post.url | relative_url }}" rel="permalink">
-            {{post.title}}
-          </a>
-        </h3>
-      </div>
-    {% endfor %}
-  </div>
-  {% include paginator.html %}
-</div>
-
-<div class = "whore">
-  <div class="whore-fb">
-    <a href="https://www.facebook.com/{{site.data.settings.facebook_page}}/">
-      <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top"/>
-    </a>
-  </div>
-  <div class="whore-pp">
-    {% include paypal_button.html %}
-  </div>
-</div>
+{% include right-sidebar.html %}
+{{content}}

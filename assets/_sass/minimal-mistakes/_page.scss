@@ -4,13 +4,13 @@
 
 #main {
   @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  //margin-left: auto;
+  //margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
-  max-width: 100%;
+  max-width: calc(100% - 250px);
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
