@@ -48,7 +48,7 @@
 
     &.toggled {
       padding-left: var(--sidebar-width);
-      padding-right: var(--sidebar-width);
+      //padding-right: var(--sidebar-width);
 
       #sidebar-wrapper {
         width: var(--sidebar-width);
@@ -57,7 +57,7 @@
       #page-content-wrapper {
         position: absolute;
         margin-right: 0;
-        width: calc(100% - 500px);
+        width: calc(100% - 250px);
       }
     }
   }
