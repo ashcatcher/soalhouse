@@ -134,8 +134,8 @@ defaults:
     values:
       layout: "single"
       image: /assets/images/soal150.svg
-      pagination:
-        enabled: true
+      # pagination:
+      #   enabled: true
 
 # Build settings
 markdown: kramdown
@@ -145,10 +145,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
-  - jekyll-paginate
+    # - jekyll-paginate
 
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 
 sidebar:
   - gradient-light: #450003
