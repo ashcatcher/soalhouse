@@ -112,7 +112,7 @@ defaults:
       path: ""
       type: "gallery"
     values:
-      layout: "profile"
+      layout: "exhibit"
       images:
         - "/assets/images/soal150.svg"
         - "/assets/images/soal150.svg"

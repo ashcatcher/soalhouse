@@ -13,27 +13,27 @@ layout: default
   {% endcomment %}
   <div class="container">
     <div class="columns" style="justify-content: space-around;">
-      {% for art in site.gallery %}
-        {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
-        {% assign art_url = art.url | append: ".html" %}
+      {% for exhibit in site.gallery %}
+        {% assign artisan_url =  exhibit.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
+        {% assign art_url = exhibit.url | append: ".html" %}
         <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
           <div class="card-header">
-            <div class="h5">{{art.title}}</div>
+            <div class="h5">{{exhibit.title}}</div>
           </div>
 
           <a href="{{art_url}}">
             <div class="card-image">
-              {% if art.images.first.thumbnail_image %}
-                <img src="{{art.images.first.thumbnail_image}}" class="img-responsive"/>
+              {% if exhibit.images.first.thumbnail_image %}
+                <img src="{{exhibit.images.first.thumbnail_image}}" class="img-responsive"/>
               {% else %}
-                <img src="{{art.images.first.image}}" class="img-responsive"/>
+                <img src="{{exhibit.images.first.image}}" class="img-responsive"/>
               {% endif %}
             </div>
           </a>
           <div class="card-footer">
             <a href="{{artisan_url}}">
               <div class="card-subtitle text-gray">
-                <small>by</small> {{art.artisan}}</div>
+                <small>by</small> {{exhibit.artisan}}</div>
           </div>
             </a>
         </div>
