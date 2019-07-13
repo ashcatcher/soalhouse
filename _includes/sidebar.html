@@ -16,7 +16,7 @@
     {% for nav in site.data.navigation.sidebar %}
       <li>
         <a href="{{nav.url}}"
-           {% if page.url contains  nav.url %}
+           {% if page.url == nav.url %}
              id="active"
            {% endif %}>
           {{ nav.title }}

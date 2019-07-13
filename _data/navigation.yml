@@ -1,9 +1,7 @@
 sidebar:
-  - title: "House"
+  - title: "House Gallery"
     url: /
-  - title: "Gallery"
-    url: /gallery/
-  - title: "Artisans"
+  - title: "Resident Artisans"
     url: /artisans/
   - title: "Accomodations"
     url: /rooms/

@@ -12,6 +12,7 @@ media_library:
     default_transformations:
       -   - fetch_format: auto
             width: auto:50
+            gravity: auto
 public_folder: "assets/images"
 logo_url: "https://soalhouse.ca/assets/images/soal150.svg"
 
