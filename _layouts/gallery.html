@@ -1,8 +1,43 @@
 ---
 layout: default
 ---
-<div class="gallery container">
-  <div class="columns">
-    {{content}}
+<div class="gallery">
+  {% comment %}
+  <aside class="sidebar-right">
+    <nav class="knows-picker">
+      <header>
+        <h4>Sample Header</h4>
+      </header>
+    </nav>
+  </aside>
+  {% endcomment %}
+  <div class="container">
+    <div class="columns" style="justify-content: space-around;">
+      {% for art in site.gallery %}
+        {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
+        {% assign art_url = art.url | append: ".html" %}
+        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
+          <div class="card-header">
+            <div class="h5">{{art.title}}</div>
+          </div>
+
+          <a href="{{art_url}}">
+            <div class="card-image">
+              {% if art.images.first.thumbnail_image %}
+                <img src="{{art.images.first.thumbnail_image}}" class="img-responsive"/>
+              {% else %}
+                <img src="{{art.images.first.image}}" class="img-responsive"/>
+              {% endif %}
+            </div>
+          </a>
+          <div class="card-footer">
+            <a href="{{artisan_url}}">
+              <div class="card-subtitle text-gray">
+                <small>by</small> {{art.artisan}}</div>
+          </div>
+            </a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
