@@ -2,12 +2,19 @@
 layout: default
 ---
 <div class="columns">
-  <div class="column col-6">
-    <img src="/assets/images/Emblem-Oval.png" style="padding-top: 10px;"/>
+  <div class="column col-6 col-xs-12">
+    <img src="/assets/images/Emblem-Oval.png" style="padding-top: 10px; width:
+    250px;"/>
+    <a href="https://www.facebook.com/{{site.data.settings.facebook_page}}/">
+      <img src="/assets/facebook/FindUs-FB-RGB.svg" class="card-img-top about-fb"/>
+    </a>
+    <div class="about-pp">
+      {% include paypal_button.html %}
+    </div>
   </div>
 
 
-  <div class="column col-6 tennants" style="background-color: rgba(0,0,0,0.5);">
+  <div class="column col-6 col-xs-12 tennants" style="background-color: rgba(0,0,0,0.5);">
     <h3>{{site.data.about.title}}</h3>
     <ol>
       {% for tennant in site.data.about.tennants %}

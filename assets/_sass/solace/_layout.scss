@@ -20,8 +20,10 @@
     margin-left: 0;
     margin-right: 0;
     clear: both;
-    transition: 1s all;
-
+    //transition: 1s all;
+    @include maxwidth(768px){
+      margin-top: 250px;
+    }
   }
   &.toggled {
     padding-left: var(--sidebar-width);
