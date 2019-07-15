@@ -7,7 +7,7 @@ description: >-
 
   Knight of Armour is waiting to guard your artistic pleasures, as hours of fun
   can be had identifying what he is made of!  
-price: 5000.00
+price: 5000
 id: 2
 images:
   - image: >-

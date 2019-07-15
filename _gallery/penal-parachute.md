@@ -4,7 +4,7 @@ artisan: Joe Renaud
 description: >
   Many metals make this saucy sculpture come to life; could even make a great
   footstool for a chuckle, carries a decent sound as percussion.
-price: 1000.00
+price: 1000
 id: 4
 images:
   - image: >-

@@ -2,7 +2,7 @@
 title: Ancients under the Moon
 artisan: CABN Feva
 description: Hand cut stencils with airbrush finish
-price: 120.00
+price: 120
 id: 3
 images:
   - image: >-
