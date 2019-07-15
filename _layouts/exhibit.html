@@ -45,14 +45,20 @@ layout: default
         <p>{{page.description}}</p>
       </div>
       <div class="profile-final">
+
+        {% include snipcart_button.html %}
+
+        {% comment %}
         <h4 style="float: left;">Asking</h4>
         <a href="{{artisan_url}}">
           <button style="float: right; width: calc(100% - 100px);" class="btn
             btn-secondary">View artisan Profile</button>
         </a>
+
         <h5 style="clear: both; float: left;">${{page.price}}</h5>
         <button style="float: right; width: 100%; width: calc(100% - 100px);"
           class="btn btn-primary">Make Offer</button>
+        {% endcomment %}
 
       </div>
       <div class="btn-group btn-group-block profile-action">

@@ -1,0 +1,13 @@
+{% capture sku %}
+  {{page.artisan | strip}}-{{page.name | strip}}
+{% endcapture %}
+<button class="snipcart-add-item"
+        data-item-name="{{ page.name | default: page.title }}"
+        data-item-id="{{sku}}"
+        data-item-image="{{page.images.first.thumbnail_image | default:
+        page.images.first.image}}"
+        data-item-url="{{site.baseurl}}"
+        data-item-price="{{page.price}}"
+        style="color: black;">
+  Buy it for {{ page.price }} $
+</button>
