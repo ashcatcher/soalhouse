@@ -1,13 +1,18 @@
 {% capture sku %}
-  {{page.artisan | strip}}-{{page.name | strip}}
+  {{page.artisan | strip | replace: " ", "-" | downcase}}-{{page.title | strip | replace: "
+  ", "-" | downcase}}
 {% endcapture %}
 <button class="snipcart-add-item"
         data-item-name="{{ page.name | default: page.title }}"
         data-item-id="{{sku}}"
         data-item-image="{{page.images.first.thumbnail_image | default:
         page.images.first.image}}"
-        data-item-url="{{site.baseurl}}"
+        data-item-url="{{page.url}}"
+        data-item-max-quantity="{{page.stock | default: 1}}"
         data-item-price="{{page.price}}"
+        data-item-id="{{page.id}}"
+        data-item-description="{{page.description}}"
+        data-item-weight="{{page.weight | default: 20}}"
         style="color: black;">
   Buy it for {{ page.price }} $
 </button>

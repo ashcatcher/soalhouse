@@ -3,6 +3,7 @@ title: Soother
 artisan: Joe Renaud
 description: This giant soother is combined metals meant to stir the imagination.
 price: 1000.00
+id: 5
 images:
   - image: >-
       https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623233/Gallery/sooth1_ueff8x.jpg
