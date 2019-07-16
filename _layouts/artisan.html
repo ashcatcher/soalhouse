@@ -3,21 +3,12 @@ layout: default
 ---
 
 <div class="artisan container">
-  <div class="columns">
-    <div class="column col-4">
-      <img src="{{site.logo}}">
-    </div>
+  <img src="{{site.logo}}">
+  <h2><b>{{page.name}}</b></h2>
 
-    <div class="column col-8">
-      <div class="artisan-header">
-        <h2><b>{{page.name}}</b></h2>
-      </div>
-      <div class="artisan-bio">
-        <p>{{page.bio}}</p>
-      </div>
-    </div>
-  </div>
-  <h3>Gallery</h3>
+  {{page.content}}
+
   <hr>
+  <h3>Artisan Gallery</h3>
   {% include more_by_artist.html %}
 </div>
