@@ -2,7 +2,7 @@
   {{page.artisan | strip | replace: " ", "-" | downcase}}-{{page.title | strip | replace: "
   ", "-" | downcase}}
 {% endcapture %}
-<button class="snipcart-add-item"
+<button class="snipcart-add-item btn btn-primary btn-lg"
         data-item-name="{{ page.name | default: page.title }}"
         data-item-id="{{sku}}"
         data-item-image="{{page.images.first.thumbnail_image | default:
@@ -12,7 +12,6 @@
         data-item-price="{{page.price}}"
         data-item-id="{{page.id}}"
         data-item-description="{{page.description}}"
-        data-item-weight="{{page.weight | default: 20}}"
-        style="color: black;">
-  Buy it for {{ page.price }} $
+        data-item-weight="{{page.weight | default: 20}}">
+  Add to Cart
 </button>

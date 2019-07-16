@@ -1,0 +1,43 @@
+<section id="gallery" class="simplegallery">
+  <div class="content">
+    {% for image in page.images %}
+      {% if forloop.index == 1 %}
+        <img src="{{image.image}}" class="active image_{{forloop.index}}" />
+      {% else %}
+        <img src="{{image.image}}" class="image_{{forloop.index}}"
+                                   style="display: none;" />
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="clear"></div>
+  <div class="thumbnail">
+    {% for image in page.images %}
+      <div class="thumb{% if forloop.last %} last{% endif %}">
+        <a href="#" rel="{{forloop.index}}">
+          {% if image.thumbnail_image %}
+            <img src="{{image.thumbnail_image}}"
+                 id="thumb_{{forloop.index}}" alt="" />
+          {% else %}
+            <img src="{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script type="text/javascript">
+  function hideImages(number) {
+    var image = ".image_" + number
+    $(".content").children("img").hide();
+    console.log(image);
+    $(image).show();
+  }
+  $(document).ready(function(){
+    $(".thumb").children('a').click(function(event){
+      event.preventDefault();
+      console.log(this.rel);
+      hideImages(this.rel);
+    });
+  });
+</script>

@@ -1,84 +1,30 @@
 ---
 layout: default
 ---
-<div class="container" style="background-color: rgba(0,0,0,0.5);">
+<div class="exhibit container">
   <div class="columns">
-    <div class="column col-6 col-xs-12">
-      <section id="gallery" class="simplegallery">
-        <div class="content">
-          {% for image in page.images %}
-            {% if forloop.index == 1 %}
-              <img src="{{image.image}}" class="active image_{{forloop.index}}" />
-            {% else %}
-              <img src="{{image.image}}" class="image_{{forloop.index}}"
-                                         style="display: none;" />
-            {% endif %}
-          {% endfor %}
-        </div>
-        <div class="clear"></div>
-        <div class="thumbnail">
-          {% for image in page.images %}
-            <div class="thumb{% if forloop.last %} last{% endif %}">
-              <a href="#" rel="{{forloop.index}}">
-                {% if image.thumbnail_image %}
-                  <img src="{{image.thumbnail_image}}"
-                       id="thumb_{{forloop.index}}" alt="" />
-                {% else %}
-                  <img src="{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
-                {% endif %}
-              </a>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
+
+    <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      {% include simple_gallery.html %}
     </div>
-    <div class="column col-6 col-xs-12">
-      <div class="profile-title">
-        <h2 style="margin-bottom: 10px">{{page.title}}</h2>
-        {% if page.artisan %}
-          {% assign artisan_url = page.artisan | slugify | prepend: "/artisan/" | append: ".html" %}
-          <a href="{{artisan_url}}"><h3><small>by </small>{{page.artisan}}</h3></a>
-        {% endif %}
-      </div>
-      <div class="profile-description" style="min-height: 150px;
-      background-color: rgba(255,0,0,0.25);">
-        <p>{{page.description}}</p>
-      </div>
-      <div class="profile-final">
 
-        {% include snipcart_button.html %}
+    <div class="exhibit-details column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <h1>{{page.title}}</h1>
 
-        {% comment %}
-        <h4 style="float: left;">Asking</h4>
-        <a href="{{artisan_url}}">
-          <button style="float: right; width: calc(100% - 100px);" class="btn
-            btn-secondary">View artisan Profile</button>
-        </a>
+      {% if page.artisan %}
+        <h4><small>by</small></h4>
+        {% assign artisan_url = page.artisan | slugify | prepend: "/artisan/" | append: ".html" %}
+        <h2><a href="{{artisan_url}}">{{page.artisan}}</a></h2>
+      {% endif %}
 
-        <h5 style="clear: both; float: left;">${{page.price}}</h5>
-        <button style="float: right; width: 100%; width: calc(100% - 100px);"
-          class="btn btn-primary">Make Offer</button>
-        {% endcomment %}
+      <p>{{page.description}}</p>
 
-      </div>
-      <div class="btn-group btn-group-block profile-action">
-      </div>
+      <h3>Asking ${{page.price}}</h3>
+
+      {% include snipcart_button.html %}
+
     </div>
   </div>
+  <h2>More by {{page.artisan}}</h2>
   {% include more_by_artist.html %}
 </div>
-<script type="text/javascript">
-  function hideImages(number) {
-    var image = ".image_" + number
-    $(".content").children("img").hide();
-    console.log(image);
-    $(image).show();
-  }
-  $(document).ready(function(){
-    $(".thumb").children('a').click(function(event){
-      event.preventDefault();
-      console.log(this.rel);
-      hideImages(this.rel);
-    });
-  });
-</script>

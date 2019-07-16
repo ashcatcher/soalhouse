@@ -21,8 +21,14 @@
     margin-right: 0;
     clear: both;
     //transition: 1s all;
+    /*
     @include maxwidth(768px){
       margin-top: 250px;
+    }
+    */
+
+    #content {
+      padding-top: .4rem;
     }
   }
   &.toggled {
