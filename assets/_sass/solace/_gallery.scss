@@ -87,13 +87,42 @@
     }
   }
 }
-// Styles for the Profile image gallery
+
+// Styles for Artisan Layout
+
+.artisan {
+  //background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.9);
+
+  h2 {
+    padding-top: 1.5rem;
+  }
+}
+
+// Styles for Exhibit Layout
+
+.exhibit {
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  p,b,h1,h2,h3,h4,h4,h6,{
+    color: black;
+  }
+  &-details {
+    text-align: center;
+    h1 {padding-top: 1.8rem;}
+    h2 a {font-size: 1.8rem;}
+    h3 {float: left; text-align: left;}
+    p {min-height: 1.8rem;}
+  }
+}
+
+// Styles for Image Picker in Exhibit layout
+
 .simplegallery {
   margin: 0 auto;
   width: 100%;
   height: auto;
   overflow: hidden;
-
   .content {
     background: transparent;
     position: relative;
@@ -101,17 +130,13 @@
     height: auto;
     padding: 5px 5px 5px 5px;
     overflow: hidden;
-
     img {
       height: auto;
-      //max-height: 350px;
       max-height: 100vh;
       border: 1px solid #9c9c9c;
       border-radius: 5px;
       display: none;
-      &.active {
-        display: inline;
-      }
+      &.active {display: inline;}
     }
   }
 
@@ -126,35 +151,54 @@
       height: auto;
       margin: 0 5px 0 0;
       cursor: pointer;
-
-      img {
-        border: 1px solid #9c9c9c;
-        width: 100px;
-      }
+      img {border: 1px solid #9c9c9c; width: 100%;}
     }
-
     .last { margin: 0; }
   }
 }
 
-.artisan {
-  background-color: rgba(0,0,0,0.5);
+// Styles for Gallery Layout
 
-  h2 {
-    padding-top: 1.5rem;
+.exhibits {
+  justify-content: space-around;
+  //background-color: rgba(255,255,255,0.6);
+  align-items: end;
+  .column {
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    img {margin: 0 auto 0 auto; max-width: 150px;}
   }
 }
 
-.exhibit {
-  background-color: rgba(255,255,255,0.95);
-  p,b,h1,h2,h3,h4,h4,h6,{
-    color: black;
+// Defunct Gallery styles
+.gallery {
+  margin-top: 25px;
+  position: relative;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
+
+  .content img {
+    padding: 4px;
+    border: none;
   }
-  &-details {
+  &-card {
+    background: var(--radical-redemption);
+    z-index: 50;
+    max-width: 200px;
+    height: 100%;
+    align-items: center;
+    opacity: 1;
     text-align: center;
-    h1 {padding-top: 1.8rem;}
-    h2 a {font-size: 1.8rem;}
-    h3 {float: left; text-align: left;}
-    p {min-height: 1.8rem;}
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    margin: 0 0 0 0;
+
+    img {
+      max-width: 150px;
+    }
   }
 }

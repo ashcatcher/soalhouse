@@ -2,40 +2,25 @@
 layout: default
 ---
 <div class="gallery">
-  {% comment %}
-  <aside class="sidebar-right">
-    <nav class="knows-picker">
-      <header>
-        <h4>Sample Header</h4>
-      </header>
-    </nav>
-  </aside>
-  {% endcomment %}
   <div class="container">
-    <div class="columns" style="justify-content: space-around;">
+    <div class="exhibits columns">
       {% for exhibit in site.gallery %}
         {% assign artisan_url =  exhibit.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
         {% assign art_url = exhibit.url | append: ".html" %}
-        <div class="column col-auto col-mx-auto col-ml-auto gallery-card card">
-          <div class="card-header">
-            <div class="h5">{{exhibit.title}}</div>
-          </div>
+        {% assign img = exhibit.images.first.image %}
+        {% assign timg = exhibit.images.first.thumbnail_image %}
+
+        <div class="column col-auto col-mx-auto col-ml-auto card">
 
           <a href="{{art_url}}">
-            <div class="card-image">
-              {% if exhibit.images.first.thumbnail_image %}
-                <img src="{{exhibit.images.first.thumbnail_image}}" class="img-responsive"/>
-              {% else %}
-                <img src="{{exhibit.images.first.image}}" class="img-responsive"/>
-              {% endif %}
-            </div>
+          <img src="{% if timg %}{{ timg }}{% else %}{{ img }}{% endif %}"
+                 class="img-responsive" />
+          <h5>{{exhibit.title}}</h5>
           </a>
-          <div class="card-footer">
-            <a href="{{artisan_url}}">
-              <div class="card-subtitle text-gray">
-                <small>by</small> {{exhibit.artisan}}</div>
-          </div>
-            </a>
+
+          <a href="{{artisan_url}}">
+            <h6><small>by: </small>{{ exhibit.artisan }}</h6>
+          </a>
         </div>
       {% endfor %}
     </div>
