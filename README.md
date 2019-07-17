@@ -3,8 +3,10 @@
 - [x]exhibit:
     - [x] Individual Product Page
     - [.] Optional Snipcart Buy it now Button for e-commerce
-    - [.] Optional Contact Form for private offers/inquiries
-    - [X] URL linked Exhibit to Artisan (relational)
+      - [ ] Toggle presence of Snipcart e-commerce object
+      - [ ] Toggle various snipcart meta information
+    - [ ] Optional Make Offer Button instead of/in addition to Add to Cart
+      - [.] Include Contact Form at bottom of exhibit page
     - [x] Footer Gallery containing other works by Artist
         - [ ] Conditional logic for condition where Artist has only 1 piece
 

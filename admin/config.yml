@@ -93,14 +93,14 @@ collections:
         name: "name"
         widget: "string"
         required: true
-      - label: "Content"
-        name: "body"
-        widget: "markdown"
-        required: false
       - label: "Excerpt"
         name: "excerpt"
         description: "140 (or less) characters to describe this person"
         widget: "string"
+        required: false
+      - label: "Content"
+        name: "body"
+        widget: "markdown"
         required: false
       - label: "Image"
         name: "image"
