@@ -27,7 +27,7 @@ collections:
         name: "title"
         widget: "string"
         required: true
-      - label: "artisan"
+      - label: "Artisans"
         name: "artisan"
         widget: "relation"
         collection: "artisan"
