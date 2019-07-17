@@ -118,9 +118,8 @@ defaults:
         - "/assets/images/soal150.svg"
         - "/assets/images/soal150.svg"
         - "/assets/images/soal150.svg"
-      description: >
-        ""
-  # _artisan
+      stock: 1
+       # _artisan
   - scope:
       path: ""
       type: "artisan"

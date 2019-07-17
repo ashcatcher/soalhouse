@@ -44,6 +44,11 @@ collections:
         widget: "number"
         default: ""
         required: false
+      - label: "Stock"
+        name: "stock"
+        widget: "number"
+        default: 1
+        required: false
       - label: "Images"
         name: "images"
         widget: "list"
