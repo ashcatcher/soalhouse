@@ -82,7 +82,7 @@
     img {
       height: auto;
       max-height: 100vh;
-      border: 1px solid #9c9c9c;
+      border: 1px solid transparent;
       border-radius: 5px;
       display: none;
       &.active {display: inline;}

@@ -1,9 +1,6 @@
 ---
 title: Neo Gothic Torso
 artisan: Joe Renaud
-description: |-
-  Torso of a Neo Gothic Warrior, made from repurposed materials formed together
-    to show a strong yet softer side of the combined metals
 price: 5000
 id: 1
 images:
@@ -24,4 +21,4 @@ images:
     thumbnail_image: >-
       https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623201/Gallery/ngt4_qrtfqf.jpg
 ---
-
+Torso of a Neo Gothic Warrior, made from repurposed materials formed together to show a strong yet softer side of the combined metals

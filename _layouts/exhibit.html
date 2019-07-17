@@ -21,7 +21,7 @@ layout: default
       {% include snipcart_button.html %}
 
       <div class="exhibit-content">
-        {{page.content}}
+        {{page.content | markdownify}}
       </div>
 
 
