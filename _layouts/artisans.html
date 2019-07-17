@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-<div class="gallery container">
+<div class="artisans container">
   {% for artisan in site.artisan %}
     {% assign artisan_url = artisan.url | append: ".html" %}
-    <div class="artisan-card">
-      <div class="artisan-card-image">
-        <img src="{{artisan.image}}" class="img-responsive"/>
-      </div>
-      <div class="artisan-card-content">
-        <h3>{{artisan.name}}</h3>
-        <p>{{artisan.bio}}</p>
-        <a href="{{artisan_url}}">
-          <button class="btn btn-primary">View Profile</button>
-        </a>
-      </div>
+    <div class="card">
+      <img src="{{artisan.image}}" class="img-responsive"/>
+      <h3>{{artisan.name}}</h3>
+      <p>{{artisan.bio}}</p>
+      <a href="{{artisan_url}}">
+        <button class="btn btn-primary">View Profile</button>
+      </a>
     </div>
   {% endfor %}
 </div>

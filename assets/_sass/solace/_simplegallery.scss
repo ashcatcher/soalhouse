@@ -1,0 +1,38 @@
+.simplegallery {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .content {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    img {
+      height: auto;
+      max-height: 100vh;
+      border: 1px solid #9c9c9c;
+      border-radius: 5px;
+      display: none;
+      &.active {display: inline;}
+    }
+  }
+
+  .thumbnail {
+    margin: 5px auto 5px auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    .thumb {
+      float: left;
+      width: 20%;
+      height: auto;
+      margin: 0 5px 0 0;
+      cursor: pointer;
+      img {border: 1px solid #9c9c9c; width: 100%;}
+    }
+    .last { margin: 0; }
+  }
+}

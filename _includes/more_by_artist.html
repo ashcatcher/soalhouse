@@ -1,50 +1,18 @@
-<div class="container">
-  <div class="columns" style="justify-content: space-around;">
-    {% for art in site.gallery %}
-      {% if page.collection == 'gallery' %}
-        {% if art.artisan == page.artisan %}
-          {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
-          {% assign art_url = art.url | append: ".html" %}
-          <div class="column col-auto col-mx-auto col-ml-auto col-mr-auto gallery-card card">
-            <a href="{{art_url}}">
-              <div class="card-image">
-                {% if art.images.first.thumbnail_image %}
-                  <img src="{{art.images.first.thumbnail_image}}" class="img-responsive"/>
-                {% elsif art.images.first.image %}
-                  <img src="{{art.images.first.image}}" class="img-responsive"/>
-                {% endif %}
-              </div>
-              {% comment %}
-              <div class="card-body">
-                <div class="h5">{{art.title}}</div>
-              </div>
-              {% endcomment %}
-            </a>
-          </div>
-        {% endif %}
-      {% elsif page.collection == 'artisan' %}
-        {% if art.artisan == page.name %}
-          {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
-          {% assign art_url = art.url | append: ".html" %}
-          <div class="column col-auto col-mx-auto col-ml-auto col-mr-auto gallery-card card">
-            <a href="{{art_url}}">
-              <div class="card-image">
-                {% if art.images.first.thumbnail_image %}
-                  <img src="{{art.images.first.thumbnail_image}}" class="img-responsive"/>
-                {% else %}
-                  <img src="{{art.images.first.image}}" class="img-responsive"/>
-                {% endif %}
-              </div>
-              {% comment %}
-              <div class="card-body">
-                <div class="h5">{{art.title}}</div>
-              </div>
-              {% endcomment %}
-            </a>
-          </div>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
+<div class="gallery container">
+  {% for art in site.gallery %}
+    {% if art.artisan == page.name or art.artisan == page.artisan %}
+      {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
+      {% assign art_url = art.url | append: ".html" %}
+      {% assign img = art.images.first.image %}
+      {% assign timg = art.images.first.thumbnail_image %}
+      <div class="card">
+        <a href="{{art_url}}">
+        <img src="{% if timg %}{{timg}}{% else %}{{img}}{% endif %}"
+               class="img-responsive"/>
+        </a>
+        <h5>{{art.title}}</h5>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
