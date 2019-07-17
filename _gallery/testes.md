@@ -2,8 +2,9 @@
 title: Testes
 artisan: garbaganza
 Body: |-
-  # Hello my baby, hello my hunny
-  ## Hello my rag-time gyal
+  Testing you testing me
+
+  Maybe this works
 price: 10
 images:
   - image: >-
