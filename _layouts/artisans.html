@@ -7,7 +7,7 @@ layout: default
     <div class="card">
       <img src="{{artisan.image}}" class="img-responsive"/>
       <h3>{{artisan.name}}</h3>
-      <p>{{artisan.bio}}</p>
+      <p>{{artisan.excerpt | strip_html | strip_newlines | truncate: 140}}</p>
       <a href="{{artisan_url}}">
         <button class="btn btn-primary">View Profile</button>
       </a>
