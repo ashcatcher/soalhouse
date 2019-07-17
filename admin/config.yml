@@ -27,7 +27,7 @@ collections:
         name: "title"
         widget: "string"
         required: true
-      - label: "artisan"
+      - label: "Artisan"
         name: "artisan"
         widget: "relation"
         collection: "artisan"
@@ -84,7 +84,7 @@ collections:
 #             multiple: true
 
   - name: "artisan"
-    label: "artisan"
+    label: "Artisans"
     folder: "_artisan/"
     create: true
     slug: "{{slug}}"
