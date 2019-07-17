@@ -17,11 +17,14 @@ layout: default
         <h2><a href="{{artisan_url}}">{{page.artisan}}</a></h2>
       {% endif %}
 
-      <p>{{page.description}}</p>
-
       <h3>Asking ${{page.price}}</h3>
-
       {% include snipcart_button.html %}
+
+      <div class="exhibit-content">
+        {{page.content}}
+      </div>
+
+
 
     </div>
   </div>

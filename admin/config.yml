@@ -75,7 +75,7 @@ collections:
         required: false
 
   - name: "gallery"
-    label: "Gallery Exhibit"
+    label: "Exhibits"
     folder: "_gallery/"
     create: true
     slug: "{{slug}}"
@@ -92,13 +92,13 @@ collections:
         valueField: "name"
         displayFields: "name"
         required: true
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        required: true
+      - label: "Content"
+        name: "Body"
+        widget: "markdown"
+        required: false
       - label: "Price"
         name: "price"
-        widget: "string"
+        widget: "number"
         default: ""
         required: false
       - label: "Images"

@@ -6,10 +6,33 @@
     - [.] Optional Contact Form for private offers/inquiries
     - [X] URL linked Exhibit to Artisan (relational)
     - [x] Footer Gallery containing other works by Artist
-      - [ ] Conditional logic for condition where Artist has only 1 piece
+        - [ ] Conditional logic for condition where Artist has only 1 piece
 
+- [x]exhibits:
+    - [X] Product Gallery View
+    - [X] Exhibit:Artisan mapping relationship
+    - [.] Optional Categories
+    - [ ] Optional display of pricing on gallery cards
+    - [ ] Conditional logic for Art without an associated Artisan
 
+- [x] artisan:
+    - [ ] Name Attribute
+      - [ ] Linked in Layout
+      - [ ] Linked in Admin
+      - [ ] Linked in Form Submissions
+      - [ ] Linked in Snipcart SKU
+      - [ ] Linked in Facebook Opengraph Data
+    - [ ] Image Attribute
+      - [ ] Linked in Layout
+      - [ ] Linked in Admin
+      - [ ] Alt Tags
+      - [ ] Thumbnail URL
+    - [ ] Relational Data FILE
+      - [ ] Artisan.contact.number
+      - [ ] ARtisan.contact.email
+      - [ ] Artisan.contact.phone
 
+    - [ ] Contact Form after Gallery
 
 
 # soalhouse.ca - based upon the [Solace Jekyll Theme](https://github.com/ashcatcher/solace)

@@ -2,7 +2,6 @@
 permalink: /:categories/:title/
 author_img_name_path: "/images/users/user.jpg"
 theme: minimal-mistakes-jekyll
-teaser: 
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem

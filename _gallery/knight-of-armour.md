@@ -1,12 +1,6 @@
 ---
 title: Knight of Armour
 artisan: Joe Renaud
-description: >-
-  Created out of a menagerie of repurposed metals; a favorite combination for
-  this retired metal sculptor. 
-
-  Knight of Armour is waiting to guard your artistic pleasures, as hours of fun
-  can be had identifying what he is made of!  
 price: 5000
 id: 2
 images:
@@ -39,4 +33,8 @@ images:
     thumbnail_image: >-
       https://res.cloudinary.com/soalhouse/image/upload/c_crop,g_north,h_2800,w_1836/c_fill,f_auto,w_150/v1562623194/Gallery/koa7_d8uyj3.jpg
 ---
+
+Created out of a menagerie of repurposed metals; a favorite combination for this retired metal sculptor. 
+
+Knight of Armour is waiting to guard your artistic pleasures, as hours of fun can be had identifying what he is made of!  
 
