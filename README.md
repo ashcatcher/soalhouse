@@ -1,3 +1,17 @@
+## Layouts
+
+- [x]exhibit:
+    - [x] Individual Product Page
+    - [.] Optional Snipcart Buy it now Button for e-commerce
+    - [.] Optional Contact Form for private offers/inquiries
+    - [X] URL linked Exhibit to Artisan (relational)
+    - [x] Footer Gallery containing other works by Artist
+      - [ ] Conditional logic for condition where Artist has only 1 piece
+
+
+
+
+
 # soalhouse.ca - based upon the [Solace Jekyll Theme](https://github.com/ashcatcher/solace)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6c6bbcd4-7a27-4626-98ed-ce06c5b89522/deploy-status)](https://app.netlify.com/sites/soalhouse/deploys)
 

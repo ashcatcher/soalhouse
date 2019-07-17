@@ -1,0 +1,40 @@
+// Styles for Artisan Layout
+.artisans {
+  @include breakpoint(max-width, 960px) {
+    column-count: 2;
+  }
+  @include breakpoint(max-width, 640px) {
+    column-count: 1;
+  }
+  @include breakpoint(min-width, 961px) {
+    column-count: 3;
+  }
+  .card {
+    background-color: rgba(255,255,255,0.95);
+    display: inline-block;
+    width: 100%;
+    margin: .4rem .4rem .4rem .4rem;
+  }
+  h1,h2,h3,h4,h5,h6,a,i,p,b {color: black;}
+  img {float: left;
+    max-width: 150px;
+    height: auto;
+  }
+  button {margin-bottom: .4rem;}
+}
+
+.artisan {
+  //background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.9);
+  h1,h2,h3,h4,h5,h6,p,b,i {color: black;}
+  img {
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: var(--color-red-light);
+    margin-top: .4rem;
+  }
+
+  h2 {
+    padding-top: 1.5rem;
+  }
+}

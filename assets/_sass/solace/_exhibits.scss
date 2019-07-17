@@ -1,9 +1,35 @@
-// Styles for Artisan Layout
+.exhibit {
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  p,b,h1,h2,h3,h4,h4,h6,{
+    color: black;
+  }
+  &-details {
+    text-align: center;
+    h1 {padding-top: 1.8rem;}
+    h2 a {font-size: 1.8rem;}
+    h3 {float: left; text-align: left;}
+    p {min-height: 1.8rem;}
+  }
+}
+
+.exhibits {
+  justify-content: space-around;
+  //background-color: rgba(255,255,255,0.6);
+  align-items: end;
+  .column {
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    img {margin: 0 auto 0 auto; max-width: 150px;}
+  }
+}
+
 .artisans {
+  column-count: 2;
   .card {
-    background-color: rgba(255,255,255,0.95);
+    //background-color: rgba(255,255,255,0.95);
     display: inline-block;
-    width: 500px;
+    width: 100%;
     margin: .4rem .4rem .4rem .4rem;
   }
   h1,h2,h3,h4,h5,h6,a,i,p,b {color: black;}
@@ -14,18 +40,64 @@
   button {margin-bottom: .4rem;}
 }
 
-.artisan {
-  //background-color: rgba(0,0,0,0.5);
+.container.exhibit, .container.artisan {
   background-color: rgba(255,255,255,0.9);
   h1,h2,h3,h4,h5,h6,p,b,i {color: black;}
-  img {
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: var(--color-red-light);
-    margin-top: .4rem;
+  img {margin: .4rem auto .4rem auto;}
+
+  .gallery {
+    .card {
+      display: inline-block;
+      background-color: transparent;
+      margin: .4rem .4rem .4rem .4rem;
+      padding: .4rem .4rem .4rem .4rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      img {background-color: transparent; max-width: 150px;}
+    }
+  }
+}
+
+.artisan {
+  img {border-radius: 13px; background-color: var(--color-red-light);}
+  h2 {padding-top: 1.5rem;}
+}
+
+
+.simplegallery {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .content {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    img {
+      height: auto;
+      max-height: 100vh;
+      border: 1px solid #9c9c9c;
+      border-radius: 5px;
+      display: none;
+      &.active {display: inline;}
+    }
   }
 
-  h2 {
-    padding-top: 1.5rem;
+  .thumbnail {
+    margin: 5px auto 5px auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    .thumb {
+      float: left;
+      width: 20%;
+      height: auto;
+      margin: 0 5px 0 0;
+      cursor: pointer;
+      img {border: 1px solid #9c9c9c; width: 100%;}
+    }
+    .last { margin: 0; }
   }
 }
