@@ -17,7 +17,7 @@ public_folder: "assets/images"
 logo_url: "https://soalhouse.ca/assets/images/soal150.svg"
 
 collections:
-- name: "gallery"
+  - name: "gallery"
     label: "Exhibits"
     folder: "_gallery/"
     create: true
