@@ -54,11 +54,12 @@ collections:
         widget: "list"
         default: ["/assets/images/soal220.png"]
         allow_add: true
-        required: true
+        required: false
         fields:
           - label: Image
             name: image
             widget: image
+            required: false
           - label: Thumbnail_Image
             name: thumbnail_image
             widget: image
