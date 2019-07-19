@@ -1,7 +1,7 @@
 ---
 title: Neo Gothic Torso
 artisan: Joe Renaud
-price: 1005
+price: 1000
 images:
   - image: >-
       https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623205/Gallery/ngt1_dkqrmt.jpg
