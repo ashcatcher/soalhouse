@@ -90,7 +90,7 @@ collections:
 #             multiple: true
 
   - name: "artisan"
-    label: "Artisans"
+    label: "Artisan"
     folder: "_artisan/"
     create: true
     slug: "{{slug}}"
