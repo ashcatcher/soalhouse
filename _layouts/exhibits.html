@@ -12,7 +12,7 @@ enabled: true
         {% assign img = exhibit.images.first.image %}
         {% assign timg = exhibit.images.first.thumbnail_image %}
 
-        <div class="column col-auto col-mx-auto col-ml-auto card">
+        <div class="column col-md-4 col-lg-4 col-xl-4 col-sm-6 col-xs-12 col-mx-auto col-ml-auto card">
 
           <a href="{{art_url}}">
           <img src="{% if timg %}{{ timg }}{% else %}{{ img }}{% endif %}"
