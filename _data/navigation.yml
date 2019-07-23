@@ -1,3 +1,14 @@
+main:
+  - title: "House Gallery"
+    url: /
+  - title: "Artisans"
+    url: /artisans/
+  - title: "Accomodations"
+    url: /rooms/
+  - title: "About"
+    url: /about/
+  - title: "Admin"
+    url: /admin/
 sidebar:
   - title: "House Gallery"
     url: /

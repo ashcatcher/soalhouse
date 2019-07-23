@@ -11,7 +11,7 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: 'gallery'
@@ -76,7 +76,8 @@ full_name: 'Shephards of Abundant Living'
 copyright_year: "2019"
 email: clboulter@shaw.ca
 
-logo: /assets/images/soal150.svg
+logo: "/assets/images/soal150.svg"
+masthead_title: "SOAL House Gallery"
 logo_red: /assets/images/soal150red.png
 teaser: /assets/images/soal150.svg
 
