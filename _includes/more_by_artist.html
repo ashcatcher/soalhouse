@@ -1,13 +1,13 @@
+{% assign cloudinary = "https://res.cloudinary.com/soalhouse/image/upload/" %}
 <div class="gallery container">
   {% for art in site.gallery %}
     {% if art.artisan == page.name or art.artisan == page.artisan %}
       {% assign artisan_url =  art.artisan | slugify | prepend:"/artisan/" | append: ".html" %}
       {% assign art_url = art.url | append: ".html" %}
       {% assign img = art.images.first.image %}
-      {% assign timg = art.images.first.thumbnail_image %}
       <div class="card">
         <a href="{{art_url}}">
-        <img src="{% if timg %}{{timg}}{% else %}{{img}}{% endif %}"
+          <img src="{{cloudinary}}w_250,h_250,c_thumb/{{img}}"
                class="img-responsive"/>
         </a>
         <h5>{{art.title}}</h5>
