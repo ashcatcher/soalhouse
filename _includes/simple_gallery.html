@@ -1,10 +1,11 @@
+{% assign cloudinary = "https://res.cloudinary.com/soalhouse/image/upload/" %}
 <section id="gallery" class="simplegallery">
   <div class="content">
     {% for image in page.images %}
       {% if forloop.index == 1 %}
-        <img src="{{image.image}}" class="active image_{{forloop.index}}" />
+      <img src="{{cloudinary}}h_1200,w_700,c_pad/{{image.image}}" class="active image_{{forloop.index}}" />
       {% else %}
-        <img src="{{image.image}}" class="image_{{forloop.index}}"
+        <img src="{{cloudinary}}h_1200,w_700,c_pad/{{image.image}}"" class="image_{{forloop.index}}"
                                    style="display: none;" />
       {% endif %}
     {% endfor %}
@@ -14,12 +15,7 @@
     {% for image in page.images %}
       <div class="thumb{% if forloop.last %} last{% endif %}">
         <a href="#" rel="{{forloop.index}}">
-          {% if image.thumbnail_image %}
-            <img src="{{image.thumbnail_image}}"
-                 id="thumb_{{forloop.index}}" alt="" />
-          {% else %}
-            <img src="{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
-          {% endif %}
+          <img src="{{cloudinary}}h_250,w_250,c_thumb/{{image.image}}" id="thumb_{{forloop.index}}" alt="" />
         </a>
       </div>
     {% endfor %}
