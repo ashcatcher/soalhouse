@@ -114,26 +114,25 @@ collections:
       - { label: "Name", name: "name", widget: "string", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Hidden", name: "hidden", widget: "boolean", required: true, default: false }
-  - name: "settings"
-    label: "Settings"
-    files:
-      - label: "Navigation"
-        name: "sidebar_navigation"
-        file: "_data/navigation.yml"
-        fields:
-          - label: Sidebar
-            name: sidebar
-            widget: list
-            fields:
-              - label: {Title, name: title, widget: string}
-              - label: {URL, name: url, widget: string}
 
-      - label: "About Page"
-        name: "about"
-        file: "_data/about.yml"
-        fields:
+  - name: "about"
+    label: "About Page"
+    file: "_data/about.yml"
+    fields:
           - {label: List_Title, name: list_title, widget: string}
           - label: List_Entries
             name: list_entries
             widget: list
             field: { label: Item, name: item, widget: string }
+
+
+  - name: "navigation"
+    label: "Sidebar"
+    file: "_data/navigation.yml"
+    fields:
+      - label: Sidebar
+        name: sidebar
+        widget: list
+        fields:
+          - label: {Title, name: title, widget: string}
+          - label: {URL, name: url, widget: string}
