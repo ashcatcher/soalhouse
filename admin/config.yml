@@ -132,15 +132,12 @@ collections:
         name: "about"
         file: "_data/about.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - label: Tennants
-            name: tennants
+          - {label: List_Title, name: list_title, widget: string}
+          - label: List_Entries
+            name: list_entries
             widget: list
-            fields:
-              - {label: Order, name: order, widget: number}
-              - {label: Title, name: title, widget: string}
-              - label: Description
-                name: description
-                widget: list
+            field:
+              - label: Entry
+                name: entry
+                widget: text
                 required: false
-                field: {label: Content, name: content, widget: string}

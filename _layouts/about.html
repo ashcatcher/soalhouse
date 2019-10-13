@@ -15,18 +15,11 @@ layout: default
 
 
   <div class="column col-6 col-xs-12 tennants" style="background-color: rgba(0,0,0,0.5);">
-    <h3>{{site.data.about.title}}</h3>
+    <div class="row">
+    <h3>{{site.data.about.list_title}}</h3>
     <ol>
-      {% for tennant in site.data.about.tennants %}
-        <li>{{tennant.title}}
-          {% if tennant.description %}
-            <ul>
-              {% for description in tennant.description %}
-                <li>{{description}}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        </li>
+      {% for entry in site.data.about.list_entries %}
+        <li>{{entry.entry}}</li>
       {% endfor %}
     </ol>
   </div>

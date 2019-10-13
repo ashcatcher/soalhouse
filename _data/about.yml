@@ -1,35 +1,25 @@
-title: "10 Tennants of Sheppard Museum of Social Culture"
-tennants:
-  - order: 1
-    title: Togetherness
-    description:  "~community values"
-  - order: 2
-    title: Genuineness
-  - order: 3
-    title: Wonder
-  - order: 4
-    title: Discernment
-    description:
-      - "~fiscal"
-      - "~emotional"
-      - "~mental"
-      - "~spiritual"
-  - order: 5
-    title: Tenderness
-    description:
-      - "~how you affect others"
-  - order: 6
-    title: Embodiment
-    description:
-      - "~your dreams"
-  - order: 7
-    title: deLight
-  - order: 8
-    title: Silence
-  - order: 9
-    title: Empathy
-    description:
-      - "~how other affects you"
-  - order: 10
-    title: "Celebrating the <u>Now</u>"
-    description: "~Where, How, Why, Where, Who... Now =) =)"
+list_title: "10 Tennants of Sheppard Museum of Social Culture"
+list_entries:
+  - entry:  "~community values"
+  - entry: "Genuineness"
+  - entry: "Wonder"
+  - entry: >
+      Discernment
+      ~fiscal
+      ~emotional
+      ~mental
+      ~spiritual
+  - entry: >
+      Tenderness
+      ~how you affect others
+  - entry: >
+      Embodiment
+      ~your dreams
+  - entry: "deLight"
+  - entry: "Silence"
+  - entry: >
+      Empathy
+      ~how other affects you
+  - entry: >
+      Celebrating the <u>Now</u>
+      ~Where, How, Why, Where, Who... Now =) =)
