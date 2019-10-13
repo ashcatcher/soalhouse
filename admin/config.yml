@@ -136,8 +136,3 @@ collections:
           - label: List_Entries
             name: list_entries
             widget: list
-            field:
-              - label: Entry
-                name: entry
-                widget: text
-                required: false
