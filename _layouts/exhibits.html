@@ -15,7 +15,8 @@ enabled: true
         <div class="column col-md-4 col-lg-4 col-xl-4 col-sm-6 col-xs-12 col-mx-auto col-ml-auto card">
 
           <a href="{{art_url}}">
-          <img src="{% if timg %}{{ timg }}{% else %}{{ img }}{% endif %}"
+          <img
+            src="https://res.cloudinary.com/soalhouse/image/upload/w_300,h_300,c_250/{{ img }}"
                  class="img-responsive" />
           <h5>{{exhibit.title}}</h5>
           </a>

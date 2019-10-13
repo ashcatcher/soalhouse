@@ -6,6 +6,6 @@ price: 20
 stock: 3
 images:
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto,g_auto/v1563746039/cabn_fascinators_t0uvim.jpg
+      cabn_fascinators_t0uvim.jpg
 ---
 

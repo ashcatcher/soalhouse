@@ -5,33 +5,19 @@ price: 5000
 id: 2
 images:
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa1_asn3dk.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_crop,h_2500,w_1700,x_-50,y_150/c_fill,f_auto,w_150/v1562623192/Gallery/koa1_asn3dk.jpg
+      Gallery/koa1_asn3dk.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa2_pvgdfu.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa2_pvgdfu.jpg
+      Gallery/koa2_pvgdfu.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa3_kgqod4.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623192/Gallery/koa3_kgqod4.jpg
+      Gallery/koa3_kgqod4.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa4_yp2hu9.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_crop,h_2500,w_1800,x_250,y_0/c_fill,f_auto,w_150/v1562623192/Gallery/koa4_yp2hu9.jpg
+      Gallery/koa4_yp2hu9.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623193/Gallery/koa5_o9bknu.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_fill,f_auto,w_150/v1562623193/Gallery/koa5_o9bknu.jpg
+      Gallery/koa5_o9bknu.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623192/Gallery/koa6_fkxrpq.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_crop,g_face:center,h_2284,w_1700/c_fill,f_auto,w_150/v1562623192/Gallery/koa6_fkxrpq.jpg
+      Gallery/koa6_fkxrpq.jpg
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto/v1562623194/Gallery/koa7_d8uyj3.jpg
-    thumbnail_image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/c_crop,g_north,h_2800,w_1836/c_fill,f_auto,w_150/v1562623194/Gallery/koa7_d8uyj3.jpg
+      Gallery/koa7_d8uyj3.jpg
 ---
 
 Created out of a menagerie of repurposed metals; a favorite combination for this retired metal sculptor. 

@@ -6,6 +6,6 @@ price: 50
 stock: 1
 images:
   - image: >-
-      https://res.cloudinary.com/soalhouse/image/upload/f_auto,g_auto/v1563408730/coy_choi_zml4kz.jpg
+      coy_choi_zml4kz.jpg
 ---
 
