@@ -19,7 +19,7 @@ layout: default
       <h3 class="text-bold">{{site.data.about.list_title}}</h3>
       <ol>
         {% for entry in site.data.about.list_entries %}
-        <li class="text-large">{{entry}}</li>
+        <li class="text-large">{{entry.item}}</li>
         {% endfor %}
       </ol>
     </div>

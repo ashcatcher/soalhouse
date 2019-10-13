@@ -1,25 +1,25 @@
 list_title: "10 Tennants of Sheppard Museum of Social Culture"
 list_entries:
-  -  "~community values"
-  -  "Genuineness"
-  -  "Wonder"
-  -  >
+  - item: "~community values"
+  - item: "Genuineness"
+  - item: "Wonder"
+  - item: >
       Discernment
       ~fiscal
       ~emotional
       ~mental
       ~spiritual
-  -  >
+  - item: >
       Tenderness
       ~how you affect others
-  -  >
+  - item: >
       Embodiment
       ~your dreams
-  -  "deLight"
-  -  "Silence"
-  -  >
+  - item: "deLight"
+  - item: "Silence"
+  - item: >
       Empathy
       ~how other affects you
-  -  >
+  - item: >
       Celebrating the <u>Now</u>
       ~Where, How, Why, Where, Who... Now =) =)

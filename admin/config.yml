@@ -136,3 +136,4 @@ collections:
           - label: List_Entries
             name: list_entries
             widget: list
+            field: { label: Item, name: item, widget: string }
