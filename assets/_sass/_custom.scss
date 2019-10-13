@@ -141,12 +141,21 @@
 
 .clear { clear: both; }
 
-.tennants {
+.list {
+  background-image: var(--sidegod);
   ul {
     list-style-type: none;
   }
+  h3 { border-bottom: solid 1px white; }
   ol {
+    margin-top: none;
     column-count: 2;
+    li {
+      list-style-type: decimal-leading-zero;
+      list-style-position: inside;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
   }
 }
 

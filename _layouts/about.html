@@ -14,26 +14,27 @@ layout: default
   </div>
 
 
-  <div class="column col-6 col-xs-12 tennants" style="background-color: rgba(0,0,0,0.5);">
+  <div class="column col-6 col-xs-12 list">
     <div class="row">
-    <h3>{{site.data.about.list_title}}</h3>
-    <ol>
-      {% for entry in site.data.about.list_entries %}
-        <li>{{entry.entry}}</li>
-      {% endfor %}
-    </ol>
+      <h3 class="text-bold">{{site.data.about.list_title}}</h3>
+      <ol>
+        {% for entry in site.data.about.list_entries %}
+        <li class="text-large">{{entry.entry}}</li>
+        {% endfor %}
+      </ol>
+    </div>
   </div>
-  <div class="column col-3" style="background-color: rgba(0,0,0,0.5);">
-    <a href="/about/history/">
-      <h4>Click here to read the original Stratchcona Newsletter</h4>
-      <img src="/assets/images/beerbaron.webp"/>
-    </a>
-  </div>
-</div>
-{% comment %}
-<div class="hero-sm hero">
-  <img src="/assets/images/History-Banner.png"/ style="width: 100%; height:
-  auto;">
-</div>
+  {% comment %}
+  <div class="hero-sm hero">
+    <img src="/assets/images/History-Banner.png"/ style="width: 100%; height:
+    auto;">
+    <div class="column col-3" style="background-color: rgba(0,0,0,0.5);">
+      <a href="/about/history/">
+        <h4>Click here to read the original Stratchcona Newsletter</h4>
+        <img src="/assets/images/beerbaron.webp"/>
+      </a>
+    </div>
 
-{% endcomment %}
+  </div>
+
+  {% endcomment %}
