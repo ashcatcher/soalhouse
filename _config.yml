@@ -155,7 +155,7 @@ sidebar:
   - gradient-dark: #771100
 
 
-include:
+# include:
 
 exclude:
   - flightdeck.manifest.js

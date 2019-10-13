@@ -6,9 +6,11 @@ backend:
 # media_folder: "assets/_images"
 media_library:
   name: cloudinary
+  output_filename_only: true
   config:
     cloud_name: soalhouse
     api_key: 947772475781272
+    output_filename_only: true
     default_transformations:
       -   - fetch_format: auto
             width: auto:50

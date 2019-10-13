@@ -66,6 +66,16 @@
   "dependencies": {
     "bootstrap": "4.2.1",
     "bulma": "^0.7.5",
-    "spectre.css": "^0.5.8"
+    "create-react-app": "^3.2.0",
+    "eslint": "^6.5.1",
+    "fkill": "^6.2.0",
+    "gulp-cli": "^2.2.0",
+    "npx": "^10.2.0",
+    "prettier": "^1.18.2",
+    "spectre.css": "^0.5.8",
+    "tldr": "^3.2.7",
+    "typescript": "^3.6.4",
+    "vtop": "^0.6.1",
+    "yarn": "^1.19.1"
   }
 }
