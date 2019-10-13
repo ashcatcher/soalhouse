@@ -14,6 +14,6 @@ price: 900
 stock: 1
 images:
   - image: >-
-      ninja_trtle_3wtble_izkonq.jpg
+      v1563746382/ninja_trtle_3wtble_izkonq.jpg
 ---
 
