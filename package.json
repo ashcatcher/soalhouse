@@ -64,7 +64,7 @@
     "yargs": "^12.0.1"
   },
   "dependencies": {
-    "bootstrap": "4.2.1",
+    "bootstrap": ">=4.3.1",
     "bulma": "^0.7.5",
     "create-react-app": "^3.2.0",
     "eslint": "^6.5.1",
