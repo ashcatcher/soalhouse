@@ -1,13 +1,12 @@
 ---
 title: Penal Parachute
 artisan: Joe Renaud
-price: 1000
-id: 4
+Body: >-
+  This artsy offering doubles nicely as a percussive instrument! Affectionatly
+  called a toad stool by some & a parachute by others
+price: 601
 images:
-  - image: >-
-      pp2_v4axyr.jpg
-  - image: >-
-      pp3_ysnzrf.jpg
+  - image: pp2_v4axyr.jpg
+  - image: pp3_ysnzrf.jpg
 ---
-Many metals make this saucy sculpture come to life; could even make a great footstool for a chuckle, carries a decent sound as percussion.
 
